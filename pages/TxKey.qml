@@ -34,7 +34,7 @@ import QtQuick.Controls.Styles 1.4
 import QtQuick.Layouts 1.1
 
 import "../components"
-import moneroComponents.Clipboard 1.0
+import waznComponents.Clipboard 1.0
 
 import "../js/TxUtils.js" as TxUtils
 

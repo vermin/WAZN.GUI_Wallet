@@ -30,7 +30,7 @@
 
 import QtQuick 2.0
 
-import "../components" as MoneroComponents
+import "../components" as WaznComponents
 
 Item {
     id: dropdown
@@ -46,7 +46,7 @@ Item {
     property int dropdownHeight: 42
     property int fontHeaderSize: 16 * scaleRatio
     property int fontItemSize: 14 * scaleRatio
-    property string colorBorder: MoneroComponents.Style.inputBorderColorInActive
+    property string colorBorder: WaznComponents.Style.inputBorderColorInActive
     property string colorHeaderBackground: "transparent"
     property bool headerBorder: true
     property bool headerFontBold: false
@@ -96,7 +96,7 @@ Item {
             anchors.left: parent.left
             anchors.leftMargin: 12 * scaleRatio
             elide: Text.ElideRight
-            font.family: MoneroComponents.Style.fontRegular.name
+            font.family: WaznComponents.Style.fontRegular.name
             font.bold: dropdown.headerFontBold
             font.pixelSize: dropdown.fontHeaderSize
             color: "#FFFFFF"
@@ -189,7 +189,7 @@ Item {
                         anchors.right: col2Text.left
                         anchors.leftMargin: 12 * scaleRatio
                         anchors.rightMargin: 0
-                        font.family: MoneroComponents.Style.fontRegular.name
+                        font.family: WaznComponents.Style.fontRegular.name
                         font.bold: true
                         font.pixelSize: fontItemSize
                         color: itemArea.containsMouse || index === column.currentIndex || itemArea.containsMouse ? "#4607AB" : "#FFFFFF"
@@ -201,7 +201,7 @@ Item {
                         anchors.verticalCenter: parent.verticalCenter
                         anchors.right: parent.right
                         anchors.rightMargin: 45 * scaleRatio
-                        font.family: MoneroComponents.Style.fontRegular.name
+                        font.family: WaznComponents.Style.fontRegular.name
                         font.pixelSize: 14 * scaleRatio
                         color: "#FFFFFF"
                         text: ""

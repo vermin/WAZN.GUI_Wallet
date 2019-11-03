@@ -34,7 +34,7 @@ import QtQuick.Controls 2.0
 import QtQuick.Dialogs 1.2
 
 import "../../version.js" as Version
-import "../../components" as MoneroComponents
+import "../../components" as WaznComponents
 
 
 Rectangle {
@@ -56,12 +56,12 @@ Rectangle {
             columns: 2
             columnSpacing: 0
 
-            MoneroComponents.TextBlock {
+            WaznComponents.TextBlock {
                 font.pixelSize: 14
                 text: qsTr("GUI version: ") + translationManager.emptyString
             }
 
-            MoneroComponents.TextBlock {
+            WaznComponents.TextBlock {
                 font.pixelSize: 14
                 text: Version.GUI_VERSION + " (Qt " + qtRuntimeVersion + ")" + translationManager.emptyString
             }
@@ -71,8 +71,8 @@ Rectangle {
                 Layout.topMargin: 2 * scaleRatio
                 Layout.bottomMargin: 2 * scaleRatio
                 Layout.fillWidth: true
-                color: MoneroComponents.Style.dividerColor
-                opacity: MoneroComponents.Style.dividerOpacity
+                color: WaznComponents.Style.dividerColor
+                opacity: WaznComponents.Style.dividerOpacity
             }
 
             Rectangle {
@@ -80,19 +80,19 @@ Rectangle {
                 Layout.topMargin: 2 * scaleRatio
                 Layout.bottomMargin: 2 * scaleRatio
                 Layout.fillWidth: true
-                color: MoneroComponents.Style.dividerColor
-                opacity: MoneroComponents.Style.dividerOpacity
+                color: WaznComponents.Style.dividerColor
+                opacity: WaznComponents.Style.dividerOpacity
             }
 
-            MoneroComponents.TextBlock {
-                id: guiMoneroVersion
+            WaznComponents.TextBlock {
+                id: guiWaznVersion
                 font.pixelSize: 14
                 text: qsTr("Embedded WAZN version: ") + translationManager.emptyString
             }
 
-            MoneroComponents.TextBlock {
+            WaznComponents.TextBlock {
                 font.pixelSize: 14
-                text: Version.GUI_MONERO_VERSION + translationManager.emptyString
+                text: Version.GUI_WAZN_VERSION + translationManager.emptyString
             }
 
             Rectangle {
@@ -100,8 +100,8 @@ Rectangle {
                 Layout.topMargin: 2 * scaleRatio
                 Layout.bottomMargin: 2 * scaleRatio
                 Layout.fillWidth: true
-                color: MoneroComponents.Style.dividerColor
-                opacity: MoneroComponents.Style.dividerOpacity
+                color: WaznComponents.Style.dividerColor
+                opacity: WaznComponents.Style.dividerOpacity
             }
 
             Rectangle {
@@ -109,24 +109,24 @@ Rectangle {
                 Layout.topMargin: 2 * scaleRatio
                 Layout.bottomMargin: 2 * scaleRatio
                 Layout.fillWidth: true
-                color: MoneroComponents.Style.dividerColor
-                opacity: MoneroComponents.Style.dividerOpacity
+                color: WaznComponents.Style.dividerColor
+                opacity: WaznComponents.Style.dividerOpacity
             }
 
-            MoneroComponents.TextBlock {
+            WaznComponents.TextBlock {
                 Layout.fillWidth: true
                 font.pixelSize: 14
                 text: qsTr("Wallet path: ") + translationManager.emptyString
             }
 
-            MoneroComponents.TextBlock {
+            WaznComponents.TextBlock {
                 Layout.fillWidth: true
                 Layout.maximumWidth: 360
                 font.pixelSize: 14
                 text: {
                     var wallet_path = walletPath();
                     if(isIOS)
-                        wallet_path = moneroAccountsDir + wallet_path;
+                        wallet_path = waznAccountsDir + wallet_path;
                     return wallet_path;
                 }
             }
@@ -136,8 +136,8 @@ Rectangle {
                 Layout.topMargin: 2 * scaleRatio
                 Layout.bottomMargin: 2 * scaleRatio
                 Layout.fillWidth: true
-                color: MoneroComponents.Style.dividerColor
-                opacity: MoneroComponents.Style.dividerOpacity
+                color: WaznComponents.Style.dividerColor
+                opacity: WaznComponents.Style.dividerOpacity
             }
 
             Rectangle {
@@ -145,18 +145,18 @@ Rectangle {
                 Layout.topMargin: 2 * scaleRatio
                 Layout.bottomMargin: 2 * scaleRatio
                 Layout.fillWidth: true
-                color: MoneroComponents.Style.dividerColor
-                opacity: MoneroComponents.Style.dividerOpacity
+                color: WaznComponents.Style.dividerColor
+                opacity: WaznComponents.Style.dividerOpacity
             }
 
-            MoneroComponents.TextBlock {
+            WaznComponents.TextBlock {
                 id: restoreHeight
                 font.pixelSize: 14
                 textFormat: Text.RichText
                 text: (typeof currentWallet == "undefined") ? "" : qsTr("Wallet creation height: ") + translationManager.emptyString
             }
 
-            MoneroComponents.TextBlock {
+            WaznComponents.TextBlock {
                 id: restoreHeightText
                 Layout.fillWidth: true
                 textFormat: Text.RichText
@@ -217,8 +217,8 @@ Rectangle {
                 Layout.topMargin: 2 * scaleRatio
                 Layout.bottomMargin: 2 * scaleRatio
                 Layout.fillWidth: true
-                color: MoneroComponents.Style.dividerColor
-                opacity: MoneroComponents.Style.dividerOpacity
+                color: WaznComponents.Style.dividerColor
+                opacity: WaznComponents.Style.dividerOpacity
             }
 
             Rectangle {
@@ -226,17 +226,17 @@ Rectangle {
                 Layout.topMargin: 2 * scaleRatio
                 Layout.bottomMargin: 2 * scaleRatio
                 Layout.fillWidth: true
-                color: MoneroComponents.Style.dividerColor
-                opacity: MoneroComponents.Style.dividerOpacity
+                color: WaznComponents.Style.dividerColor
+                opacity: WaznComponents.Style.dividerOpacity
             }
 
-            MoneroComponents.TextBlock {
+            WaznComponents.TextBlock {
                 Layout.fillWidth: true
                 font.pixelSize: 14
                 text: qsTr("Wallet log path: ") + translationManager.emptyString
             }
 
-            MoneroComponents.TextBlock {
+            WaznComponents.TextBlock {
                 Layout.fillWidth: true
                 font.pixelSize: 14
                 text: walletLogPath
@@ -251,7 +251,7 @@ Rectangle {
 
             Rectangle {
                 id: rectCopy
-                color: MoneroComponents.Style.buttonBackgroundColorDisabled
+                color: WaznComponents.Style.buttonBackgroundColorDisabled
                 width: btnCopy.width + 40
                 height: 24
                 radius: 2
@@ -260,8 +260,8 @@ Rectangle {
                     id: btnCopy
                     anchors.verticalCenter: parent.verticalCenter
                     anchors.horizontalCenter: parent.horizontalCenter
-                    color: MoneroComponents.Style.defaultFontColor
-                    font.family: MoneroComponents.Style.fontRegular.name
+                    color: WaznComponents.Style.defaultFontColor
+                    font.family: WaznComponents.Style.fontRegular.name
                     font.pixelSize: 14 * scaleRatio
                     font.bold: true
                     text: qsTr("Copy to clipboard") + translationManager.emptyString
@@ -273,12 +273,12 @@ Rectangle {
                     onClicked: {
                         var data = "";
                         data += "GUI version: " + Version.GUI_VERSION + " (Qt " + qtRuntimeVersion + ")";
-                        data += "\nEmbedded WAZN version: " + Version.GUI_MONERO_VERSION;
+                        data += "\nEmbedded WAZN version: " + Version.GUI_WAZN_VERSION;
                         data += "\nWallet path: ";
 
                         var wallet_path = walletPath();
                         if(isIOS)
-                            wallet_path = moneroAccountsDir + wallet_path;
+                            wallet_path = waznAccountsDir + wallet_path;
                         data += wallet_path;
 
                         data += "\nWallet creation height: ";

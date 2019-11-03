@@ -35,13 +35,13 @@ import QtQuick.Layouts 1.1
 import QtQuick.Dialogs 1.2
 
 import "../components"
-import moneroComponents.Clipboard 1.0
-import moneroComponents.Wallet 1.0
-import moneroComponents.WalletManager 1.0
-import moneroComponents.TransactionHistory 1.0
-import moneroComponents.TransactionHistoryModel 1.0
-import moneroComponents.Subaddress 1.0
-import moneroComponents.SubaddressModel 1.0
+import waznComponents.Clipboard 1.0
+import waznComponents.Wallet 1.0
+import waznComponents.WalletManager 1.0
+import waznComponents.TransactionHistory 1.0
+import waznComponents.TransactionHistoryModel 1.0
+import waznComponents.Subaddress 1.0
+import waznComponents.SubaddressModel 1.0
 import "../js/TxUtils.js" as TxUtils
 
 Rectangle {
@@ -55,7 +55,7 @@ Rectangle {
     property alias addressText : pageReceive.current_address
 
     function makeQRCodeString() {
-        var s = "monero:"
+        var s = "WAZN:"
         var nfields = 0
         s += current_address;
         var amount = amountToReceiveLine.text.trim()
@@ -138,8 +138,8 @@ Rectangle {
         var expectedAmount = walletManager.amountFromString(amountToReceiveLine.text)
         if (expectedAmount && expectedAmount != amount) {
             var displayTotalAmount = walletManager.displayAmount(totalAmount)
-            if (amount > expectedAmount) toReceiveSatisfiedLine.text += qsTr("With more Monero");
-            else if (amount < expectedAmount) toReceiveSatisfiedLine.text = qsTr("With not enough Monero")
+            if (amount > expectedAmount) toReceiveSatisfiedLine.text += qsTr("With more WAZN");
+            else if (amount < expectedAmount) toReceiveSatisfiedLine.text = qsTr("With not enough WAZN")
             toReceiveSatisfiedLine.text += ": " + "<br>" +
                     qsTr("Expected") + ": " + amountToReceiveLine.text + "<br>" +
                     qsTr("Total received") + ": " + displayTotalAmount + translationManager.emptyString;

@@ -32,26 +32,26 @@ import QtQuick.Controls 2.0
 import QtQuick 2.7
 
 import "../js/TxUtils.js" as TxUtils
-import "../components" as MoneroComponents
+import "../components" as WaznComponents
 
 TextArea {
     property int fontSize: 18 * scaleRatio
     property bool fontBold: false
-    property string fontColor: MoneroComponents.Style.defaultFontColor
+    property string fontColor: WaznComponents.Style.defaultFontColor
 
     property bool mouseSelection: true
     property bool error: false
     property bool addressValidation: false
 
     id: textArea
-    font.family: MoneroComponents.Style.fontRegular.name
+    font.family: WaznComponents.Style.fontRegular.name
     color: fontColor
     font.pixelSize: fontSize
     font.bold: fontBold
     horizontalAlignment: TextInput.AlignLeft
     selectByMouse: mouseSelection
-    selectionColor: MoneroComponents.Style.dimmedFontColor
-    selectedTextColor: MoneroComponents.Style.defaultFontColor
+    selectionColor: WaznComponents.Style.dimmedFontColor
+    selectedTextColor: WaznComponents.Style.defaultFontColor
 
     onTextChanged: {
         if(addressValidation){

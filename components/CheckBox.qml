@@ -31,7 +31,7 @@
 import QtQuick 2.0
 import QtQuick.Layouts 1.1
 
-import "../components" as MoneroComponents
+import "../components" as WaznComponents
 
 RowLayout {
     id: checkBox
@@ -61,9 +61,9 @@ RowLayout {
             color: "transparent"
             border.color:
                 if(checkBox.checked){
-                    return MoneroComponents.Style.inputBorderColorActive;
+                    return WaznComponents.Style.inputBorderColorActive;
                 } else {
-                    return MoneroComponents.Style.inputBorderColorInActive;
+                    return WaznComponents.Style.inputBorderColorInActive;
                 }
         }
 
@@ -92,9 +92,9 @@ RowLayout {
 
         Text {
             id: label
-            font.family: MoneroComponents.Style.fontRegular.name
+            font.family: WaznComponents.Style.fontRegular.name
             font.pixelSize: checkBox.fontSize
-            color: MoneroComponents.Style.defaultFontColor
+            color: WaznComponents.Style.defaultFontColor
             wrapMode: Text.Wrap
             Layout.fillWidth: true
             anchors.left: backgroundRect.right

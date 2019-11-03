@@ -35,8 +35,8 @@ import QtQuick.Layouts 1.1
 import QtQuick.Dialogs 1.2
 
 import "../components"
-import moneroComponents.Clipboard 1.0
-import moneroComponents.WalletManager 1.0
+import waznComponents.Clipboard 1.0
+import waznComponents.WalletManager 1.0
 
 Rectangle {
     id: mainLayout

@@ -31,8 +31,8 @@
 import QtQuick 2.0
 import QtQuick.Layouts 1.1
 
-import moneroComponents.Wallet 1.0
-import "../components" as MoneroComponents
+import waznComponents.Wallet 1.0
+import "../components" as WaznComponents
 
 Rectangle {
     id: item
@@ -96,7 +96,7 @@ Rectangle {
                 anchors.left: parent.left
                 anchors.top: parent.top
                 anchors.topMargin: 0
-                font.family: MoneroComponents.Style.fontMedium.name
+                font.family: WaznComponents.Style.fontMedium.name
                 font.bold: true
                 font.pixelSize: 13 * scaleRatio
                 color: "white"
@@ -109,7 +109,7 @@ Rectangle {
                 anchors.left: parent.left
                 anchors.top: parent.top
                 anchors.topMargin: 14
-                font.family: MoneroComponents.Style.fontMedium.name
+                font.family: WaznComponents.Style.fontMedium.name
                 font.pixelSize: 20 * scaleRatio
                 color: "white"
                 text: getConnectionStatusString(item.connected) + translationManager.emptyString

@@ -40,8 +40,8 @@ class Subaddress : public QObject
 {
     Q_OBJECT
 public:
-    Q_INVOKABLE QList<Monero::SubaddressRow*> getAll(bool update = false) const;
-    Q_INVOKABLE Monero::SubaddressRow * getRow(int index) const;
+    Q_INVOKABLE QList<WAZN::SubaddressRow*> getAll(bool update = false) const;
+    Q_INVOKABLE WAZN::SubaddressRow * getRow(int index) const;
     Q_INVOKABLE void addRow(quint32 accountIndex, const QString &label) const;
     Q_INVOKABLE void setLabel(quint32 accountIndex, quint32 addressIndex, const QString &label) const;
     Q_INVOKABLE void refresh(quint32 accountIndex) const;
@@ -54,10 +54,10 @@ signals:
 public slots:
 
 private:
-    explicit Subaddress(Monero::Subaddress * subaddressImpl, QObject *parent);
+    explicit Subaddress(WAZN::Subaddress * subaddressImpl, QObject *parent);
     friend class Wallet;
-    Monero::Subaddress * m_subaddressImpl;
-    mutable QList<Monero::SubaddressRow*> m_rows;
+    WAZN::Subaddress * m_subaddressImpl;
+    mutable QList<WAZN::SubaddressRow*> m_rows;
 };
 
 #endif // SUBADDRESS_H

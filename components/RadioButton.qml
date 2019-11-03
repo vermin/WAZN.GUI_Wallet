@@ -31,7 +31,7 @@
 import QtQuick 2.0
 import QtQuick.Layouts 1.1
 
-import "../components" as MoneroComponents
+import "../components" as WaznComponents
 
 RowLayout {
     id: radioButton
@@ -86,8 +86,8 @@ RowLayout {
             id: label
             anchors.left: button.right
             anchors.leftMargin: !isMobile ? 10 : 8
-            color: MoneroComponents.Style.defaultFontColor
-            font.family: MoneroComponents.Style.fontRegular.name
+            color: WaznComponents.Style.defaultFontColor
+            font.family: WaznComponents.Style.fontRegular.name
             font.pixelSize: radioButton.fontSize
             wrapMode: Text.Wrap
 

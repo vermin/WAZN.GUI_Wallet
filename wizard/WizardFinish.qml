@@ -30,7 +30,7 @@
 
 import QtQuick 2.2
 import QtQuick.Layouts 1.1
-import moneroComponents.NetworkType 1.0
+import waznComponents.NetworkType 1.0
 
 
 ColumnLayout {

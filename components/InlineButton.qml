@@ -31,7 +31,7 @@
 import QtQuick 2.0
 import QtQuick.Layouts 1.1
 
-import "../components" as MoneroComponents
+import "../components" as WaznComponents
 
 Item {
     id: inlineButton
@@ -54,7 +54,7 @@ Item {
 
     Rectangle{
         id: rect
-        color: MoneroComponents.Style.buttonBackgroundColorDisabled
+        color: WaznComponents.Style.buttonBackgroundColorDisabled
         border.color: "black"
         height: 28 * scaleRatio
         width: inlineText.width + 22 * scaleRatio
@@ -65,7 +65,7 @@ Item {
 
         Text {
             id: inlineText
-            font.family: MoneroComponents.Style.fontBold.name
+            font.family: WaznComponents.Style.fontBold.name
             font.bold: true
             font.pixelSize: 16 * scaleRatio
             color: "black"

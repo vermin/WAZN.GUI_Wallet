@@ -29,10 +29,10 @@
 // THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 import QtQuick 2.0
-import moneroComponents.Clipboard 1.0
-import moneroComponents.AddressBookModel 1.0
+import waznComponents.Clipboard 1.0
+import waznComponents.AddressBookModel 1.0
 
-import "../components" as MoneroComponents
+import "../components" as WaznComponents
 import "../js/TxUtils.js" as TxUtils
 
 ListView {
@@ -151,7 +151,7 @@ ListView {
                 id: txrxLabel
                 anchors.left: arrowImage.right
                 anchors.leftMargin: 18 * scaleRatio
-                font.family: MoneroComponents.Style.fontLight.name
+                font.family: WaznComponents.Style.fontLight.name
                 font.pixelSize: 14 * scaleRatio
                 text: isOut ? qsTr("Sent") + translationManager.emptyString : qsTr("Received") + translationManager.emptyString
                 color: "#808080"
@@ -163,7 +163,7 @@ ListView {
                 anchors.leftMargin: 18 * scaleRatio
                 anchors.top: txrxLabel.bottom
                 anchors.topMargin: 0 * scaleRatio
-                font.family: MoneroComponents.Style.fontBold.name
+                font.family: WaznComponents.Style.fontBold.name
                 font.pixelSize: 18 * scaleRatio
                 font.bold: true
                 text: {
@@ -189,7 +189,7 @@ ListView {
                 Text {
                     id: dateLabel
                     anchors.left: parent.left
-                    font.family: MoneroComponents.Style.fontRegular.name
+                    font.family: WaznComponents.Style.fontRegular.name
                     font.pixelSize: 14 * scaleRatio
                     text: date
                     color: "#808080"
@@ -213,7 +213,7 @@ ListView {
                     anchors.left: parent.left
                     anchors.top: dateLabel.bottom
                     anchors.topMargin: 0
-                    font.family: MoneroComponents.Style.fontRegular.name
+                    font.family: WaznComponents.Style.fontRegular.name
                     font.pixelSize: 16 * scaleRatio
                     text: {
                         if(isOut){
@@ -291,7 +291,7 @@ ListView {
             visible: delegate.collapsed
 
             // left column
-            MoneroComponents.HistoryTableInnerColumn{
+            WaznComponents.HistoryTableInnerColumn{
                 anchors.left: parent.left
                 anchors.leftMargin: 30 * scaleRatio
 
@@ -301,7 +301,7 @@ ListView {
             }
 
             // right column
-            MoneroComponents.HistoryTableInnerColumn{
+            WaznComponents.HistoryTableInnerColumn{
                 anchors.right: parent.right
                 anchors.rightMargin: 100 * scaleRatio
                 width: 200 * scaleRatio
@@ -339,7 +339,7 @@ ListView {
             visible: delegate.collapsed
 
             // left column
-            MoneroComponents.HistoryTableInnerColumn{
+            WaznComponents.HistoryTableInnerColumn{
                 anchors.left: parent.left
                 anchors.leftMargin: 30 * scaleRatio
                 labelHeader: qsTr("Blockheight")
@@ -359,7 +359,7 @@ ListView {
             }
 
             // right column
-            MoneroComponents.HistoryTableInnerColumn {
+            WaznComponents.HistoryTableInnerColumn {
                 visible: currentWallet.getUserNote(hash)
                 anchors.right: parent.right
                 anchors.rightMargin: 80 * scaleRatio
@@ -427,7 +427,7 @@ ListView {
                 }
 
                 Text {
-                    color: MoneroComponents.Style.defaultFontColor
+                    color: WaznComponents.Style.defaultFontColor
                     text: "P"
                     anchors.horizontalCenter: parent.horizontalCenter
                     anchors.verticalCenter: parent.verticalCenter
@@ -472,7 +472,7 @@ ListView {
                 }
 
                 Text {
-                    color: MoneroComponents.Style.defaultFontColor
+                    color: WaznComponents.Style.defaultFontColor
                     text: "?"
                     anchors.horizontalCenter: parent.horizontalCenter
                     anchors.verticalCenter: parent.verticalCenter

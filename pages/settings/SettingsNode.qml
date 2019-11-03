@@ -31,7 +31,7 @@
 import QtQuick 2.7
 import QtQuick.Layouts 1.1
 import QtQuick.Controls 2.0
-import "../../components" as MoneroComponents
+import "../../components" as WaznComponents
 
 Rectangle{
     color: "transparent"
@@ -66,8 +66,8 @@ Rectangle{
                 anchors.left: parent.left
                 anchors.right: parent.right
                 height: 1
-                color: MoneroComponents.Style.dividerColor
-                opacity: MoneroComponents.Style.dividerOpacity
+                color: WaznComponents.Style.dividerColor
+                opacity: WaznComponents.Style.dividerOpacity
             }
 
             Rectangle {
@@ -111,7 +111,7 @@ Rectangle{
                     anchors.top: parent.top
                     color: "white"
                     font.bold: true
-                    font.family: MoneroComponents.Style.fontRegular.name
+                    font.family: WaznComponents.Style.fontRegular.name
                     font.pixelSize: 16 * scaleRatio
                     text: qsTr("Local node") + translationManager.emptyString
                 }
@@ -122,8 +122,8 @@ Rectangle{
                     anchors.topMargin: 4 * scaleRatio
                     anchors.left: localNodeIcon.right
                     anchors.leftMargin: 14 * scaleRatio
-                    color: MoneroComponents.Style.dimmedFontColor
-                    font.family: MoneroComponents.Style.fontRegular.name
+                    color: WaznComponents.Style.dimmedFontColor
+                    font.family: WaznComponents.Style.fontRegular.name
                     font.pixelSize: 15 * scaleRatio
                     horizontalAlignment: TextInput.AlignLeft
                     selectByMouse: false
@@ -165,8 +165,8 @@ Rectangle{
                 anchors.left: parent.left
                 anchors.right: parent.right
                 height: 1
-                color: MoneroComponents.Style.dividerColor
-                opacity: MoneroComponents.Style.dividerOpacity
+                color: WaznComponents.Style.dividerColor
+                opacity: WaznComponents.Style.dividerOpacity
             }
 
             Rectangle {
@@ -210,7 +210,7 @@ Rectangle{
                     anchors.top: parent.top
                     color: "white"
                     font.bold: true
-                    font.family: MoneroComponents.Style.fontRegular.name
+                    font.family: WaznComponents.Style.fontRegular.name
                     font.pixelSize: 16 * scaleRatio
                     text: qsTr("Remote node") + translationManager.emptyString
                 }
@@ -221,8 +221,8 @@ Rectangle{
                     anchors.topMargin: 4 * scaleRatio
                     anchors.left: remoteNodeIcon.right
                     anchors.leftMargin: 14 * scaleRatio
-                    color: MoneroComponents.Style.dimmedFontColor
-                    font.family: MoneroComponents.Style.fontRegular.name
+                    color: WaznComponents.Style.dimmedFontColor
+                    font.family: WaznComponents.Style.fontRegular.name
                     font.pixelSize: 15 * scaleRatio
                     activeFocusOnPress: false
                     horizontalAlignment: TextInput.AlignLeft
@@ -260,8 +260,8 @@ Rectangle{
                 anchors.right: parent.right
                 anchors.bottom: parent.bottom
                 height: 1
-                color: MoneroComponents.Style.dividerColor
-                opacity: MoneroComponents.Style.dividerOpacity
+                color: WaznComponents.Style.dividerColor
+                opacity: WaznComponents.Style.dividerOpacity
             }
         }
 
@@ -273,13 +273,13 @@ Rectangle{
             Layout.topMargin: 20
             visible: !isMobile && persistentSettings.useRemoteNode
 
-            MoneroComponents.WarningBox {
+            WaznComponents.WarningBox {
                 Layout.topMargin: 26 * scaleRatio
                 Layout.bottomMargin: 6 * scaleRatio
                 text: qsTr("To find a remote node, type 'WAZN remote node' into your favorite search engine. Please ensure the node is run by a trusted third-party.") + translationManager.emptyString
             }
 
-            MoneroComponents.RemoteNodeEdit {
+            WaznComponents.RemoteNodeEdit {
                 id: remoteNodeEdit
                 Layout.minimumWidth: 100 * scaleRatio
 
@@ -309,7 +309,7 @@ Rectangle{
                 columns: (isMobile) ? 1 : 2
                 columnSpacing: 32
 
-                MoneroComponents.LineEdit {
+                WaznComponents.LineEdit {
                     id: daemonUsername
                     Layout.fillWidth: true
                     labelText: "Daemon username"
@@ -320,7 +320,7 @@ Rectangle{
                     fontSize: 15 * scaleRatio
                 }
 
-                MoneroComponents.LineEdit {
+                WaznComponents.LineEdit {
                     id: daemonPassword
                     Layout.fillWidth: true
                     labelText: "Daemon password"
@@ -337,7 +337,7 @@ Rectangle{
                 id: rectConnectRemote
                 Layout.topMargin: 12 * scaleRatio
                 enabled: remoteNodeEdit.isValid()
-                color: enabled ? MoneroComponents.Style.buttonBackgroundColor : MoneroComponents.Style.buttonBackgroundColorDisabled
+                color: enabled ? WaznComponents.Style.buttonBackgroundColor : WaznComponents.Style.buttonBackgroundColorDisabled
                 width: btnConnectRemote.width + 40
                 height: 26
                 radius: 2
@@ -346,8 +346,8 @@ Rectangle{
                     id: btnConnectRemote
                     anchors.verticalCenter: parent.verticalCenter
                     anchors.horizontalCenter: parent.horizontalCenter
-                    color: MoneroComponents.Style.defaultFontColor
-                    font.family: MoneroComponents.Style.fontRegular.name
+                    color: WaznComponents.Style.defaultFontColor
+                    font.family: WaznComponents.Style.fontRegular.name
                     font.pixelSize: 14 * scaleRatio
                     font.bold: true
                     text: qsTr("Connect") + translationManager.emptyString
@@ -390,7 +390,7 @@ Rectangle{
 
                 Rectangle {
                     id: rectStartStopNode
-                    color: MoneroComponents.Style.buttonBackgroundColor
+                    color: WaznComponents.Style.buttonBackgroundColor
                     width: btnStartStopNode.width + 40
                     height: 24
                     radius: 2
@@ -399,8 +399,8 @@ Rectangle{
                         id: btnStartStopNode
                         anchors.verticalCenter: parent.verticalCenter
                         anchors.horizontalCenter: parent.horizontalCenter
-                        color: MoneroComponents.Style.defaultFontColor
-                        font.family: MoneroComponents.Style.fontRegular.name
+                        color: WaznComponents.Style.defaultFontColor
+                        font.family: WaznComponents.Style.fontRegular.name
                         font.pixelSize: 14 * scaleRatio
                         font.bold: true
                         text: (appWindow.daemonRunning ? qsTr("Stop local node") : qsTr("Start daemon")) + translationManager.emptyString
@@ -421,7 +421,7 @@ Rectangle{
             }
 
             RowLayout {
-                MoneroComponents.LineEditMulti {
+                WaznComponents.LineEditMulti {
                     id: blockchainFolder
                     Layout.preferredWidth: 200
                     Layout.fillWidth: true
@@ -451,7 +451,7 @@ Rectangle{
             RowLayout {
                 id: daemonFlagsRow
 
-                MoneroComponents.LineEditMulti {
+                WaznComponents.LineEditMulti {
                     id: daemonFlags
                     Layout.preferredWidth:  200
                     Layout.fillWidth: true
@@ -471,14 +471,14 @@ Rectangle{
                 ColumnLayout {
                     Layout.fillWidth: true
 
-                    MoneroComponents.RemoteNodeEdit {
+                    WaznComponents.RemoteNodeEdit {
                         id: bootstrapNodeEdit
                         Layout.minimumWidth: 100 * scaleRatio
                         Layout.bottomMargin: 20 * scaleRatio
 
                         lineEditBackgroundColor: "transparent"
                         lineEditFontColor: "white"
-                        lineEditBorderColor: MoneroComponents.Style.inputBorderColorActive
+                        lineEditBorderColor: WaznComponents.Style.inputBorderColorActive
                         placeholderFontSize: 15 * scaleRatio
                         labelFontSize: 14 * scaleRatio
                         lineEditFontBold: false

@@ -2,7 +2,7 @@ import QtQuick 2.7
 import QtQuick.Layouts 1.1
 import QtQuick.Controls 2.0
 
-import "." as MoneroComponents
+import "." as WaznComponents
 
 Rectangle {
     id: root
@@ -14,7 +14,7 @@ Rectangle {
 
     color: "#09FFFFFF"
     radius: 4
-    border.color: MoneroComponents.Style.inputBorderColorInActive
+    border.color: WaznComponents.Style.inputBorderColorInActive
     border.width: 1
     
     signal linkActivated;
@@ -39,8 +39,8 @@ Rectangle {
         TextArea {
             id: content
             Layout.fillWidth: true
-            color: MoneroComponents.Style.defaultFontColor
-            font.family: MoneroComponents.Style.fontRegular.name
+            color: WaznComponents.Style.defaultFontColor
+            font.family: WaznComponents.Style.fontRegular.name
             font.pixelSize: root.fontSize
             horizontalAlignment: TextInput.AlignLeft
             selectByMouse: false

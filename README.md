@@ -17,7 +17,7 @@ Portions Copyright (c) 2012-2013 The Cryptonote developers
 
 ## Introduction
 
-WAZN  is an anonymous, secure, untraceable, decentralized digital currency, much like Monero. The advantages being that lower end IoT devices are able to mine at a more efficient rate, allowing for the network to become more decentralized. Other advantages include a lightweight blockchain, fast synctimes, and fairly fast transactions (2 minute block times). It may be used by anyone, anywhere. We will reach adoption through technical advancements, whilst also maintaining a focus on the forefront: marketing to adopters.
+WAZN  is an anonymous, secure, untraceable, decentralized digital currency, much like WAZN. The advantages being that lower end IoT devices are able to mine at a more efficient rate, allowing for the network to become more decentralized. Other advantages include a lightweight blockchain, fast synctimes, and fairly fast transactions (2 minute block times). It may be used by anyone, anywhere. We will reach adoption through technical advancements, whilst also maintaining a focus on the forefront: marketing to adopters.
 
 Our adoption advertising strategies revolve around a unique payment processing merchant we will be launching for WAZN. Features for said system, do not exist for any current cryptocurrency. Other strategies will include incentivizing shop owners to have their users use WAZN to pay, bringing more eyes to the ease-of-use of our cryptocurrency; whilst also lessening payment processing fee's from mass merchants and banks, all while allowing for security and anonymity.(edited)
 Other devices we wish to include are video gaming consoles and smart home appliances. More details will be released about that next year.

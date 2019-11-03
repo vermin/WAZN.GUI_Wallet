@@ -35,7 +35,7 @@ import QtQuick.Layouts 1.1
 import QtQuick.Controls.Styles 1.4
 import QtQuick.Window 2.2
 
-import "../components" as MoneroComponents
+import "../components" as WaznComponents
 import "../js/Windows.js" as Windows
 import "../js/Utils.js" as Utils
 
@@ -106,8 +106,8 @@ Window {
                     anchors.fill: parent
                     font.family: "Ariel"
                     font.pixelSize: 14 * scaleRatio
-                    color: MoneroComponents.Style.defaultFontColor
-                    selectionColor: MoneroComponents.Style.dimmedFontColor
+                    color: WaznComponents.Style.defaultFontColor
+                    selectionColor: WaznComponents.Style.dimmedFontColor
                     wrapMode: TextEdit.Wrap
                     readOnly: true
                     background: Rectangle {
@@ -173,7 +173,7 @@ Window {
         RowLayout {
             Layout.fillWidth: true
 
-            MoneroComponents.LineEdit {
+            WaznComponents.LineEdit {
                 id: sendCommandText
                 Layout.fillWidth: true
                 placeholderText: qsTr("command + enter (e.g help)") + translationManager.emptyString

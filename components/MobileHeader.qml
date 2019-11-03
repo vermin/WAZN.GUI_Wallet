@@ -2,8 +2,8 @@ import QtQuick 2.2
 import QtGraphicalEffects 1.0
 import QtQuick.Layouts 1.1
 
-import moneroComponents.Wallet 1.0
-import "../components" as MoneroComponents
+import waznComponents.Wallet 1.0
+import "../components" as WaznComponents
 
 // BasicPanel header
 Rectangle {
@@ -21,7 +21,7 @@ Rectangle {
         anchors.verticalCenterOffset: -5
         anchors.left: parent.left
         anchors.leftMargin: 50 * scaleRatio
-        source: "../images/moneroLogo2.png"
+        source: "../images/waznLogo2.png"
     }
 
     Image {
@@ -29,8 +29,8 @@ Rectangle {
         visible: !logo.visible
         anchors.verticalCenter: parent.verticalCenter
         anchors.left: parent.left
-        anchors.leftMargin: 40 * scaleRatio 
-        source: "../images/moneroIcon.png"
+        anchors.leftMargin: 40 * scaleRatio
+        source: "../images/waznIcon.png"
     }
 
     Grid {

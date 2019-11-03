@@ -30,7 +30,7 @@
 
 import QtQuick 2.0
 
-import "../components" as MoneroComponents
+import "../components" as WaznComponents
 
 Item {
     id: delegateItem
@@ -54,7 +54,7 @@ Item {
             font.family: "Arial"
             font.bold: true
             font.pixelSize: 12 * scaleRatio
-            color: MoneroComponents.Style.defaultFontColor
+            color: WaznComponents.Style.defaultFontColor
             text: {
                 if(currentIndex === 0) return qsTr("Default") + translationManager.emptyString
                 if(currentIndex === 13) return qsTr("High") + translationManager.emptyString

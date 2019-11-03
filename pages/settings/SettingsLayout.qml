@@ -35,7 +35,7 @@ import QtQuick.Dialogs 1.2
 
 import "../../js/Utils.js" as Utils
 import "../../js/Windows.js" as Windows
-import "../../components" as MoneroComponents
+import "../../components" as WaznComponents
 
 Rectangle {
     color: "transparent"
@@ -53,7 +53,7 @@ Rectangle {
         anchors.topMargin: 0
         spacing: 0
 
-        MoneroComponents.CheckBox {
+        WaznComponents.CheckBox {
             visible: !isMobile
             id: customDecorationsCheckBox
             checked: persistentSettings.customDecorations
@@ -61,7 +61,7 @@ Rectangle {
             text: qsTr("Custom decorations") + translationManager.emptyString
         }
 
-        MoneroComponents.TextBlock {
+        WaznComponents.TextBlock {
             visible: isMobile
             font.pixelSize: 14
             textFormat: Text.RichText

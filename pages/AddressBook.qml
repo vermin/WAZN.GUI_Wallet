@@ -31,8 +31,8 @@
 import QtQuick 2.0
 import QtQuick.Layouts 1.1
 import "../components"
-import moneroComponents.AddressBook 1.0
-import moneroComponents.AddressBookModel 1.0
+import waznComponents.AddressBook 1.0
+import waznComponents.AddressBookModel 1.0
 
 Rectangle {
     id: root

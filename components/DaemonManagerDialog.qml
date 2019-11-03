@@ -35,7 +35,7 @@ import QtQuick.Layouts 1.1
 import QtQuick.Controls.Styles 1.4
 import QtQuick.Window 2.0
 
-import "../components" as MoneroComponents
+import "../components" as WaznComponents
 
 Window {
     id: root
@@ -106,7 +106,7 @@ Window {
             spacing: 60
             Layout.alignment: Qt.AlignHCenter
 
-            MoneroComponents.StandardButton {
+            WaznComponents.StandardButton {
                 id: okButton
                 visible:false
                 fontSize: 14
@@ -120,7 +120,7 @@ Window {
                 }
             }
 
-            MoneroComponents.StandardButton {
+            WaznComponents.StandardButton {
                 id: cancelButton
                 fontSize: 14
                 text: qsTr("Use custom settings")

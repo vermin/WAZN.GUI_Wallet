@@ -8,7 +8,7 @@ Copyright (c) 2014-2018 The Monero Project
 
 This is a *Inno Setup* script `WAZN.iss` plus some related files
 that allows you to build a standalone Windows installer (.exe) for
-the GUI wallet that comes with the NightCore release of WAZN.
+the GUI wallet that comes with the "Sweet Chestnut" release of WAZN.
 
 This turns the GUI wallet into a more or less standard Windows program,
 by default installed into a subdirectory of `C:\Program Files`, a
@@ -20,7 +20,7 @@ WAZN.
 As the setup script in file [WAZN.iss](WAZN.iss) has to list every
 single file of the GUI wallet package to install by name,
 this version of the script only works with exactly the GUI wallet
-for WAZN release *Nightcore* that you find on
+for WAZN release *Sweet Chestnut* that you find on
 [the official download page](https://wazn.com/downloads).
 
 It should however be easy to modify the script for future

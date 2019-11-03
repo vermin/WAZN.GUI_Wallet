@@ -31,7 +31,7 @@
 import QtQuick 2.5
 import QtQuick.Layouts 1.1
 
-import "../components" as MoneroComponents
+import "../components" as WaznComponents
 
 Item {
     id: item
@@ -41,7 +41,7 @@ Item {
     property string tipText: ""
     property int fontSize: 16 * scaleRatio
     property bool fontBold: false
-    property string fontColor: MoneroComponents.Style.defaultFontColor
+    property string fontColor: WaznComponents.Style.defaultFontColor
     property string fontFamily: ""
     property alias wrapMode: label.wrapMode
     property alias horizontalAlignment: label.horizontalAlignment
@@ -60,7 +60,7 @@ Item {
             if(fontFamily){
                 return fontFamily;
             } else {
-                return MoneroComponents.Style.fontRegular.name;
+                return WaznComponents.Style.fontRegular.name;
             }
         }
         font.pixelSize: fontSize

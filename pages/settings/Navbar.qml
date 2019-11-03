@@ -35,10 +35,10 @@ import QtQuick.Layouts 1.1
 import QtQuick.Dialogs 1.2
 import "../../js/Windows.js" as Windows
 import "../../js/Utils.js" as Utils
-import "../../components" as MoneroComponents
+import "../../components" as WaznComponents
 import "../../pages"
 import "."
-import moneroComponents.Clipboard 1.0
+import waznComponents.Clipboard 1.0
 
 Rectangle {
     Layout.fillWidth: true
@@ -58,7 +58,7 @@ Rectangle {
             property string fontColor: "white"
             property int fontSize: 13 * scaleRatio
             property bool fontBold: true
-            property var fontFamily: MoneroComponents.Style.fontRegular.name
+            property var fontFamily: WaznComponents.Style.fontRegular.name
             property string borderColor: "#808080"
             property int textMargin: {
                 // left-right margins for a given cell

@@ -35,7 +35,7 @@ import QtQuick.Layouts 1.1
 import QtQuick.Controls.Styles 1.4
 import QtQuick.Window 2.0
 
-import "../components" as MoneroComponents
+import "../components" as WaznComponents
 
 Rectangle {
     id: root
@@ -105,12 +105,12 @@ Rectangle {
             Layout.topMargin: 14 * scaleRatio
             Layout.alignment: Qt.AlignHCenter
 
-            MoneroComponents.Label {
+            WaznComponents.Label {
                 id: dialogTitle
                 horizontalAlignment: Text.AlignHCenter
                 fontSize: 18 * scaleRatio
                 fontFamily: "Arial"
-                color: MoneroComponents.Style.defaultFontColor
+                color: WaznComponents.Style.defaultFontColor
             }
 
         }
@@ -121,13 +121,13 @@ Rectangle {
                 Layout.fillWidth: true
                 Layout.fillHeight: true
                 renderType: Text.QtRendering
-                font.family: MoneroComponents.Style.fontLight.name
+                font.family: WaznComponents.Style.fontLight.name
                 textFormat: TextEdit.AutoText
                 readOnly: true
                 font.pixelSize: 14 * scaleRatio
                 selectByMouse: false
                 wrapMode: TextEdit.Wrap
-                color: MoneroComponents.Style.defaultFontColor
+                color: WaznComponents.Style.defaultFontColor
 
                 MouseArea {
                     anchors.fill: parent
@@ -151,7 +151,7 @@ Rectangle {
             spacing: 60
             Layout.alignment: Qt.AlignHCenter
 
-            MoneroComponents.StandardButton {
+            WaznComponents.StandardButton {
                 id: cancelButton
                 text: qsTr("Cancel") + translationManager.emptyString
                 onClicked: {
@@ -160,7 +160,7 @@ Rectangle {
                 }
             }
 
-            MoneroComponents.StandardButton {
+            WaznComponents.StandardButton {
                 id: okButton
                 text: qsTr("OK")
                 KeyNavigation.tab: cancelButton
@@ -176,7 +176,7 @@ Rectangle {
     // window borders
     Rectangle{
         width: 1
-        color: MoneroComponents.Style.grey
+        color: WaznComponents.Style.grey
         anchors.left: parent.left
         anchors.top: parent.top
         anchors.bottom: parent.bottom
@@ -184,7 +184,7 @@ Rectangle {
 
     Rectangle{
         width: 1
-        color: MoneroComponents.Style.grey
+        color: WaznComponents.Style.grey
         anchors.right: parent.right
         anchors.top: parent.top
         anchors.bottom: parent.bottom
@@ -192,7 +192,7 @@ Rectangle {
 
     Rectangle{
         height: 1
-        color: MoneroComponents.Style.grey
+        color: WaznComponents.Style.grey
         anchors.left: parent.left
         anchors.top: parent.top
         anchors.right: parent.right
@@ -200,7 +200,7 @@ Rectangle {
 
     Rectangle{
         height: 1
-        color: MoneroComponents.Style.grey
+        color: WaznComponents.Style.grey
         anchors.left: parent.left
         anchors.bottom: parent.bottom
         anchors.right: parent.right

@@ -28,7 +28,7 @@
 // STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
 // THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-import moneroComponents.WalletManager 1.0
+import waznComponents.WalletManager 1.0
 import QtQuick 2.2
 import QtQuick.Layouts 1.1
 import "../components"
@@ -113,7 +113,7 @@ ColumnLayout {
             color: "#4A4646"
             textFormat: Text.RichText
 //            horizontalAlignment: Text.AlignHCenter
-            text: qsTr("To be able to communicate with the Monero network your wallet needs to be connected to a Monero node. For best privacy it's recommended to run your own node. \
+            text: qsTr("To be able to communicate with the WAZN network your wallet needs to be connected to a WAZN node. For best privacy it's recommended to run your own node. \
                         <br><br> \
                         If you don't have the option to run your own node, there's an option to connect to a remote node.")
                     + translationManager.emptyString

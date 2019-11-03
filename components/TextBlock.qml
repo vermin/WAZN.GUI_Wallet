@@ -1,11 +1,11 @@
 import QtQuick 2.0
 
-import "../components" as MoneroComponents
+import "../components" as WaznComponents
 
 TextEdit {
-    color: MoneroComponents.Style.defaultFontColor
-    font.family: MoneroComponents.Style.fontRegular.name
-    selectionColor: MoneroComponents.Style.dimmedFontColor
+    color: WaznComponents.Style.defaultFontColor
+    font.family: WaznComponents.Style.fontRegular.name
+    selectionColor: WaznComponents.Style.dimmedFontColor
     wrapMode: Text.Wrap
     readOnly: true
     selectByMouse: true

@@ -350,7 +350,7 @@ macx {
 
 
 # translation stuff
-TRANSLATIONS = $$files($$PWD/translations/monero-core_*.ts)
+TRANSLATIONS = $$files($$PWD/translations/wazn-core_*.ts)
 
 CONFIG(release, debug|release) {
     DESTDIR = release/bin

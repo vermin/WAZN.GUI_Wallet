@@ -30,7 +30,7 @@
 
 import QtQuick 2.0
 
-import "../components" as MoneroComponents
+import "../components" as WaznComponents
 
 Label {
     id: item
@@ -42,8 +42,8 @@ Label {
         anchors.left: parent.left
         anchors.right: parent.right
         height: 2
-        color: MoneroComponents.Style.dividerColor
-        opacity: MoneroComponents.Style.dividerOpacity
+        color: WaznComponents.Style.dividerColor
+        opacity: WaznComponents.Style.dividerOpacity
     }
 
     MouseArea {

@@ -30,7 +30,7 @@
 
 import QtQuick 2.0
 
-import "../components" as MoneroComponents
+import "../components" as WaznComponents
 
 Item {
     id: item
@@ -217,7 +217,7 @@ Item {
             }
         }
 
-        MoneroComponents.StandardButton {
+        WaznComponents.StandardButton {
             id: button
             anchors.top: parent.top
             anchors.bottom: parent.bottom

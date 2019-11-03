@@ -31,8 +31,8 @@
 import QtQuick 2.2
 import QtQuick.Layouts 1.1
 import QtGraphicalEffects 1.0
-import moneroComponents.Wallet 1.0
-import moneroComponents.NetworkType 1.0
+import waznComponents.Wallet 1.0
+import waznComponents.NetworkType 1.0
 import "components"
 
 Rectangle {
@@ -93,7 +93,7 @@ Rectangle {
         z: 1
     }
 
-    // card with monero logo
+    // card with WAZN logo
     Column {
         visible: true
         z: 2

@@ -34,7 +34,7 @@ import QtQuick.Controls 2.0
 import QtQuick.Dialogs 1.2
 
 import "../../js/Utils.js" as Utils
-import "../../components" as MoneroComponents
+import "../../components" as WaznComponents
 
 Rectangle {
     color: "transparent"
@@ -57,8 +57,8 @@ Rectangle {
             Layout.preferredHeight: 1 * scaleRatio
             Layout.fillWidth: true
             Layout.bottomMargin: 8 * scaleRatio
-            color: MoneroComponents.Style.dividerColor
-            opacity: MoneroComponents.Style.dividerOpacity
+            color: WaznComponents.Style.dividerColor
+            opacity: WaznComponents.Style.dividerOpacity
         }
 
         GridLayout {
@@ -77,15 +77,15 @@ Rectangle {
                     Layout.topMargin: 8 * scaleRatio
                     color: "white"
                     font.bold: true
-                    font.family: MoneroComponents.Style.fontRegular.name
+                    font.family: WaznComponents.Style.fontRegular.name
                     font.pixelSize: 16 * scaleRatio
                     text: qsTr("Close this wallet") + translationManager.emptyString
                 }
 
                 TextArea {
                     Layout.fillWidth: true
-                    color: MoneroComponents.Style.dimmedFontColor
-                    font.family: MoneroComponents.Style.fontRegular.name
+                    color: WaznComponents.Style.dimmedFontColor
+                    font.family: WaznComponents.Style.fontRegular.name
                     font.pixelSize: 14 * scaleRatio
                     horizontalAlignment: TextInput.AlignLeft
                     selectByMouse: false
@@ -118,14 +118,14 @@ Rectangle {
                     radius: 2 * scaleRatio
                     anchors.verticalCenter: parent.verticalCenter
                     anchors.horizontalCenter: parent.horizontalCenter
-                    color: MoneroComponents.Style.buttonBackgroundColorDisabled
+                    color: WaznComponents.Style.buttonBackgroundColorDisabled
 
                     Text {
                         id: closeWalletText
                         anchors.verticalCenter: parent.verticalCenter
                         anchors.horizontalCenter: parent.horizontalCenter
-                        color: MoneroComponents.Style.defaultFontColor
-                        font.family: MoneroComponents.Style.fontRegular.name
+                        color: WaznComponents.Style.defaultFontColor
+                        font.family: WaznComponents.Style.fontRegular.name
                         font.pixelSize: 14 * scaleRatio
                         font.bold: true
                         text: qsTr("Close wallet") + translationManager.emptyString
@@ -148,8 +148,8 @@ Rectangle {
             Layout.fillWidth: true
             Layout.topMargin: 8 * scaleRatio
             Layout.bottomMargin: 8 * scaleRatio
-            color: MoneroComponents.Style.dividerColor
-            opacity: MoneroComponents.Style.dividerOpacity
+            color: WaznComponents.Style.dividerColor
+            opacity: WaznComponents.Style.dividerOpacity
         }
 
         GridLayout {
@@ -168,15 +168,15 @@ Rectangle {
                     Layout.topMargin: 8 * scaleRatio
                     color: "white"
                     font.bold: true
-                    font.family: MoneroComponents.Style.fontRegular.name
+                    font.family: WaznComponents.Style.fontRegular.name
                     font.pixelSize: 16 * scaleRatio
                     text: qsTr("Create a view-only wallet") + translationManager.emptyString
                 }
 
                 TextArea {
                     Layout.fillWidth: true
-                    color: MoneroComponents.Style.dimmedFontColor
-                    font.family: MoneroComponents.Style.fontRegular.name
+                    color: WaznComponents.Style.dimmedFontColor
+                    font.family: WaznComponents.Style.fontRegular.name
                     font.pixelSize: 14 * scaleRatio
                     horizontalAlignment: TextInput.AlignLeft
                     selectByMouse: false
@@ -209,14 +209,14 @@ Rectangle {
                     radius: 2 * scaleRatio
                     anchors.verticalCenter: parent.verticalCenter
                     anchors.horizontalCenter: parent.horizontalCenter
-                    color: MoneroComponents.Style.buttonBackgroundColorDisabled
+                    color: WaznComponents.Style.buttonBackgroundColorDisabled
 
                     Text {
                         id: createViewOnlyText
                         anchors.verticalCenter: parent.verticalCenter
                         anchors.horizontalCenter: parent.horizontalCenter
-                        color: MoneroComponents.Style.defaultFontColor
-                        font.family: MoneroComponents.Style.fontRegular.name
+                        color: WaznComponents.Style.defaultFontColor
+                        font.family: WaznComponents.Style.fontRegular.name
                         font.pixelSize: 14 * scaleRatio
                         font.bold: true
                         text: qsTr("Create wallet") + translationManager.emptyString
@@ -239,8 +239,8 @@ Rectangle {
             Layout.fillWidth: true
             Layout.topMargin: 8 * scaleRatio
             Layout.bottomMargin: 8 * scaleRatio
-            color: MoneroComponents.Style.dividerColor
-            opacity: MoneroComponents.Style.dividerOpacity
+            color: WaznComponents.Style.dividerColor
+            opacity: WaznComponents.Style.dividerOpacity
         }
 
         GridLayout {
@@ -259,15 +259,15 @@ Rectangle {
                     Layout.topMargin: 8 * scaleRatio
                     color: "white"
                     font.bold: true
-                    font.family: MoneroComponents.Style.fontRegular.name
+                    font.family: WaznComponents.Style.fontRegular.name
                     font.pixelSize: 16 * scaleRatio
                     text: qsTr("Show seed & keys") + translationManager.emptyString
                 }
 
                 TextArea {
                     Layout.fillWidth: true
-                    color: MoneroComponents.Style.dimmedFontColor
-                    font.family: MoneroComponents.Style.fontRegular.name
+                    color: WaznComponents.Style.dimmedFontColor
+                    font.family: WaznComponents.Style.fontRegular.name
                     font.pixelSize: 14 * scaleRatio
                     horizontalAlignment: TextInput.AlignLeft
                     selectByMouse: false
@@ -300,14 +300,14 @@ Rectangle {
                     radius: 2 * scaleRatio
                     anchors.verticalCenter: parent.verticalCenter
                     anchors.horizontalCenter: parent.horizontalCenter
-                    color: MoneroComponents.Style.buttonBackgroundColorDisabled
+                    color: WaznComponents.Style.buttonBackgroundColorDisabled
 
                     Text {
                         id: showSeedText
                         anchors.verticalCenter: parent.verticalCenter
                         anchors.horizontalCenter: parent.horizontalCenter
-                        color: MoneroComponents.Style.defaultFontColor
-                        font.family: MoneroComponents.Style.fontRegular.name
+                        color: WaznComponents.Style.defaultFontColor
+                        font.family: WaznComponents.Style.fontRegular.name
                         font.pixelSize: 14 * scaleRatio
                         font.bold: true
                         text: qsTr("Show seed") + translationManager.emptyString
@@ -328,8 +328,8 @@ Rectangle {
             Layout.fillWidth: true
             Layout.topMargin: 8 * scaleRatio
             Layout.bottomMargin: 8 * scaleRatio
-            color: MoneroComponents.Style.dividerColor
-            opacity: MoneroComponents.Style.dividerOpacity
+            color: WaznComponents.Style.dividerColor
+            opacity: WaznComponents.Style.dividerOpacity
         }
 
         GridLayout {
@@ -348,15 +348,15 @@ Rectangle {
                     Layout.topMargin: 8 * scaleRatio
                     color: "white"
                     font.bold: true
-                    font.family: MoneroComponents.Style.fontRegular.name
+                    font.family: WaznComponents.Style.fontRegular.name
                     font.pixelSize: 16 * scaleRatio
                     text: qsTr("Rescan wallet balance") + translationManager.emptyString
                 }
 
                 TextArea {
                     Layout.fillWidth: true
-                    color: MoneroComponents.Style.dimmedFontColor
-                    font.family: MoneroComponents.Style.fontRegular.name
+                    color: WaznComponents.Style.dimmedFontColor
+                    font.family: WaznComponents.Style.fontRegular.name
                     font.pixelSize: 14 * scaleRatio
                     horizontalAlignment: TextInput.AlignLeft
                     selectByMouse: false
@@ -390,14 +390,14 @@ Rectangle {
                     radius: 2 * scaleRatio
                     anchors.verticalCenter: parent.verticalCenter
                     anchors.horizontalCenter: parent.horizontalCenter
-                    color: MoneroComponents.Style.buttonBackgroundColorDisabled
+                    color: WaznComponents.Style.buttonBackgroundColorDisabled
 
                     Text {
                         id: rescanButtonText
                         anchors.verticalCenter: parent.verticalCenter
                         anchors.horizontalCenter: parent.horizontalCenter
-                        color: MoneroComponents.Style.defaultFontColor
-                        font.family: MoneroComponents.Style.fontRegular.name
+                        color: WaznComponents.Style.defaultFontColor
+                        font.family: WaznComponents.Style.fontRegular.name
                         font.pixelSize: 14 * scaleRatio
                         font.bold: true
                         text: qsTr("Rescan") + translationManager.emptyString

@@ -2200,8 +2200,8 @@ Harcama Kanıtı ile ilgili davada, alıcı adresini belirtmeniz gerekmez. </tra
     </message>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="162"/>
-        <source>For every transaction, a small transaction fee is charged. This option lets you add an additional amount, as a percentage of that fee, to your transaction to support Monero development. For instance, a 50% autodonation take a transaction fee of 0.005 UPX and add a 0.0025 UPX to support Monero development.</source>
-        <translation>Her işlem için küçük bir işlem ücreti alınır. Bu seçenek, Monero&apos;nun geliştirilmesini desteklemek için işleminize, bu ücretin bir yüzdesi olarak ek bir miktar eklemenize izin verir. Örneğin 50% otomatik bağış, 0.005 UPX işlem ücreti alır ve Monero gelişimini desteklemek için 0.0025 UPX ekler.</translation>
+        <source>For every transaction, a small transaction fee is charged. This option lets you add an additional amount, as a percentage of that fee, to your transaction to support Monero development. For instance, a 50% autodonation take a transaction fee of 0.005 WAZN and add a 0.0025 WAZN to support Monero development.</source>
+        <translation>Her işlem için küçük bir işlem ücreti alınır. Bu seçenek, Monero&apos;nun geliştirilmesini desteklemek için işleminize, bu ücretin bir yüzdesi olarak ek bir miktar eklemenize izin verir. Örneğin 50% otomatik bağış, 0.005 WAZN işlem ücreti alır ve Monero gelişimini desteklemek için 0.0025 WAZN ekler.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="174"/>
@@ -2787,8 +2787,8 @@ Spending address index: </source>
     </message>
     <message>
         <location filename="../main.qml" line="1787"/>
-        <source>New version of uplexa-wallet-gui is available: %1&lt;br&gt;%2</source>
-        <translation>uplexa-wallet-gui&apos;nin yeni sürümü mevcut: %1&lt;br&gt;%2</translation>
+        <source>New version of wazn-wallet-gui is available: %1&lt;br&gt;%2</source>
+        <translation>wazn-wallet-gui&apos;nin yeni sürümü mevcut: %1&lt;br&gt;%2</translation>
     </message>
     <message>
         <location filename="../main.qml" line="1819"/>

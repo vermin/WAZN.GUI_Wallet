@@ -2207,8 +2207,8 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     </message>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="162"/>
-        <source>For every transaction, a small transaction fee is charged. This option lets you add an additional amount, as a percentage of that fee, to your transaction to support Monero development. For instance, a 50% autodonation take a transaction fee of 0.005 UPX and add a 0.0025 UPX to support Monero development.</source>
-        <translation>За каждую транзакцию взимается небольшая комиссия. Эта опция позволяет вам добавить дополнительную сумму в процентах от этой комиссии к транзакции для поддержки разработки Monero. Например, 50% автодотации берут плату за транзакцию 0,005 UPX и добавляют 0,0025 UPX в пользу поддержки разработки Monero.</translation>
+        <source>For every transaction, a small transaction fee is charged. This option lets you add an additional amount, as a percentage of that fee, to your transaction to support Monero development. For instance, a 50% autodonation take a transaction fee of 0.005 WAZN and add a 0.0025 WAZN to support Monero development.</source>
+        <translation>За каждую транзакцию взимается небольшая комиссия. Эта опция позволяет вам добавить дополнительную сумму в процентах от этой комиссии к транзакции для поддержки разработки Monero. Например, 50% автодотации берут плату за транзакцию 0,005 WAZN и добавляют 0,0025 WAZN в пользу поддержки разработки Monero.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="174"/>
@@ -2645,7 +2645,7 @@ Amount: </source>
     </message>
     <message>
         <location filename="../main.qml" line="1787"/>
-        <source>New version of uplexa-wallet-gui is available: %1&lt;br&gt;%2</source>
+        <source>New version of wazn-wallet-gui is available: %1&lt;br&gt;%2</source>
         <translation>Доступна новая версия кошелька с графическим интерфейсом: %1&lt;br&gt;%2</translation>
     </message>
     <message>
@@ -2787,7 +2787,7 @@ Spending address index: </source>
     <message>
         <location filename="../main.qml" line="871"/>
         <source>This address received %1 monero, with %2 confirmation(s).</source>
-        <translation>Этот адрес получил %1 UPX, с %2 подтверждениями</translation>
+        <translation>Этот адрес получил %1 WAZN, с %2 подтверждениями</translation>
     </message>
     <message>
         <location filename="../main.qml" line="882"/>
@@ -2862,7 +2862,7 @@ Spending address index: </source>
     <message>
         <location filename="../main.qml" line="868"/>
         <source>This address received %1 monero, but the transaction is not yet mined</source>
-        <translation>Этот адрес получил %1 UPX, но транзакции еще не подтверждены майнерами</translation>
+        <translation>Этот адрес получил %1 WAZN, но транзакции еще не подтверждены майнерами</translation>
     </message>
     <message>
         <location filename="../main.qml" line="875"/>

@@ -1,6 +1,6 @@
 #!/bin/bash
-MONERO_URL=https://github.com/uplexa/uplexa.git
-MONERO_BRANCH=master
+MONERO_URL=https://github.com/Project-WAZN/WAZN.git
+MONERO_BRANCH=dev
 
 pushd $(pwd)
 ROOT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
@@ -8,41 +8,41 @@ ROOT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 source $ROOT_DIR/utils.sh
 
 INSTALL_DIR=$ROOT_DIR/wallet
-MONERO_DIR=$ROOT_DIR/uplexa
+MONERO_DIR=$ROOT_DIR/wazn
 BUILD_LIBWALLET=false
 
-# init and update uplexa submodule
+# init and update wazn submodule
 if [ ! -d $MONERO_DIR/src ]; then
-    git submodule init uplexa
+    git submodule init wazn
 fi
 git submodule update --remote
 git -C $MONERO_DIR fetch
 git -C $MONERO_DIR checkout master
 
-# get uplexa core tag
+# get wazn core tag
 pushd $MONERO_DIR
 get_tag
 popd
-# create local uplexa branch
+# create local wazn branch
 git -C $MONERO_DIR checkout -B $VERSIONTAG
 
 git -C $MONERO_DIR submodule init
 git -C $MONERO_DIR submodule update
 
-# Merge uplexa PR dependencies
+# Merge wazn PR dependencies
 
 # Workaround for git username requirements
 # Save current user settings and revert back when we are done with merging PR's
 OLD_GIT_USER=$(git -C $MONERO_DIR config --local user.name)
 OLD_GIT_EMAIL=$(git -C $MONERO_DIR config --local user.email)
 git -C $MONERO_DIR config user.name "uPlexa GUI"
-git -C $MONERO_DIR config user.email "gui@uplexa.local"
+git -C $MONERO_DIR config user.email "gui@wazn.local"
 # check for PR requirements in most recent commit message (i.e requires #xxxx)
 for PR in $(git log --format=%B -n 1 | grep -io "requires #[0-9]*" | sed 's/[^0-9]*//g'); do
-    echo "Merging uplexa push request #$PR"
+    echo "Merging wazn push request #$PR"
     # fetch pull request and merge
     git -C $MONERO_DIR fetch origin pull/$PR/head:PR-$PR
-    git -C $MONERO_DIR merge --quiet PR-$PR  -m "Merge uplexa PR #$PR"
+    git -C $MONERO_DIR merge --quiet PR-$PR  -m "Merge wazn PR #$PR"
     BUILD_LIBWALLET=true
 done
 
@@ -56,7 +56,7 @@ if [ ! -f $MONERO_DIR/lib/libwallet_merged.a ]; then
     BUILD_LIBWALLET=true
 # Build libwallet if no previous version file exists
 elif [ ! -f $MONERO_DIR/version.sh ]; then
-    echo "uplexa/version.h not found - Building libwallet"
+    echo "wazn/version.h not found - Building libwallet"
     BUILD_LIBWALLET=true
 ## Compare previously built version with submodule + merged PR's version.
 else
@@ -72,7 +72,7 @@ else
         echo "Building new libwallet version $GUI_MONERO_VERSION"
         BUILD_LIBWALLET=true
     else
-        echo "latest libwallet ($GUI_MONERO_VERSION) is already built. Remove uplexa/lib/libwallet_merged.a to force rebuild"
+        echo "latest libwallet ($GUI_MONERO_VERSION) is already built. Remove wazn/lib/libwallet_merged.a to force rebuild"
     fi
 fi
 
@@ -119,7 +119,7 @@ else
 fi
 
 
-echo "cleaning up existing uplexa build dir, libs and includes"
+echo "cleaning up existing wazn build dir, libs and includes"
 rm -fr $MONERO_DIR/build
 rm -fr $MONERO_DIR/lib
 rm -fr $MONERO_DIR/include
@@ -219,7 +219,7 @@ eval $make_exec  -j$CPU_CORE_COUNT
 eval $make_exec  install -j$CPU_CORE_COUNT
 popd
 
-# Build uplexad
+# Build waznd
 # win32 need to build daemon manually with msys2 toolchain
 if [ "$platform" != "mingw32" ] && [ "$ANDROID" != true ]; then
     pushd $MONERO_DIR/build/$BUILD_TYPE/src/daemon

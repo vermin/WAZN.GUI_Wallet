@@ -2189,8 +2189,8 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     </message>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="162"/>
-        <source>For every transaction, a small transaction fee is charged. This option lets you add an additional amount, as a percentage of that fee, to your transaction to support Monero development. For instance, a 50% autodonation take a transaction fee of 0.005 UPX and add a 0.0025 UPX to support Monero development.</source>
-        <translation>모든 거래에 대해 작은 수수료가 부과됩니다. 해당 옵션은 수수료 이외에 수수료의 일부에 해당하는 금액을 모네로 개발팀에 기부하는 것을 허용합니다. 예를 들어, 자동 기부율이 50%이고 거래 수수료가 0.005 UPX이면 0.0025 UPX이 개발팀에 대한 기부로 거래금액에 추가됩니다.</translation>
+        <source>For every transaction, a small transaction fee is charged. This option lets you add an additional amount, as a percentage of that fee, to your transaction to support Monero development. For instance, a 50% autodonation take a transaction fee of 0.005 WAZN and add a 0.0025 WAZN to support Monero development.</source>
+        <translation>모든 거래에 대해 작은 수수료가 부과됩니다. 해당 옵션은 수수료 이외에 수수료의 일부에 해당하는 금액을 모네로 개발팀에 기부하는 것을 허용합니다. 예를 들어, 자동 기부율이 50%이고 거래 수수료가 0.005 WAZN이면 0.0025 WAZN이 개발팀에 대한 기부로 거래금액에 추가됩니다.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="174"/>
@@ -2703,7 +2703,7 @@ Spending address index: </source>
     <message>
         <location filename="../main.qml" line="871"/>
         <source>This address received %1 monero, with %2 confirmation(s).</source>
-        <translation>이 주소로 %1 UPX을 받아, %2 번의 컨펌을 받았습니다.</translation>
+        <translation>이 주소로 %1 WAZN을 받아, %2 번의 컨펌을 받았습니다.</translation>
     </message>
     <message>
         <location filename="../main.qml" line="1736"/>
@@ -2727,8 +2727,8 @@ Spending address index: </source>
     </message>
     <message>
         <location filename="../main.qml" line="1787"/>
-        <source>New version of uplexa-wallet-gui is available: %1&lt;br&gt;%2</source>
-        <translation>uplexa-wallet-gui의 새 버전을 사용할 수 있습니다: %1&lt;br&gt;%2</translation>
+        <source>New version of wazn-wallet-gui is available: %1&lt;br&gt;%2</source>
+        <translation>wazn-wallet-gui의 새 버전을 사용할 수 있습니다: %1&lt;br&gt;%2</translation>
     </message>
     <message>
         <location filename="../main.qml" line="673"/>
@@ -2764,7 +2764,7 @@ Spending address index: </source>
     <message>
         <location filename="../main.qml" line="868"/>
         <source>This address received %1 monero, but the transaction is not yet mined</source>
-        <translation>이 주소는 % 1UPX을 받았지만, 해당 거래가 아직 채굴에 포함되지 않았습니다</translation>
+        <translation>이 주소는 % 1WAZN을 받았지만, 해당 거래가 아직 채굴에 포함되지 않았습니다</translation>
     </message>
     <message>
         <location filename="../main.qml" line="875"/>

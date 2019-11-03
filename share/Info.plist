@@ -18,13 +18,13 @@
   <string>????</string>
 
   <key>CFBundleExecutable</key>
-  <string>uplexa-wallet-gui</string>
+  <string>wazn-wallet-gui</string>
 
   <key>CFBundleName</key>
   <string>uPlexa GUI</string>
 
   <key>CFBundleIdentifier</key>
-  <string>org.uplexa.uplexa-wallet-gui</string>
+  <string>org.wazn.wazn-wallet-gui</string>
 
   <key>NSSupportsAutomaticGraphicsSwitching</key>
   <true/>

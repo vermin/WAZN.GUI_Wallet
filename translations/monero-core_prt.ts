@@ -2192,8 +2192,8 @@ Fer the case wit&apos; Spend Proof, you don&apos;t be needin&apos; to specify th
     </message>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="162"/>
-        <source>For every transaction, a small transaction fee is charged. This option lets you add an additional amount, as a percentage of that fee, to your transaction to support Monero development. For instance, a 50% autodonation take a transaction fee of 0.005 UPX and add a 0.0025 UPX to support Monero development.</source>
-        <translation>Fer every U-PLEXAGHHH transact&apos;on, a wee transaction fee be charg&apos;d. T&apos;is option be lettin&apos; ye add an additional amount, as a percent&apos;ge o&apos; that fee, to ye transaction to supp&apos;rt Monero developm&apos;nt. For instanc&apos;, a 50% autodonation be takin&apos; a transaction fee o&apos; 0.005 UPX and addin&apos; a 0.0025 UPX to support thee Monero development ye tight-arsed lobst&apos;r.</translation>
+        <source>For every transaction, a small transaction fee is charged. This option lets you add an additional amount, as a percentage of that fee, to your transaction to support Monero development. For instance, a 50% autodonation take a transaction fee of 0.005 WAZN and add a 0.0025 WAZN to support Monero development.</source>
+        <translation>Fer every U-PLEXAGHHH transact&apos;on, a wee transaction fee be charg&apos;d. T&apos;is option be lettin&apos; ye add an additional amount, as a percent&apos;ge o&apos; that fee, to ye transaction to supp&apos;rt Monero developm&apos;nt. For instanc&apos;, a 50% autodonation be takin&apos; a transaction fee o&apos; 0.005 WAZN and addin&apos; a 0.0025 WAZN to support thee Monero development ye tight-arsed lobst&apos;r.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="174"/>
@@ -2780,8 +2780,8 @@ Spending address index: </source>
     </message>
     <message>
         <location filename="../main.qml" line="1787"/>
-        <source>New version of uplexa-wallet-gui is available: %1&lt;br&gt;%2</source>
-        <translation>Thar be argh new version o&apos; thee uplexa-wallet-gui availabl&apos;: %1&lt;br&gt;%2</translation>
+        <source>New version of wazn-wallet-gui is available: %1&lt;br&gt;%2</source>
+        <translation>Thar be argh new version o&apos; thee wazn-wallet-gui availabl&apos;: %1&lt;br&gt;%2</translation>
     </message>
     <message>
         <location filename="../main.qml" line="1819"/>

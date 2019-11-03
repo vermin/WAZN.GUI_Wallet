@@ -1,4 +1,6 @@
-// Copyright (c) 2014-2018, The Monero Project
+// Copyright (c) 2019 WAZN Project
+// Copyright (c) 2018-2019 uPlexa
+// Copyright (c) 2014-2018 The Monero Project
 //
 // All rights reserved.
 //
@@ -71,7 +73,7 @@ bool QrScanThread::zimageFromQImage(const QImage &qimg, zbar::Image &dst)
     switch( qimg.format() ){
         case QImage::Format_RGB32 :
         case QImage::Format_ARGB32 :
-        case QImage::Format_ARGB32_Premultiplied : 
+        case QImage::Format_ARGB32_Premultiplied :
             break;
         default :
             emit notifyError(QString("Invalid QImage Format !"));
@@ -131,4 +133,3 @@ void QrScanThread::run()
             processVideoFrame(m_queue.takeFirst());
     }
 }
-

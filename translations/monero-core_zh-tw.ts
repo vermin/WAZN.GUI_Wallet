@@ -2206,8 +2206,8 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     </message>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="162"/>
-        <source>For every transaction, a small transaction fee is charged. This option lets you add an additional amount, as a percentage of that fee, to your transaction to support Monero development. For instance, a 50% autodonation take a transaction fee of 0.005 UPX and add a 0.0025 UPX to support Monero development.</source>
-        <translation>在每一筆交易中 Monero 系統都會收取小額的手續費，而這個選項則是讓你可以增加額外的金額贊助 Monero 的開發，比例以當次交易的手續費計算，譬如 50% 的自動贊助將會從0.005 UPX的手續費算出 0.0025 UPX 的金額贊助給 Monero 開發團隊。</translation>
+        <source>For every transaction, a small transaction fee is charged. This option lets you add an additional amount, as a percentage of that fee, to your transaction to support Monero development. For instance, a 50% autodonation take a transaction fee of 0.005 WAZN and add a 0.0025 WAZN to support Monero development.</source>
+        <translation>在每一筆交易中 Monero 系統都會收取小額的手續費，而這個選項則是讓你可以增加額外的金額贊助 Monero 的開發，比例以當次交易的手續費計算，譬如 50% 的自動贊助將會從0.005 WAZN的手續費算出 0.0025 WAZN 的金額贊助給 Monero 開發團隊。</translation>
     </message>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="174"/>
@@ -2803,7 +2803,7 @@ Spending address index: </source>
     </message>
     <message>
         <location filename="../main.qml" line="1787"/>
-        <source>New version of uplexa-wallet-gui is available: %1&lt;br&gt;%2</source>
+        <source>New version of wazn-wallet-gui is available: %1&lt;br&gt;%2</source>
         <translation>有可用的新版本 Monero 錢包:  %1&lt;br&gt;%2</translation>
     </message>
     <message>

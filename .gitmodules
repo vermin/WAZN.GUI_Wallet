@@ -1,4 +1,4 @@
-[submodule "uplexa"]
-	path = uplexa
-	url = https://github.com/uPlexa/uplexa
+[submodule "wazn"]
+	path = wazn
+	url = https://github.com/Project-WAZN/WAZN
         ignore = all

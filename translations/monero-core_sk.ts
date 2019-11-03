@@ -2207,8 +2207,8 @@ V prípade Spend Proof, nie je potrebné špecifikovať prijímateľovu adresu.<
     </message>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="162"/>
-        <source>For every transaction, a small transaction fee is charged. This option lets you add an additional amount, as a percentage of that fee, to your transaction to support Monero development. For instance, a 50% autodonation take a transaction fee of 0.005 UPX and add a 0.0025 UPX to support Monero development.</source>
-        <translation>Pre každú transakciu sa účtuje malý poplatok za transakciu. Táto možnosť Vám umožní pridať ďalšiu sumu, ktorá predstavuje percento z tohto poplatku, k Vašej transakcii na podporu vývoja softvéru Monero. Napríklad 50% auto-donácia vezme transakčný poplatok 0,005 UPX a pridá 0,0025 UPX na podporu vývoja softvéru Monero.</translation>
+        <source>For every transaction, a small transaction fee is charged. This option lets you add an additional amount, as a percentage of that fee, to your transaction to support Monero development. For instance, a 50% autodonation take a transaction fee of 0.005 WAZN and add a 0.0025 WAZN to support Monero development.</source>
+        <translation>Pre každú transakciu sa účtuje malý poplatok za transakciu. Táto možnosť Vám umožní pridať ďalšiu sumu, ktorá predstavuje percento z tohto poplatku, k Vašej transakcii na podporu vývoja softvéru Monero. Napríklad 50% auto-donácia vezme transakčný poplatok 0,005 WAZN a pridá 0,0025 WAZN na podporu vývoja softvéru Monero.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="174"/>
@@ -2804,8 +2804,8 @@ Index míňacej adresy (spending): </translation>
     </message>
     <message>
         <location filename="../main.qml" line="1787"/>
-        <source>New version of uplexa-wallet-gui is available: %1&lt;br&gt;%2</source>
-        <translation>K dispozícii je nová verzia uplexa-wallet-gui: %1&lt;br&gt;%2</translation>
+        <source>New version of wazn-wallet-gui is available: %1&lt;br&gt;%2</source>
+        <translation>K dispozícii je nová verzia wazn-wallet-gui: %1&lt;br&gt;%2</translation>
     </message>
     <message>
         <location filename="../main.qml" line="1819"/>

@@ -2204,8 +2204,8 @@ Para o caso com Spend Proof, você não precisa especificar o endereço do desti
     </message>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="162"/>
-        <source>For every transaction, a small transaction fee is charged. This option lets you add an additional amount, as a percentage of that fee, to your transaction to support Monero development. For instance, a 50% autodonation take a transaction fee of 0.005 UPX and add a 0.0025 UPX to support Monero development.</source>
-        <translation>Para cada transação uma pequena taxa é coletada. Esta opção permite você adicionar uma quantidade adicional (porcentagem desta taxa) para ajudar o desenvolvimento do Monero. Por exemplo, 50% de auto-doação em uma taxa de transferência de 0.005 UPX adicionará 0.0025 UPX na taxa para ajudar o desenvolvimento do projeto.</translation>
+        <source>For every transaction, a small transaction fee is charged. This option lets you add an additional amount, as a percentage of that fee, to your transaction to support Monero development. For instance, a 50% autodonation take a transaction fee of 0.005 WAZN and add a 0.0025 WAZN to support Monero development.</source>
+        <translation>Para cada transação uma pequena taxa é coletada. Esta opção permite você adicionar uma quantidade adicional (porcentagem desta taxa) para ajudar o desenvolvimento do Monero. Por exemplo, 50% de auto-doação em uma taxa de transferência de 0.005 WAZN adicionará 0.0025 WAZN na taxa para ajudar o desenvolvimento do projeto.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="174"/>
@@ -2794,7 +2794,7 @@ Spending address index: </source>
     </message>
     <message>
         <location filename="../main.qml" line="1787"/>
-        <source>New version of uplexa-wallet-gui is available: %1&lt;br&gt;%2</source>
+        <source>New version of wazn-wallet-gui is available: %1&lt;br&gt;%2</source>
         <translation>Nova versão da carteira (GUI) do Monero disponível: %1&lt;br&gt;%2</translation>
     </message>
     <message>

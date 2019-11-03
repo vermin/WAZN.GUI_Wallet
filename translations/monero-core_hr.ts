@@ -2199,8 +2199,8 @@ U slučaju &quot;dokaza potrošnje&quot;, adresa primatelja ne mora se navesti.<
     </message>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="162"/>
-        <source>For every transaction, a small transaction fee is charged. This option lets you add an additional amount, as a percentage of that fee, to your transaction to support Monero development. For instance, a 50% autodonation take a transaction fee of 0.005 UPX and add a 0.0025 UPX to support Monero development.</source>
-        <translation>Za svaku transakciju se naplaćuje mala provizija. Ova opcija omogućava dodavanje dodatnog iznosa, kao postotka te provizije, vašoj transakciji u svrhu podrške razvoja Monera. Na primjer, postavka od 50% automatske donacije uzima transakcijsku proviziju od 0.005 UPX i dodaje 0.0025 UPX za podršku razvoja Monera.</translation>
+        <source>For every transaction, a small transaction fee is charged. This option lets you add an additional amount, as a percentage of that fee, to your transaction to support Monero development. For instance, a 50% autodonation take a transaction fee of 0.005 WAZN and add a 0.0025 WAZN to support Monero development.</source>
+        <translation>Za svaku transakciju se naplaćuje mala provizija. Ova opcija omogućava dodavanje dodatnog iznosa, kao postotka te provizije, vašoj transakciji u svrhu podrške razvoja Monera. Na primjer, postavka od 50% automatske donacije uzima transakcijsku proviziju od 0.005 WAZN i dodaje 0.0025 WAZN za podršku razvoja Monera.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="174"/>
@@ -2868,8 +2868,8 @@ Provizija: </translation>
     </message>
     <message>
         <location filename="../main.qml" line="1787"/>
-        <source>New version of uplexa-wallet-gui is available: %1&lt;br&gt;%2</source>
-        <translation>Nova verzija uplexa-wallet-gui je dostupna: %1&lt;br&gt;%2</translation>
+        <source>New version of wazn-wallet-gui is available: %1&lt;br&gt;%2</source>
+        <translation>Nova verzija wazn-wallet-gui je dostupna: %1&lt;br&gt;%2</translation>
     </message>
     <message>
         <location filename="../main.qml" line="1819"/>

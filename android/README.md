@@ -1,5 +1,6 @@
-Copyright (c) 2014-2018, The Monero Project
-
+Copyright (c) 2019 WAZN Project
+Copyright (c) 2018-2019 uPlexa
+Copyright (c) 2014-2018 The Monero Project
 
 ## Current status : ALPHA
 
@@ -10,19 +11,19 @@ Copyright (c) 2014-2018, The Monero Project
 
 # Base environnement
 
-        cd uplexa/utils/build_scripts
-        docker build -f android32.Dockerfile -t uplexa-android .
+        cd wazn/utils/build_scripts
+        docker build -f android32.Dockerfile -t wazn-android .
         cd ..
 
 # Build GUI
 
         cd android/docker
-        docker build -t uplexa-gui-android .
-        docker create -it --name uplexa-gui-android uplexa-gui-android bash
+        docker build -t wazn-gui-android .
+        docker create -it --name wazn-gui-android wazn-gui-android bash
 
 # Get the apk
 
-        docker cp uplexa-gui-android:/opt/android/uplexa-gui/build/release/bin/bin/QtApp-debug.apk .
+        docker cp wazn-gui-android:/opt/android/wazn-gui/build/release/bin/bin/QtApp-debug.apk .
 
 ## Deployment
 
@@ -31,7 +32,7 @@ Copyright (c) 2014-2018, The Monero Project
   First, see section [Enable adb debugging on your device](https://developer.android.com/studio/command-line/adb.html#Enabling)
   The only place where we are allowed to play is `/data/local/tmp`. So :
 
-        adb  push /opt/android/uplexa-gui/build/release/bin/bin/QtApp-debug.apk /data/local/tmp
+        adb  push /opt/android/wazn-gui/build/release/bin/bin/QtApp-debug.apk /data/local/tmp
         adb  shell pm install -r /data/local/tmp/QtApp-debug.apk
 
   - Troubleshooting:

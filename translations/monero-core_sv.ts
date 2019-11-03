@@ -2205,8 +2205,8 @@ I fallet med spenderbevis behöver du inte ange mottagaradressen.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="162"/>
-        <source>For every transaction, a small transaction fee is charged. This option lets you add an additional amount, as a percentage of that fee, to your transaction to support Monero development. For instance, a 50% autodonation take a transaction fee of 0.005 UPX and add a 0.0025 UPX to support Monero development.</source>
-        <translation>För varje transaktion tas en liten transaktionsavgift ut. Detta alternativ låter dig lägga till ett ytterligare belopp till din transaktion, angivet som en procent av transaktionsavgiften, för att stödja utvecklingen av Monero. Till exempel, en 50 % automatisk donation tar en transaktionsavgift på 0,005 UPX och lägger på 0,0025 UPX för att stödja utvecklingen av Monero.</translation>
+        <source>For every transaction, a small transaction fee is charged. This option lets you add an additional amount, as a percentage of that fee, to your transaction to support Monero development. For instance, a 50% autodonation take a transaction fee of 0.005 WAZN and add a 0.0025 WAZN to support Monero development.</source>
+        <translation>För varje transaktion tas en liten transaktionsavgift ut. Detta alternativ låter dig lägga till ett ytterligare belopp till din transaktion, angivet som en procent av transaktionsavgiften, för att stödja utvecklingen av Monero. Till exempel, en 50 % automatisk donation tar en transaktionsavgift på 0,005 WAZN och lägger på 0,0025 WAZN för att stödja utvecklingen av Monero.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="174"/>
@@ -2803,8 +2803,8 @@ Index för spenderingsadress: </translation>
     </message>
     <message>
         <location filename="../main.qml" line="1787"/>
-        <source>New version of uplexa-wallet-gui is available: %1&lt;br&gt;%2</source>
-        <translation>En ny version av uplexa-wallet-gui finns tillgänglig: %1&lt;br&gt;%2</translation>
+        <source>New version of wazn-wallet-gui is available: %1&lt;br&gt;%2</source>
+        <translation>En ny version av wazn-wallet-gui finns tillgänglig: %1&lt;br&gt;%2</translation>
     </message>
     <message>
         <location filename="../main.qml" line="1819"/>

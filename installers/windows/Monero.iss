@@ -1,9 +1,10 @@
-; uPlexa NightCore GUI Wallet Installer for Windows
-; Copyright (c) 2014-2018, uPlexa
+; Copyright (c) 2019 WAZN Project
+; Copyright (c) 2018-2019 uPlexa
+; Copyright (c) 2014-2018 The Monero Project
 ; See LICENSE
 
 [Setup]
-AppName=uPlexa GUI Wallet
+AppName=WAZN GUI Wallet
 ; For InnoSetup this is the property that uniquely identifies the application as such
 ; Thus it's important to keep this stable over releases
 ; With a different "AppName" InnoSetup would treat a mere update as a completely new application and thus mess up
@@ -11,7 +12,7 @@ AppName=uPlexa GUI Wallet
 AppVersion=0.13.0.4
 DefaultDirName={pf}\uPlexa GUI Wallet
 DefaultGroupName=uPlexa GUI Wallet
-UninstallDisplayIcon={app}\uplexa-wallet-gui.exe
+UninstallDisplayIcon={app}\wazn-wallet-gui.exe
 PrivilegesRequired=admin
 ArchitecturesInstallIn64BitMode=x64
 ArchitecturesAllowed=x64
@@ -20,7 +21,7 @@ WizardImageFile=WelcomeImage.bmp
 DisableWelcomePage=no
 LicenseFile=LICENSE
 AppPublisher=The uPlexa Developer Community
-AppPublisherURL=https://uplexa.com
+AppPublisherURL=https://wazn.com
 
 UsedUserAreasWarning=no
 ; The above directive silences the following compiler warning:
@@ -67,39 +68,39 @@ Source: "ReadMe.htm"; DestDir: "{app}"; Flags: ignoreversion
 Source: "FinishImage.bmp"; Flags: dontcopy
 
 ; uPlexa GUI wallet exe and guide
-Source: "bin\uplexa-wallet-gui.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "bin\uplexa-GUI-guide.pdf"; DestDir: "{app}"; Flags: ignoreversion
+Source: "bin\wazn-wallet-gui.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "bin\wazn-GUI-guide.pdf"; DestDir: "{app}"; Flags: ignoreversion
 
 ; uPlexa GUI wallet log file
 ; The GUI wallet does not have the "--log-file" command-line option of the CLI wallet and insists to put the .log beside the .exe
 ; so pre-create the file and give the necessary permissions to the wallet to write into it
 ; Flag is "onlyifdoesntexist": We do not want to overwrite an already existing log
-Source: "uplexa-wallet-gui.log"; DestDir: "{app}"; Flags: onlyifdoesntexist; Permissions: users-modify
+Source: "wazn-wallet-gui.log"; DestDir: "{app}"; Flags: onlyifdoesntexist; Permissions: users-modify
 
 ; uPlexa CLI wallet
-Source: "bin\uplexa-wallet-cli.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "bin\uplexa-gen-trusted-multisig.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "bin\wazn-wallet-cli.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "bin\wazn-gen-trusted-multisig.exe"; DestDir: "{app}"; Flags: ignoreversion
 
 ; uPlexa wallet RPC interface implementation
-Source: "bin\uplexa-wallet-rpc.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "bin\wazn-wallet-rpc.exe"; DestDir: "{app}"; Flags: ignoreversion
 
 ; uPlexa daemon
-Source: "bin\uplexad.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "bin\waznd.exe"; DestDir: "{app}"; Flags: ignoreversion
 
 ; uPlexa daemon wrapped in a batch file that stops before the text window closes, to see any error messages
-Source: "uplexa-daemon.bat"; DestDir: "{app}"; Flags: ignoreversion;
+Source: "wazn-daemon.bat"; DestDir: "{app}"; Flags: ignoreversion;
 
 ; uPlexa blockchain utilities
-Source: "bin\uplexa-blockchain-export.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "bin\uplexa-blockchain-import.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "bin\uplexa-blockchain-mark-spent-outputs.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "bin\uplexa-blockchain-usage.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "bin\uplexa-blockchain-import.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "bin\uplexa-blockchain-ancestry.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "bin\uplexa-blockchain-depth.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "bin\wazn-blockchain-export.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "bin\wazn-blockchain-import.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "bin\wazn-blockchain-mark-spent-outputs.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "bin\wazn-blockchain-usage.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "bin\wazn-blockchain-import.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "bin\wazn-blockchain-ancestry.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "bin\wazn-blockchain-depth.exe"; DestDir: "{app}"; Flags: ignoreversion
 
 ; was present in 0.10.3.1, not present anymore in 0.11.1.0 and after
-; Source: "bin\uplexa-utils-deserialize.exe"; DestDir: "{app}"; Flags: ignoreversion
+; Source: "bin\wazn-utils-deserialize.exe"; DestDir: "{app}"; Flags: ignoreversion
 
 ; Various .qm files for translating the wallet UI "on the fly" into all supported languages
 Source: "bin\translations\*"; DestDir: "{app}\translations"; Flags: recursesubdirs ignoreversion
@@ -260,7 +261,7 @@ Name: desktopicon; Description: "Create a &desktop icon"; GroupDescription: "Add
 Filename: "{app}\ReadMe.htm"; Description: "Show ReadMe"; Flags: postinstall shellexec skipifsilent
 
 ; DON'T offer to run the wallet right away, let the people read about initial blockchain download first in the ReadMe
-; Filename: "{app}\uplexa-wallet-gui.exe"; Description: "Run GUI Wallet now"; Flags: postinstall nowait skipifsilent
+; Filename: "{app}\wazn-wallet-gui.exe"; Description: "Run GUI Wallet now"; Flags: postinstall nowait skipifsilent
 
 
 [Code]
@@ -283,7 +284,7 @@ begin
   WizardForm.WizardBitmapImage2.Bitmap.LoadFromFile(ExpandConstant('{tmp}\FinishImage.bmp'));
 
   // Additional wizard page for entering a special blockchain location
-  blockChainDefaultDir := ExpandConstant('{commonappdata}\uplexa');
+  blockChainDefaultDir := ExpandConstant('{commonappdata}\wazn');
   s := 'The default folder to store the uPlexa blockchain is ' + blockChainDefaultDir;
   s := s + '. As this will need more than 1 GB of free space, you may want to use a folder on a different drive.';
   s := s + ' If yes, specify that folder here.';
@@ -296,7 +297,7 @@ begin
 
   // Evaluate proposal for the blockchain location
   // In case of an update take the blockchain location from the actual setting in the registry
-  RegQueryStringValue(HKEY_CURRENT_USER, 'Software\uplexa\uplexa', 'blockchainDataDir', blockChainDir);
+  RegQueryStringValue(HKEY_CURRENT_USER, 'Software\wazn\wazn', 'blockchainDataDir', blockChainDir);
   if blockChainDir = '' then begin
     blockChainDir := GetPreviousData('BlockChainDir', '');
   end;
@@ -350,7 +351,7 @@ end;
 function DaemonLog(Param: String) : String;
 // Full filename of the log of the daemon
 begin
-  Result := BlockChainDir('') + '\uplexa.log';
+  Result := BlockChainDir('') + '\wazn.log';
   // No quotes for filename with blanks as this is never used as part of a command line
 end;
 
@@ -379,7 +380,7 @@ function WalletFlags(Param: String): String;
 // created there because of an unsolved issue in the 0.13.0.4 wallet code
 var s: String;
 begin
-  s := ExpandConstant('{app}\uplexa-wallet-gui.log');
+  s := ExpandConstant('{app}\wazn-wallet-gui.log');
   if Pos(' ', s) > 0 then begin
     // Quotes needed for filename with blanks
     s := '"' + s + '"';
@@ -392,12 +393,12 @@ procedure CurStepChanged(CurStep: TSetupStep);
 var s: TArrayOfString;
 begin
   if CurStep = ssPostInstall then begin
-    // Re-build "uplexa-daemon.bat" according to actual install and blockchain directory used
+    // Re-build "wazn-daemon.bat" according to actual install and blockchain directory used
     SetArrayLength(s, 3);
     s[0] := 'REM Execute the uPlexa daemon and then stay with window open after it exits';
-    s[1] := '"' + ExpandConstant('{app}\uplexad.exe') + '" ' + DaemonFlags('');
+    s[1] := '"' + ExpandConstant('{app}\waznd.exe') + '" ' + DaemonFlags('');
     s[2] := 'PAUSE';
-    SaveStringsToFile(ExpandConstant('{app}\uplexa-daemon.bat'), s, false);
+    SaveStringsToFile(ExpandConstant('{app}\wazn-daemon.bat'), s, false);
   end;
 end;
 
@@ -415,19 +416,19 @@ end;
 [Icons]
 ; Icons in the "uPlexa GUI Wallet" program group
 ; Windows will almost always display icons in alphabetical order, per level, so specify the text accordingly
-Name: "{group}\GUI Wallet"; Filename: "{app}\uplexa-wallet-gui.exe"; Parameters: {code:WalletFlags}
-Name: "{group}\GUI Wallet Guide"; Filename: "{app}\uplexa-GUI-guide.pdf"; IconFilename: "{app}\uplexa-wallet-gui.exe"
+Name: "{group}\GUI Wallet"; Filename: "{app}\wazn-wallet-gui.exe"; Parameters: {code:WalletFlags}
+Name: "{group}\GUI Wallet Guide"; Filename: "{app}\wazn-GUI-guide.pdf"; IconFilename: "{app}\wazn-wallet-gui.exe"
 Name: "{group}\Uninstall GUI Wallet"; Filename: "{uninstallexe}"
 
 ; Sub-folder "Utilities";
 ; Note that Windows 10, unlike Windows 7, ignores such sub-folders completely
 ; and insists on displaying ALL icons on one single level
-Name: "{group}\Utilities\uPlexa Daemon"; Filename: "{app}\uplexad.exe"; Parameters: {code:DaemonFlags}
+Name: "{group}\Utilities\uPlexa Daemon"; Filename: "{app}\waznd.exe"; Parameters: {code:DaemonFlags}
 Name: "{group}\Utilities\Read Me"; Filename: "{app}\ReadMe.htm"
 
 ; CLI wallet: Needs a working directory ("Start in:") set in the icon, because with no such directory set
 ; it tries to create new wallets without a path given in the probably non-writable program folder and will abort with an error
-Name: "{group}\Utilities\Textual (CLI) Wallet"; Filename: "{app}\uplexa-wallet-cli.exe"; WorkingDir: "{userdocs}\uPlexa\wallets"
+Name: "{group}\Utilities\Textual (CLI) Wallet"; Filename: "{app}\wazn-wallet-cli.exe"; WorkingDir: "{userdocs}\uPlexa\wallets"
 
 ; Icons for troubleshooting problems / testing / debugging
 ; To show that they are in some way different (not for everyday use), make them visually different
@@ -435,19 +436,19 @@ Name: "{group}\Utilities\Textual (CLI) Wallet"; Filename: "{app}\uplexa-wallet-c
 Name: "{group}\Utilities\x (Check Blockchain Folder)"; Filename: "{win}\Explorer.exe"; Parameters: {code:BlockChainDir}
 Name: "{group}\Utilities\x (Check Daemon Log)"; Filename: "Notepad"; Parameters: {code:DaemonLog}
 Name: "{group}\Utilities\x (Check Default Wallet Folder)"; Filename: "{win}\Explorer.exe"; Parameters: "{userdocs}\uPlexa\wallets"
-Name: "{group}\Utilities\x (Check GUI Wallet Log)"; Filename: "Notepad"; Parameters: "{app}\uplexa-wallet-gui.log"
-Name: "{group}\Utilities\x (Try Daemon, Exit Confirm)"; Filename: "{app}\uplexa-daemon.bat"
+Name: "{group}\Utilities\x (Check GUI Wallet Log)"; Filename: "Notepad"; Parameters: "{app}\wazn-wallet-gui.log"
+Name: "{group}\Utilities\x (Try Daemon, Exit Confirm)"; Filename: "{app}\wazn-daemon.bat"
 Name: "{group}\Utilities\x (Try GUI Wallet Low Graphics Mode)"; Filename: "{app}\start-low-graphics-mode.bat"
-Name: "{group}\Utilities\x (Try Kill Daemon)"; Filename: "Taskkill.exe"; Parameters: "/IM uplexad.exe /T /F"
+Name: "{group}\Utilities\x (Try Kill Daemon)"; Filename: "Taskkill.exe"; Parameters: "/IM waznd.exe /T /F"
 
 ; Desktop icons, optional with the help of the "Task" section
-Name: "{commondesktop}\GUI Wallet"; Filename: "{app}\uplexa-wallet-gui.exe"; Parameters: {code:WalletFlags}; Tasks: desktopicon
+Name: "{commondesktop}\GUI Wallet"; Filename: "{app}\wazn-wallet-gui.exe"; Parameters: {code:WalletFlags}; Tasks: desktopicon
 
 
 [Registry]
 ; Store any special flags for the daemon in the registry location where the GUI wallet will take it from
 ; So if the wallet is used to start the daemon instead of the separate icon the wallet will pass the correct flags
 ; Side effect, mostly positive: The uninstaller will clean the registry
-Root: HKCU; Subkey: "Software\uplexa"; Flags: uninsdeletekeyifempty
-Root: HKCU; Subkey: "Software\uplexa\uplexa"; Flags: uninsdeletekey
-Root: HKCU; Subkey: "Software\uplexa\uplexa"; ValueType: string; ValueName: "blockchainDataDir"; ValueData: {code:BlockChainDirOrEmpty};
+Root: HKCU; Subkey: "Software\wazn"; Flags: uninsdeletekeyifempty
+Root: HKCU; Subkey: "Software\wazn\wazn"; Flags: uninsdeletekey
+Root: HKCU; Subkey: "Software\wazn\wazn"; ValueType: string; ValueName: "blockchainDataDir"; ValueData: {code:BlockChainDirOrEmpty};

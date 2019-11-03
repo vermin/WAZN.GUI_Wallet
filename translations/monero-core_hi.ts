@@ -2189,8 +2189,8 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     </message>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="162"/>
-        <source>For every transaction, a small transaction fee is charged. This option lets you add an additional amount, as a percentage of that fee, to your transaction to support Monero development. For instance, a 50% autodonation take a transaction fee of 0.005 UPX and add a 0.0025 UPX to support Monero development.</source>
-        <translation>प्रत्येक लेनदेन के लिए एक छोटा शुल्क लगाया जाता है। यह विकल्प आपको Monero का विकास समर्थित करने के लिए अपने लेनदेन में शुल्क के प्रतिशत के रूप में एक अतिरिक्त राशि जोड़ने की अनुमति देता है। उदाहरण के लिए, 50% ऑटो-डोनेशन 0.005 UPX का लेनदेन शुल्क लेता है और Monero के विकास को समर्थित करने के लिए 0.0025 UPX जोड़ता है।</translation>
+        <source>For every transaction, a small transaction fee is charged. This option lets you add an additional amount, as a percentage of that fee, to your transaction to support Monero development. For instance, a 50% autodonation take a transaction fee of 0.005 WAZN and add a 0.0025 WAZN to support Monero development.</source>
+        <translation>प्रत्येक लेनदेन के लिए एक छोटा शुल्क लगाया जाता है। यह विकल्प आपको Monero का विकास समर्थित करने के लिए अपने लेनदेन में शुल्क के प्रतिशत के रूप में एक अतिरिक्त राशि जोड़ने की अनुमति देता है। उदाहरण के लिए, 50% ऑटो-डोनेशन 0.005 WAZN का लेनदेन शुल्क लेता है और Monero के विकास को समर्थित करने के लिए 0.0025 WAZN जोड़ता है।</translation>
     </message>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="174"/>
@@ -2749,7 +2749,7 @@ Fee: </source>
     </message>
     <message>
         <location filename="../main.qml" line="1787"/>
-        <source>New version of uplexa-wallet-gui is available: %1&lt;br&gt;%2</source>
+        <source>New version of wazn-wallet-gui is available: %1&lt;br&gt;%2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

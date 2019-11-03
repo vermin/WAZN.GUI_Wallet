@@ -1,4 +1,6 @@
-// Copyright (c) 2014-2018, The Monero Project
+// Copyright (c) 2019 WAZN Project
+// Copyright (c) 2018-2019 uPlexa
+// Copyright (c) 2014-2018 The Monero Project
 //
 // All rights reserved.
 //
@@ -106,7 +108,7 @@ Item {
                 anchors.left: parent.left
                 color: MoneroComponents.Style.errorColor
                 font.pixelSize: 16 * scaleRatio
-                font.family: MoneroComponents.Style.fontLight.name                
+                font.family: MoneroComponents.Style.fontLight.name
                 Layout.fillWidth: true
                 wrapMode: Text.Wrap
             }

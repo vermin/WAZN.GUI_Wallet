@@ -2206,8 +2206,8 @@ Pentru cazurile cu Dovadă de plată, nu e necesară adresa destinatarului.</tra
     </message>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="162"/>
-        <source>For every transaction, a small transaction fee is charged. This option lets you add an additional amount, as a percentage of that fee, to your transaction to support Monero development. For instance, a 50% autodonation take a transaction fee of 0.005 UPX and add a 0.0025 UPX to support Monero development.</source>
-        <translation>Pentru fiecare tranzacție se plătește un mic comision de tranzacție. Această setare îți permite să adaugi o mică sumă la tranzacție, ca procent din comisionul respectiv, pentru a susține dezvoltarea Monero. De exemplu, pentru un comision de 0.005 UPX, o donație automată de 50% adaugă 0.0025 UPX pentru susținerea dezvoltării Monero.</translation>
+        <source>For every transaction, a small transaction fee is charged. This option lets you add an additional amount, as a percentage of that fee, to your transaction to support Monero development. For instance, a 50% autodonation take a transaction fee of 0.005 WAZN and add a 0.0025 WAZN to support Monero development.</source>
+        <translation>Pentru fiecare tranzacție se plătește un mic comision de tranzacție. Această setare îți permite să adaugi o mică sumă la tranzacție, ca procent din comisionul respectiv, pentru a susține dezvoltarea Monero. De exemplu, pentru un comision de 0.005 WAZN, o donație automată de 50% adaugă 0.0025 WAZN pentru susținerea dezvoltării Monero.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="174"/>
@@ -2798,8 +2798,8 @@ Indexul adresei de cheltuit:</translation>
     </message>
     <message>
         <location filename="../main.qml" line="1787"/>
-        <source>New version of uplexa-wallet-gui is available: %1&lt;br&gt;%2</source>
-        <translation>O nouă versiune uplexa-wallet-gui este disponibilă: %1&lt;br&gt;%2</translation>
+        <source>New version of wazn-wallet-gui is available: %1&lt;br&gt;%2</source>
+        <translation>O nouă versiune wazn-wallet-gui este disponibilă: %1&lt;br&gt;%2</translation>
     </message>
     <message>
         <location filename="../main.qml" line="1819"/>

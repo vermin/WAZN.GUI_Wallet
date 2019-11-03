@@ -2206,8 +2206,8 @@ Jei naudojate &quot;Išleidimo įrodymas&quot;, jums nereikia nurodyti gavėjo a
     </message>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="162"/>
-        <source>For every transaction, a small transaction fee is charged. This option lets you add an additional amount, as a percentage of that fee, to your transaction to support Monero development. For instance, a 50% autodonation take a transaction fee of 0.005 UPX and add a 0.0025 UPX to support Monero development.</source>
-        <translation>Už kiekvieną pavedimą taikomas nedidelė rinkliava. Ši parinktis leidžia pridėti papildomą sumą, kaip šios rinkliavos procentą prie jūsų pavedimo. Pvz., 50% automatinis rėmimas už pavedimo rinkliavą sudaro 0,005 UPX ir pridedant 0,0025 UPX, kad būtų remiama &quot;Monero&quot; plėtra.</translation>
+        <source>For every transaction, a small transaction fee is charged. This option lets you add an additional amount, as a percentage of that fee, to your transaction to support Monero development. For instance, a 50% autodonation take a transaction fee of 0.005 WAZN and add a 0.0025 WAZN to support Monero development.</source>
+        <translation>Už kiekvieną pavedimą taikomas nedidelė rinkliava. Ši parinktis leidžia pridėti papildomą sumą, kaip šios rinkliavos procentą prie jūsų pavedimo. Pvz., 50% automatinis rėmimas už pavedimo rinkliavą sudaro 0,005 WAZN ir pridedant 0,0025 WAZN, kad būtų remiama &quot;Monero&quot; plėtra.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="174"/>
@@ -2803,8 +2803,8 @@ Išlaidų adreso rodyklė: </translation>
     </message>
     <message>
         <location filename="../main.qml" line="1787"/>
-        <source>New version of uplexa-wallet-gui is available: %1&lt;br&gt;%2</source>
-        <translation>Yra nauja uplexa-wallet-gui versija: %1&lt;br&gt;%2</translation>
+        <source>New version of wazn-wallet-gui is available: %1&lt;br&gt;%2</source>
+        <translation>Yra nauja wazn-wallet-gui versija: %1&lt;br&gt;%2</translation>
     </message>
     <message>
         <location filename="../main.qml" line="1819"/>

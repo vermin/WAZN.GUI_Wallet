@@ -2219,8 +2219,8 @@ Voor een betalingsbewijs hoeft u het adres van de ontvanger niet op te geven.</t
     </message>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="162"/>
-        <source>For every transaction, a small transaction fee is charged. This option lets you add an additional amount, as a percentage of that fee, to your transaction to support Monero development. For instance, a 50% autodonation take a transaction fee of 0.005 UPX and add a 0.0025 UPX to support Monero development.</source>
-        <translation>Voor elke transactie betaalt u een kleine vergoeding. Met deze optie voegt u een extra bedrag (als percentage van die vergoeding) aan uw transactie toe om de ontwikkeling van Monero te ondersteunen. Bijvoorbeeld, een automatische donatie van 50% neemt een transactievergoeding van 0.005 UPX en voegt 0.0025 UPX toe om de ontwikkeling van Monero te ondersteunen.</translation>
+        <source>For every transaction, a small transaction fee is charged. This option lets you add an additional amount, as a percentage of that fee, to your transaction to support Monero development. For instance, a 50% autodonation take a transaction fee of 0.005 WAZN and add a 0.0025 WAZN to support Monero development.</source>
+        <translation>Voor elke transactie betaalt u een kleine vergoeding. Met deze optie voegt u een extra bedrag (als percentage van die vergoeding) aan uw transactie toe om de ontwikkeling van Monero te ondersteunen. Bijvoorbeeld, een automatische donatie van 50% neemt een transactievergoeding van 0.005 WAZN en voegt 0.0025 WAZN toe om de ontwikkeling van Monero te ondersteunen.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="174"/>
@@ -2890,8 +2890,8 @@ Vergoeding: </translation>
     </message>
     <message>
         <location filename="../main.qml" line="1787"/>
-        <source>New version of uplexa-wallet-gui is available: %1&lt;br&gt;%2</source>
-        <translation>Nieuwe versie van uplexa-wallet-gui is beschikbaar: %1&lt;br&gt;%2</translation>
+        <source>New version of wazn-wallet-gui is available: %1&lt;br&gt;%2</source>
+        <translation>Nieuwe versie van wazn-wallet-gui is beschikbaar: %1&lt;br&gt;%2</translation>
     </message>
     <message>
         <location filename="../main.qml" line="1819"/>

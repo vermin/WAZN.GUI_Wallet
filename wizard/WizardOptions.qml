@@ -75,7 +75,7 @@ ColumnLayout {
             color: "#3F3F3F"
             wrapMode: Text.Wrap
             horizontalAlignment: Text.AlignHCenter
-            text: qsTr("Welcome to uPlexa!") + translationManager.emptyString
+            text: qsTr("Welcome to WAZN!") + translationManager.emptyString
         }
 
         Text {

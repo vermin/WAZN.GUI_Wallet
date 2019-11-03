@@ -63,7 +63,7 @@ fi
 source ./utils.sh
 pushd $(pwd)
 ROOT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-MONERO_DIR=wazn
+MONERO_DIR=WAZN
 MONEROD_EXEC=waznd
 
 MAKE='make'

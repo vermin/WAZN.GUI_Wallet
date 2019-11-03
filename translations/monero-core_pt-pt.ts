@@ -373,8 +373,8 @@
     </message>
     <message>
         <location filename="../pages/Keys.qml" line="93"/>
-        <source>WARNING: Do not reuse your uPlexa keys on another fork, UNLESS this fork has key reuse mitigations built in. Doing so will harm your privacy.</source>
-        <translation>AVISO: Não reutilize as suas chaves privadas do Monero noutro fork, A MENOS que este fork preveja proteções contra a reutilização de chaves. Se o fizer estará a pôr em risco a sua privacidade.</translation>
+        <source>WARNING: Do not reuse your WAZN keys on another fork, UNLESS this fork has key reuse mitigations built in. Doing so will harm your privacy.</source>
+        <translation>AVISO: Não reutilize as suas chaves privadas do WAZN noutro fork, A MENOS que este fork preveja proteções contra a reutilização de chaves. Se o fizer estará a pôr em risco a sua privacidade.</translation>
     </message>
     <message>
         <location filename="../pages/Keys.qml" line="196"/>
@@ -625,8 +625,8 @@
     </message>
     <message>
         <location filename="../pages/Mining.qml" line="82"/>
-        <source>Mining with your computer helps strengthen the uPlexa network. The more that people mine, the harder it is for the network to be attacked, and every little bit helps.&lt;br&gt; &lt;br&gt;Mining also gives you a small chance to earn some uPlexa. Your computer will create hashes looking for block solutions. If you find a block, you will get the associated reward. Good luck!</source>
-        <translation>Minerar com o seu computador ajuda a fortalecer a rede Monero. Quanto mais pessoas minerarem, mais difícil será atacar a rede e por mais pequena que seja a sua contribuição está a ajudar. &lt;br&gt; &lt;br&gt;Minerar também dá uma pequena possibilidade de ganhar Monero. O seu computador irá criar hashes procurando soluções para validade blocos. Caso consiga encontrar o hash de validação de um bloco, você ganha a recompensa associada. Boa sorte!</translation>
+        <source>Mining with your computer helps strengthen the WAZN network. The more that people mine, the harder it is for the network to be attacked, and every little bit helps.&lt;br&gt; &lt;br&gt;Mining also gives you a small chance to earn some WAZN. Your computer will create hashes looking for block solutions. If you find a block, you will get the associated reward. Good luck!</source>
+        <translation>Minerar com o seu computador ajuda a fortalecer a rede WAZN. Quanto mais pessoas minerarem, mais difícil será atacar a rede e por mais pequena que seja a sua contribuição está a ajudar. &lt;br&gt; &lt;br&gt;Minerar também dá uma pequena possibilidade de ganhar WAZN. O seu computador irá criar hashes procurando soluções para validade blocos. Caso consiga encontrar o hash de validação de um bloco, você ganha a recompensa associada. Boa sorte!</translation>
     </message>
     <message>
         <location filename="../pages/Mining.qml" line="95"/>
@@ -882,13 +882,13 @@
     </message>
     <message>
         <location filename="../pages/Receive.qml" line="139"/>
-        <source>With more Monero</source>
-        <translation>Com mais Monero</translation>
+        <source>With more WAZN</source>
+        <translation>Com mais WAZN</translation>
     </message>
     <message>
         <location filename="../pages/Receive.qml" line="140"/>
-        <source>With not enough Monero</source>
-        <translation>Com Monero insuficiente</translation>
+        <source>With not enough WAZN</source>
+        <translation>Com WAZN insuficiente</translation>
     </message>
     <message>
         <location filename="../pages/Receive.qml" line="142"/>
@@ -1056,8 +1056,8 @@
     </message>
     <message>
         <location filename="../pages/settings/SettingsInfo.qml" line="89"/>
-        <source>Embedded uPlexa version: </source>
-        <translation>Versão Monero: </translation>
+        <source>Embedded WAZN version: </source>
+        <translation>Versão WAZN: </translation>
     </message>
     <message>
         <location filename="../pages/settings/SettingsInfo.qml" line="118"/>
@@ -1179,13 +1179,13 @@ O ficheiro de cache antigo será renomeado e poderá ser restaurado mais tarde.
     </message>
     <message>
         <location filename="../pages/settings/SettingsNode.qml" line="232"/>
-        <source>Uses a third-party server to connect to the uPlexa network. Less secure, but easier on your computer.</source>
-        <translation>Utiliza um servidor remoto para ligar à rede Monero. É um método menos seguro, mas necessita de menos espaço de armazenamento local.</translation>
+        <source>Uses a third-party server to connect to the WAZN network. Less secure, but easier on your computer.</source>
+        <translation>Utiliza um servidor remoto para ligar à rede WAZN. É um método menos seguro, mas necessita de menos espaço de armazenamento local.</translation>
     </message>
     <message>
         <location filename="../pages/settings/SettingsNode.qml" line="277"/>
-        <source>To find a remote node, type &apos;uPlexa remote node&apos; into your favorite search engine. Please ensure the node is run by a trusted third-party.</source>
-        <translation>Para encontrar um node remoto, escreva &apos;node remoto de Monero&apos; no seu motor de busca favorito. Confirme sempre que o node é gerido por uma entidade confiável.</translation>
+        <source>To find a remote node, type &apos;WAZN remote node&apos; into your favorite search engine. Please ensure the node is run by a trusted third-party.</source>
+        <translation>Para encontrar um node remoto, escreva &apos;node remoto de WAZN&apos; no seu motor de busca favorito. Confirme sempre que o node é gerido por uma entidade confiável.</translation>
     </message>
     <message>
         <location filename="../pages/settings/SettingsNode.qml" line="291"/>
@@ -1341,8 +1341,8 @@ O ficheiro de cache antigo será renomeado e poderá ser restaurado mais tarde.
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="106"/>
-        <source>This page allows you to interact with the shared ring database. This database is meant for use by uPlexa wallets as well as wallets from uPlexa clones which reuse the uPlexa keys.</source>
-        <translation>Esta secção permite-lhe interagir com a base de dados de rings. Esta base de dados é intencionada para a utilização de carteiras de Monero assim como carteiras de clones do Monero que usam as mesmas chaves.</translation>
+        <source>This page allows you to interact with the shared ring database. This database is meant for use by WAZN wallets as well as wallets from WAZN clones which reuse the WAZN keys.</source>
+        <translation>Esta secção permite-lhe interagir com a base de dados de rings. Esta base de dados é intencionada para a utilização de carteiras de WAZN assim como carteiras de clones do WAZN que usam as mesmas chaves.</translation>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="119"/>
@@ -1358,8 +1358,8 @@ O ficheiro de cache antigo será renomeado e poderá ser restaurado mais tarde.
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="122"/>
-        <source>In order to obscure which inputs in a Monero transaction are being spent, a third party should not be able to tell which inputs in a ring are already known to be spent. Being able to do so would weaken the protection afforded by ring signatures. If all but one of the inputs are known to be already spent, then the input being actually spent becomes apparent, thereby nullifying the effect of ring signatures, one of the three main layers of privacy protection Monero uses.&lt;br&gt;To help transactions avoid those inputs, a list of known spent ones can be used to avoid using them in new transactions. Such a list is maintained by the Monero project and is available on the getmonero.org website, and you can import this list here.&lt;br&gt;Alternatively, you can scan the blockchain (and the blockchain of key-reusing Monero clones) yourself using the monero-blockchain-mark-spent-outputs tool to create a list of known spent outputs.&lt;br&gt;</source>
-        <translation>De forma a esconder qual é a verdadeira transação que está a ser gasta, Monero utiliza varias transacções selecionadas automaticamente na mesma transação, uma terceira pessoa não deve conseguir distinguir qual é a transação verdadeira das falsas. Caso o consiga fazer irá enfraquecer a a protecção dada pelas ring signatures. Se todas as transacções excepto uma forem conhecidas por já terem sido gastas, então torna-se evidente qual é a transação que está a ser gasta e a utilização de ring signatures fica sem efeito, sendo as ring signatures uma das 3 camadas que permite a protecção de privacidade em Monero.&lt;br&gt;Para ajudar a evitar essas transacções, é-lhe fornecida uma lista com transacções já conhecidas como gastas e assim pode evitar usa-las numa nova transação. Esta lista é mantida pelo Monero Project e está disponivel no site oficinal getmonero.org, e pode importar essa lista para aqui.&lt;br&gt;Em alternativa, pode utilizar a ferramenta monero-blockchain-mark-spent-outputs e criar essa mesma lista de transacções conhecidas como gastas.</translation>
+        <source>In order to obscure which inputs in a WAZN transaction are being spent, a third party should not be able to tell which inputs in a ring are already known to be spent. Being able to do so would weaken the protection afforded by ring signatures. If all but one of the inputs are known to be already spent, then the input being actually spent becomes apparent, thereby nullifying the effect of ring signatures, one of the three main layers of privacy protection WAZN uses.&lt;br&gt;To help transactions avoid those inputs, a list of known spent ones can be used to avoid using them in new transactions. Such a list is maintained by the WAZN project and is available on the getmonero.org website, and you can import this list here.&lt;br&gt;Alternatively, you can scan the blockchain (and the blockchain of key-reusing WAZN clones) yourself using the monero-blockchain-mark-spent-outputs tool to create a list of known spent outputs.&lt;br&gt;</source>
+        <translation>De forma a esconder qual é a verdadeira transação que está a ser gasta, WAZN utiliza varias transacções selecionadas automaticamente na mesma transação, uma terceira pessoa não deve conseguir distinguir qual é a transação verdadeira das falsas. Caso o consiga fazer irá enfraquecer a a protecção dada pelas ring signatures. Se todas as transacções excepto uma forem conhecidas por já terem sido gastas, então torna-se evidente qual é a transação que está a ser gasta e a utilização de ring signatures fica sem efeito, sendo as ring signatures uma das 3 camadas que permite a protecção de privacidade em WAZN.&lt;br&gt;Para ajudar a evitar essas transacções, é-lhe fornecida uma lista com transacções já conhecidas como gastas e assim pode evitar usa-las numa nova transação. Esta lista é mantida pelo WAZN Project e está disponivel no site oficinal getmonero.org, e pode importar essa lista para aqui.&lt;br&gt;Em alternativa, pode utilizar a ferramenta monero-blockchain-mark-spent-outputs e criar essa mesma lista de transacções conhecidas como gastas.</translation>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="143"/>
@@ -1429,13 +1429,13 @@ O ficheiro de cache antigo será renomeado e poderá ser restaurado mais tarde.
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="263"/>
-        <source>In order to avoid nullifying the protection afforded by Monero&apos;s ring signatures, an output should not be spent with different rings on different blockchains. While this is normally not a concern, it can become one when a key-reusing Monero clone allows you to spend existing outputs. In this case, you need to ensure this existing outputs uses the same ring on both chains.&lt;br&gt;This will be done automatically by Monero and any key-reusing software which is not trying to actively strip you of your privacy.&lt;br&gt;If you are using a key-reusing Monero clone too, and this clone does not include this protection, you can still ensure your transactions are protected by spending on the clone first, then manually adding the ring on this page, which allows you to then spend your Monero safely.&lt;br&gt;If you do not use a key-reusing Monero clone without these safety features, then you do not need to do anything as it is all automated.&lt;br&gt;</source>
-        <translation>Para evitar anular a proteção oferecida pelo Monero, um output não deve ser usado com diferentes rings em blockchains diferentes. Normalmente isto não é uma preocupação, poderá tornar-se uma quando um clone do Monero permite a utilização de outputs já gastos na rede original do Monero. Neste caso é necessário que garante que estes outputs que já tinham sido gastos na rede Monero usem os mesmos rings em ambas as blockchains.&lt;br&gt;Isto é feito automaticamente pelo Monero e por qualquer outro software que não está a tentar destruir a sua provacidade.&lt;br&gt;Se você está a utilizar um clone de Monero e este clone não inclui uma proteção contra isto, poderá obter na mesma a sua proteção garantido que as transações são feitas primeiro no clone do Monero e de seguida adicionado a ring utilizada nesta página, o que permite que depois utilize o seu Monero em segurança.&lt;br&gt;Se você optar por não usar um clone do Monero então não necessita de se preocupar, tudo será feito automaticamente.&lt;br&gt;</translation>
+        <source>In order to avoid nullifying the protection afforded by WAZN&apos;s ring signatures, an output should not be spent with different rings on different blockchains. While this is normally not a concern, it can become one when a key-reusing WAZN clone allows you to spend existing outputs. In this case, you need to ensure this existing outputs uses the same ring on both chains.&lt;br&gt;This will be done automatically by WAZN and any key-reusing software which is not trying to actively strip you of your privacy.&lt;br&gt;If you are using a key-reusing WAZN clone too, and this clone does not include this protection, you can still ensure your transactions are protected by spending on the clone first, then manually adding the ring on this page, which allows you to then spend your WAZN safely.&lt;br&gt;If you do not use a key-reusing WAZN clone without these safety features, then you do not need to do anything as it is all automated.&lt;br&gt;</source>
+        <translation>Para evitar anular a proteção oferecida pelo WAZN, um output não deve ser usado com diferentes rings em blockchains diferentes. Normalmente isto não é uma preocupação, poderá tornar-se uma quando um clone do WAZN permite a utilização de outputs já gastos na rede original do WAZN. Neste caso é necessário que garante que estes outputs que já tinham sido gastos na rede WAZN usem os mesmos rings em ambas as blockchains.&lt;br&gt;Isto é feito automaticamente pelo WAZN e por qualquer outro software que não está a tentar destruir a sua provacidade.&lt;br&gt;Se você está a utilizar um clone de WAZN e este clone não inclui uma proteção contra isto, poderá obter na mesma a sua proteção garantido que as transações são feitas primeiro no clone do WAZN e de seguida adicionado a ring utilizada nesta página, o que permite que depois utilize o seu WAZN em segurança.&lt;br&gt;Se você optar por não usar um clone do WAZN então não necessita de se preocupar, tudo será feito automaticamente.&lt;br&gt;</translation>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="285"/>
-        <source>This records rings used by outputs spent on uPlexa on a key reusing chain, so that the same ring may be reused to avoid privacy issues.</source>
-        <translation>Estes registos contêm assinaturas usadas em transacções num clone do Monero com as mesmas chaves, é necessário utilizar as mesmas assinaturas para evitar perda de privacidade.</translation>
+        <source>This records rings used by outputs spent on WAZN on a key reusing chain, so that the same ring may be reused to avoid privacy issues.</source>
+        <translation>Estes registos contêm assinaturas usadas em transacções num clone do WAZN com as mesmas chaves, é necessário utilizar as mesmas assinaturas para evitar perda de privacidade.</translation>
     </message>
     <message>
         <location filename="../pages/SharedRingDB.qml" line="296"/>
@@ -1840,8 +1840,8 @@ O ficheiro de cache antigo será renomeado e poderá ser restaurado mais tarde.
     </message>
     <message>
         <location filename="../pages/Transfer.qml" line="552"/>
-        <source>uPlexa sent successfully</source>
-        <translation>Monero enviado com sucesso</translation>
+        <source>WAZN sent successfully</source>
+        <translation>WAZN enviado com sucesso</translation>
     </message>
     <message>
         <location filename="../pages/Transfer.qml" line="399"/>
@@ -2095,13 +2095,13 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     <name>WizardConfigure</name>
     <message>
         <location filename="../wizard/WizardConfigure.qml" line="79"/>
-        <source>We’re almost there - let’s just configure some Monero preferences</source>
+        <source>We’re almost there - let’s just configure some WAZN preferences</source>
         <translation>Quase terminado - falta apenas configurar algumas opções</translation>
     </message>
     <message>
         <location filename="../wizard/WizardConfigure.qml" line="97"/>
-        <source>Kickstart the Monero blockchain?</source>
-        <translation>Iniciar a blockchain do Monero?</translation>
+        <source>Kickstart the WAZN blockchain?</source>
+        <translation>Iniciar a blockchain do WAZN?</translation>
     </message>
     <message>
         <location filename="../wizard/WizardConfigure.qml" line="113"/>
@@ -2115,8 +2115,8 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     </message>
     <message>
         <location filename="../wizard/WizardConfigure.qml" line="140"/>
-        <source>Disk conservation mode uses substantially less disk-space, but the same amount of bandwidth as a regular Monero instance. However, storing the full blockchain is beneficial to the security of the Monero network. If you are on a device with limited disk space, then this option is appropriate for you.</source>
-        <translation>O modo de conservação de espaço no disco usa menos espaço porém a mesma quantia de dados na internet. Armazenar a blockchain completa no seu disco ajuda a proteger a rede Monero. Caso esteja a usar um dispositivo com pouco espaço de disco livre, ative esta opção.</translation>
+        <source>Disk conservation mode uses substantially less disk-space, but the same amount of bandwidth as a regular WAZN instance. However, storing the full blockchain is beneficial to the security of the WAZN network. If you are on a device with limited disk space, then this option is appropriate for you.</source>
+        <translation>O modo de conservação de espaço no disco usa menos espaço porém a mesma quantia de dados na internet. Armazenar a blockchain completa no seu disco ajuda a proteger a rede WAZN. Caso esteja a usar um dispositivo com pouco espaço de disco livre, ative esta opção.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardConfigure.qml" line="153"/>
@@ -2125,8 +2125,8 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     </message>
     <message>
         <location filename="../wizard/WizardConfigure.qml" line="169"/>
-        <source>Mining secures the Monero network, and also pays a small reward for the work done. This option will let Monero mine when your computer is on mains power and is idle. It will stop mining when you continue working.</source>
-        <translation>Minerar ajuda a rede Monero a ficar mais segura e poderá pagar um prémio pelo trabalho realizado. Esta opção permite que o seu computador minere quando estiver sem ser utilizado e ligado à corrente elétrica. Para de minerar assim que comece a utilizar o computador.</translation>
+        <source>Mining secures the WAZN network, and also pays a small reward for the work done. This option will let WAZN mine when your computer is on mains power and is idle. It will stop mining when you continue working.</source>
+        <translation>Minerar ajuda a rede WAZN a ficar mais segura e poderá pagar um prémio pelo trabalho realizado. Esta opção permite que o seu computador minere quando estiver sem ser utilizado e ligado à corrente elétrica. Para de minerar assim que comece a utilizar o computador.</translation>
     </message>
 </context>
 <context>
@@ -2157,8 +2157,8 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     <name>WizardDaemonSettings</name>
     <message>
         <location filename="../wizard/WizardDaemonSettings.qml" line="114"/>
-        <source>To be able to communicate with the Monero network your wallet needs to be connected to a Monero node. For best privacy it&apos;s recommended to run your own node.                         &lt;br&gt;&lt;br&gt;                         If you don&apos;t have the option to run your own node, there&apos;s an option to connect to a remote node.</source>
-        <translation>Para que possa comunicar com a rede Monero, a sua carteira necessita estar ligada a um node de Monero. É recomendável que corra o seu próprio node local, contudo se não tiver opção de correr o seu próprio node pode também ligar-se a um node remoto.</translation>
+        <source>To be able to communicate with the WAZN network your wallet needs to be connected to a WAZN node. For best privacy it&apos;s recommended to run your own node.                         &lt;br&gt;&lt;br&gt;                         If you don&apos;t have the option to run your own node, there&apos;s an option to connect to a remote node.</source>
+        <translation>Para que possa comunicar com a rede WAZN, a sua carteira necessita estar ligada a um node de WAZN. É recomendável que corra o seu próprio node local, contudo se não tiver opção de correr o seu próprio node pode também ligar-se a um node remoto.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardDaemonSettings.qml" line="126"/>
@@ -2190,8 +2190,8 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     <name>WizardDonation</name>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="93"/>
-        <source>Monero development is solely supported by donations</source>
-        <translation>O desenvolvimento do Monero é unicamente suportado através de doações</translation>
+        <source>WAZN development is solely supported by donations</source>
+        <translation>O desenvolvimento do WAZN é unicamente suportado através de doações</translation>
     </message>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="113"/>
@@ -2205,8 +2205,8 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     </message>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="162"/>
-        <source>For every transaction, a small transaction fee is charged. This option lets you add an additional amount, as a percentage of that fee, to your transaction to support Monero development. For instance, a 50% autodonation take a transaction fee of 0.005 WAZN and add a 0.0025 WAZN to support Monero development.</source>
-        <translation>Para cada transação uma pequena taxa é sempre cobrada. Esta opção permite adicionar uma quantia adicional de percentagem desta taxa para ajudar o desenvolvimento do Monero. Por exemplo, 50% de auto-doação numa taxa de transferência de 0.005 WAZN adiciona 0.0025 WAZN que será enviado para o fundo comum de ajuda ao desenvolvimento do Monero.</translation>
+        <source>For every transaction, a small transaction fee is charged. This option lets you add an additional amount, as a percentage of that fee, to your transaction to support WAZN development. For instance, a 50% autodonation take a transaction fee of 0.005 WAZN and add a 0.0025 WAZN to support WAZN development.</source>
+        <translation>Para cada transação uma pequena taxa é sempre cobrada. Esta opção permite adicionar uma quantia adicional de percentagem desta taxa para ajudar o desenvolvimento do WAZN. Por exemplo, 50% de auto-doação numa taxa de transferência de 0.005 WAZN adiciona 0.0025 WAZN que será enviado para o fundo comum de ajuda ao desenvolvimento do WAZN.</translation>
     </message>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="174"/>
@@ -2215,8 +2215,8 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     </message>
     <message>
         <location filename="../wizard/WizardDonation.qml" line="190"/>
-        <source>Mining secures the Monero network, and also pays a small reward for the work done. This option will let Monero mine when your computer is on mains power and is idle. It will stop mining when you continue working.</source>
-        <translation>Minerar protege a rede do Monero e pode premiar o minerador com uma pequena quantia de Monero pelo trabalho feito. Esta opção irá permitir que o seu computador seja usado para minerar Monero quando estiver sem utilização. A mineração será interrompida quando você voltar a utilizar o computador.</translation>
+        <source>Mining secures the WAZN network, and also pays a small reward for the work done. This option will let WAZN mine when your computer is on mains power and is idle. It will stop mining when you continue working.</source>
+        <translation>Minerar protege a rede do WAZN e pode premiar o minerador com uma pequena quantia de WAZN pelo trabalho feito. Esta opção irá permitir que o seu computador seja usado para minerar WAZN quando estiver sem utilização. A mineração será interrompida quando você voltar a utilizar o computador.</translation>
     </message>
 </context>
 <context>
@@ -2308,8 +2308,8 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     </message>
     <message>
         <location filename="../wizard/WizardMain.qml" line="386"/>
-        <source>USE UPLEXA</source>
-        <translation>USAR O MONERO</translation>
+        <source>USE WAZN</source>
+        <translation>USAR O WAZN</translation>
     </message>
     <message>
         <location filename="../wizard/WizardMain.qml" line="399"/>
@@ -2429,8 +2429,8 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     <name>WizardOptions</name>
     <message>
         <location filename="../wizard/WizardOptions.qml" line="76"/>
-        <source>Welcome to uPlexa!</source>
-        <translation>Bem-vindo ao Monero!</translation>
+        <source>Welcome to WAZN!</source>
+        <translation>Bem-vindo ao WAZN!</translation>
     </message>
     <message>
         <location filename="../wizard/WizardOptions.qml" line="87"/>
@@ -2519,8 +2519,8 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     <name>WizardWelcome</name>
     <message>
         <location filename="../wizard/WizardWelcome.qml" line="73"/>
-        <source>Welcome to uPlexa!</source>
-        <translation>Bem-vindo ao Monero!</translation>
+        <source>Welcome to WAZN!</source>
+        <translation>Bem-vindo ao WAZN!</translation>
     </message>
     <message>
         <location filename="../wizard/WizardWelcome.qml" line="83"/>
@@ -2698,8 +2698,8 @@ Spending address index: </source>
     </message>
     <message>
         <location filename="../main.qml" line="797"/>
-        <source>uPlexa sent successfully: %1 transaction(s) </source>
-        <translation>Monero enviado com sucesso: %1 transação(ões)</translation>
+        <source>WAZN sent successfully: %1 transaction(s) </source>
+        <translation>WAZN enviado com sucesso: %1 transação(ões)</translation>
     </message>
     <message>
         <location filename="../main.qml" line="827"/>
@@ -2803,7 +2803,7 @@ Spending address index: </source>
     <message>
         <location filename="../main.qml" line="1787"/>
         <source>New version of wazn-wallet-gui is available: %1&lt;br&gt;%2</source>
-        <translation>Nova versão da GUI do Monero disponível: %1&lt;br&gt;%2</translation>
+        <translation>Nova versão da GUI do WAZN disponível: %1&lt;br&gt;%2</translation>
     </message>
     <message>
         <location filename="../main.qml" line="1819"/>
@@ -2874,8 +2874,8 @@ Spending address index: </source>
     </message>
     <message>
         <location filename="../main.qml" line="1295"/>
-        <source>Monero</source>
-        <translation>Monero</translation>
+        <source>WAZN</source>
+        <translation>WAZN</translation>
     </message>
     <message>
         <location filename="../main.qml" line="1445"/>

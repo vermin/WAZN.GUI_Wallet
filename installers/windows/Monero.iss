@@ -9,9 +9,9 @@ AppName=WAZN GUI Wallet
 ; Thus it's important to keep this stable over releases
 ; With a different "AppName" InnoSetup would treat a mere update as a completely new application and thus mess up
 
-AppVersion=0.13.0.4
-DefaultDirName={pf}\uPlexa GUI Wallet
-DefaultGroupName=uPlexa GUI Wallet
+AppVersion=v1.0.0
+DefaultDirName={pf}\WAZN GUI Wallet
+DefaultGroupName=WAZN GUI Wallet
 UninstallDisplayIcon={app}\wazn-wallet-gui.exe
 PrivilegesRequired=admin
 ArchitecturesInstallIn64BitMode=x64
@@ -20,8 +20,8 @@ WizardSmallImageFile=WizardSmallImage.bmp
 WizardImageFile=WelcomeImage.bmp
 DisableWelcomePage=no
 LicenseFile=LICENSE
-AppPublisher=The uPlexa Developer Community
-AppPublisherURL=https://wazn.com
+AppPublisher=The Project WAZN Devs
+AppPublisherURL=https://wazn.io
 
 UsedUserAreasWarning=no
 ; The above directive silences the following compiler warning:
@@ -29,7 +29,7 @@ UsedUserAreasWarning=no
 ;    are used by the script. Regardless of the version of Windows, if the installation is administrative then you should
 ;    be careful about making any per-user area changes: such changes may not achieve what you are intending.
 ; Background info:
-; This installer indeed asks for admin rights so the uPlexa files can be copied to a place where they have at least
+; This installer indeed asks for admin rights so the WAZN files can be copied to a place where they have at least
 ; a minimum of protection against changes, e.g. by malware, plus it handles things for the currently logged-in user
 ; in the registry (GUI wallet per-user options) and for some of the icons. For reasons too complicated to fully explain
 ; here this does not work as intended if the installing user does not have admin rights and has to provide the password
@@ -57,40 +57,40 @@ Name: "en"; MessagesFile: "compiler:Default.isl"
 ; .exe/.dll file possibly with version info).
 ;
 ; This is far more robust than relying on version info or on file dates (flag "comparetimestamp").
-; As of version 0.13.0.4, the uPlexa .exe files do not carry version info anyway in their .exe headers.
+; As of version 0.13.0.4, the WAZN .exe files do not carry version info anyway in their .exe headers.
 ; The only small drawback seems to be somewhat longer update times because each and every file is
 ; copied again, even if already present with correct file date and identical content.
 ;
 ; Note that it would be very dangerous to use "ignoreversion" on files that may be shared with other
-; applications somehow. Luckily this is no issue here because ALL files are "private" to uPlexa.
+; applications somehow. Luckily this is no issue here because ALL files are "private" to WAZN.
 
 Source: "ReadMe.htm"; DestDir: "{app}"; Flags: ignoreversion
 Source: "FinishImage.bmp"; Flags: dontcopy
 
-; uPlexa GUI wallet exe and guide
+; WAZN GUI wallet exe and guide
 Source: "bin\wazn-wallet-gui.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "bin\wazn-GUI-guide.pdf"; DestDir: "{app}"; Flags: ignoreversion
 
-; uPlexa GUI wallet log file
+; WAZN GUI wallet log file
 ; The GUI wallet does not have the "--log-file" command-line option of the CLI wallet and insists to put the .log beside the .exe
 ; so pre-create the file and give the necessary permissions to the wallet to write into it
 ; Flag is "onlyifdoesntexist": We do not want to overwrite an already existing log
 Source: "wazn-wallet-gui.log"; DestDir: "{app}"; Flags: onlyifdoesntexist; Permissions: users-modify
 
-; uPlexa CLI wallet
+; WAZN CLI wallet
 Source: "bin\wazn-wallet-cli.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "bin\wazn-gen-trusted-multisig.exe"; DestDir: "{app}"; Flags: ignoreversion
 
-; uPlexa wallet RPC interface implementation
+; WAZN wallet RPC interface implementation
 Source: "bin\wazn-wallet-rpc.exe"; DestDir: "{app}"; Flags: ignoreversion
 
-; uPlexa daemon
+; WAZN daemon
 Source: "bin\waznd.exe"; DestDir: "{app}"; Flags: ignoreversion
 
-; uPlexa daemon wrapped in a batch file that stops before the text window closes, to see any error messages
+; WAZN daemon wrapped in a batch file that stops before the text window closes, to see any error messages
 Source: "wazn-daemon.bat"; DestDir: "{app}"; Flags: ignoreversion;
 
-; uPlexa blockchain utilities
+; WAZN blockchain utilities
 Source: "bin\wazn-blockchain-export.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "bin\wazn-blockchain-import.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "bin\wazn-blockchain-mark-spent-outputs.exe"; DestDir: "{app}"; Flags: ignoreversion
@@ -285,7 +285,7 @@ begin
 
   // Additional wizard page for entering a special blockchain location
   blockChainDefaultDir := ExpandConstant('{commonappdata}\wazn');
-  s := 'The default folder to store the uPlexa blockchain is ' + blockChainDefaultDir;
+  s := 'The default folder to store the WAZN blockchain is ' + blockChainDefaultDir;
   s := s + '. As this will need more than 1 GB of free space, you may want to use a folder on a different drive.';
   s := s + ' If yes, specify that folder here.';
 
@@ -302,7 +302,7 @@ begin
     blockChainDir := GetPreviousData('BlockChainDir', '');
   end;
   if blockChainDir = '' then begin
-    // Unfortunately 'TInputDirWizardDirPage' does not allow empty field, so "propose" uPlexa default location
+    // Unfortunately 'TInputDirWizardDirPage' does not allow empty field, so "propose" WAZN default location
     blockChainDir := blockChainDefaultDir;
   end;
   BlockChainDirPage.Values[0] := blockChainDir;
@@ -395,7 +395,7 @@ begin
   if CurStep = ssPostInstall then begin
     // Re-build "wazn-daemon.bat" according to actual install and blockchain directory used
     SetArrayLength(s, 3);
-    s[0] := 'REM Execute the uPlexa daemon and then stay with window open after it exits';
+    s[0] := 'REM Execute the WAZN daemon and then stay with window open after it exits';
     s[1] := '"' + ExpandConstant('{app}\waznd.exe') + '" ' + DaemonFlags('');
     s[2] := 'PAUSE';
     SaveStringsToFile(ExpandConstant('{app}\wazn-daemon.bat'), s, false);
@@ -414,7 +414,7 @@ end;
 
 
 [Icons]
-; Icons in the "uPlexa GUI Wallet" program group
+; Icons in the "WAZN GUI Wallet" program group
 ; Windows will almost always display icons in alphabetical order, per level, so specify the text accordingly
 Name: "{group}\GUI Wallet"; Filename: "{app}\wazn-wallet-gui.exe"; Parameters: {code:WalletFlags}
 Name: "{group}\GUI Wallet Guide"; Filename: "{app}\wazn-GUI-guide.pdf"; IconFilename: "{app}\wazn-wallet-gui.exe"
@@ -423,19 +423,19 @@ Name: "{group}\Uninstall GUI Wallet"; Filename: "{uninstallexe}"
 ; Sub-folder "Utilities";
 ; Note that Windows 10, unlike Windows 7, ignores such sub-folders completely
 ; and insists on displaying ALL icons on one single level
-Name: "{group}\Utilities\uPlexa Daemon"; Filename: "{app}\waznd.exe"; Parameters: {code:DaemonFlags}
+Name: "{group}\Utilities\WAZN Daemon"; Filename: "{app}\waznd.exe"; Parameters: {code:DaemonFlags}
 Name: "{group}\Utilities\Read Me"; Filename: "{app}\ReadMe.htm"
 
 ; CLI wallet: Needs a working directory ("Start in:") set in the icon, because with no such directory set
 ; it tries to create new wallets without a path given in the probably non-writable program folder and will abort with an error
-Name: "{group}\Utilities\Textual (CLI) Wallet"; Filename: "{app}\wazn-wallet-cli.exe"; WorkingDir: "{userdocs}\uPlexa\wallets"
+Name: "{group}\Utilities\Textual (CLI) Wallet"; Filename: "{app}\wazn-wallet-cli.exe"; WorkingDir: "{userdocs}\WAZN\wallets"
 
 ; Icons for troubleshooting problems / testing / debugging
 ; To show that they are in some way different (not for everyday use), make them visually different
 ; from the others by text, and make them sort at the end by the help of "x" in front
 Name: "{group}\Utilities\x (Check Blockchain Folder)"; Filename: "{win}\Explorer.exe"; Parameters: {code:BlockChainDir}
 Name: "{group}\Utilities\x (Check Daemon Log)"; Filename: "Notepad"; Parameters: {code:DaemonLog}
-Name: "{group}\Utilities\x (Check Default Wallet Folder)"; Filename: "{win}\Explorer.exe"; Parameters: "{userdocs}\uPlexa\wallets"
+Name: "{group}\Utilities\x (Check Default Wallet Folder)"; Filename: "{win}\Explorer.exe"; Parameters: "{userdocs}\WAZN\wallets"
 Name: "{group}\Utilities\x (Check GUI Wallet Log)"; Filename: "Notepad"; Parameters: "{app}\wazn-wallet-gui.log"
 Name: "{group}\Utilities\x (Try Daemon, Exit Confirm)"; Filename: "{app}\wazn-daemon.bat"
 Name: "{group}\Utilities\x (Try GUI Wallet Low Graphics Mode)"; Filename: "{app}\start-low-graphics-mode.bat"

@@ -87,7 +87,7 @@ Rectangle {
             MoneroComponents.TextBlock {
                 id: guiMoneroVersion
                 font.pixelSize: 14
-                text: qsTr("Embedded uPlexa version: ") + translationManager.emptyString
+                text: qsTr("Embedded WAZN version: ") + translationManager.emptyString
             }
 
             MoneroComponents.TextBlock {
@@ -273,7 +273,7 @@ Rectangle {
                     onClicked: {
                         var data = "";
                         data += "GUI version: " + Version.GUI_VERSION + " (Qt " + qtRuntimeVersion + ")";
-                        data += "\nEmbedded uPlexa version: " + Version.GUI_MONERO_VERSION;
+                        data += "\nEmbedded WAZN version: " + Version.GUI_MONERO_VERSION;
                         data += "\nWallet path: ";
 
                         var wallet_path = walletPath();

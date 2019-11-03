@@ -8,7 +8,7 @@ ROOT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 source $ROOT_DIR/utils.sh
 
 INSTALL_DIR=$ROOT_DIR/wallet
-MONERO_DIR=$ROOT_DIR/wazn
+MONERO_DIR=$ROOT_DIR/WAZN
 BUILD_LIBWALLET=false
 
 # init and update wazn submodule
@@ -35,14 +35,14 @@ git -C $MONERO_DIR submodule update
 # Save current user settings and revert back when we are done with merging PR's
 OLD_GIT_USER=$(git -C $MONERO_DIR config --local user.name)
 OLD_GIT_EMAIL=$(git -C $MONERO_DIR config --local user.email)
-git -C $MONERO_DIR config user.name "uPlexa GUI"
-git -C $MONERO_DIR config user.email "gui@wazn.local"
+git -C $MONERO_DIR config user.name "vermin"
+git -C $MONERO_DIR config user.email "vermin@techie.com"
 # check for PR requirements in most recent commit message (i.e requires #xxxx)
 for PR in $(git log --format=%B -n 1 | grep -io "requires #[0-9]*" | sed 's/[^0-9]*//g'); do
     echo "Merging wazn push request #$PR"
     # fetch pull request and merge
     git -C $MONERO_DIR fetch origin pull/$PR/head:PR-$PR
-    git -C $MONERO_DIR merge --quiet PR-$PR  -m "Merge wazn PR #$PR"
+    git -C $MONERO_DIR merge --quiet PR-$PR  -m "Merge WAZN PR #$PR"
     BUILD_LIBWALLET=true
 done
 

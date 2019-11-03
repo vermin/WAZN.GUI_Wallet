@@ -250,7 +250,7 @@ int main(int argc, char *argv[])
 //  wizard is talking about where
 //  to save the wallet file (.keys, .bin), they have to be user-accessible for
 //  backups - I reckon we save that in My Documents\Monero Accounts\ on
-//  Windows, ~/uPlexa Accounts/ on nix / osx
+//  Windows, ~/WAZN Accounts/ on nix / osx
 #if defined(Q_OS_WIN) || defined(Q_OS_IOS)
     QStringList moneroAccountsRootDir = QStandardPaths::standardLocations(QStandardPaths::DocumentsLocation);
 #else
@@ -272,7 +272,7 @@ int main(int argc, char *argv[])
 
     if (!moneroAccountsRootDir.empty())
     {
-        QString moneroAccountsDir = moneroAccountsRootDir.at(0) + "/uPlexa/wallets";
+        QString moneroAccountsDir = moneroAccountsRootDir.at(0) + "/WAZN/wallets";
         engine.rootContext()->setContextProperty("moneroAccountsDir", moneroAccountsDir);
     }
 

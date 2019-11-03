@@ -106,7 +106,7 @@ Rectangle {
 
         Text {
             text: qsTr("This page allows you to interact with the shared ring database. " +
-                       "This database is meant for use by uPlexa wallets as well as wallets from uPlexa clones which reuse the uPlexa keys.") + translationManager.emptyString
+                       "This database is meant for use by WAZN wallets as well as wallets from WAZN clones which reuse the WAZN keys.") + translationManager.emptyString
             wrapMode: Text.Wrap
             Layout.fillWidth: true
             font.family: Style.fontRegular.name
@@ -284,7 +284,7 @@ Rectangle {
             textFormat: Text.RichText
             font.family: Style.fontRegular.name
             font.pixelSize: 14 * scaleRatio
-            text: qsTr("This records rings used by outputs spent on uPlexa on a key reusing chain, so that the same ring may be reused to avoid privacy issues.") + translationManager.emptyString
+            text: qsTr("This records rings used by outputs spent on WAZN on a key reusing chain, so that the same ring may be reused to avoid privacy issues.") + translationManager.emptyString
             wrapMode: Text.Wrap
             Layout.fillWidth: true;
             color: Style.defaultFontColor

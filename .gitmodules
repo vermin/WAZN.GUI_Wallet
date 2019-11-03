@@ -1,4 +1,4 @@
 [submodule "WAZN"]
 	path = WAZN
-	url = https://github.com/vermin/WAZN
+	url = https://github.com/vermin/WAZN.git
 	ignore = all

@@ -1,6 +1,6 @@
 #!/bin/bash
 MONERO_URL=https://github.com/Project-WAZN/WAZN.git
-MONERO_BRANCH=dev
+MONERO_BRANCH=master
 
 pushd $(pwd)
 ROOT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
@@ -13,7 +13,7 @@ BUILD_LIBWALLET=false
 
 # init and update wazn submodule
 if [ ! -d $MONERO_DIR/src ]; then
-    git submodule init wazn
+    git submodule init WAZN
 fi
 git submodule update --remote
 git -C $MONERO_DIR fetch

@@ -1,4 +1,4 @@
-[submodule "wazn"]
-	path = wazn
-	url = https://github.com/Project-WAZN/WAZN
-        ignore = all
+[submodule "WAZN"]
+	path = WAZN
+	url = https://github.com/vermin/WAZN
+	ignore = all

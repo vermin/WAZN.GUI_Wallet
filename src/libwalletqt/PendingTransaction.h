@@ -25,16 +25,16 @@ class PendingTransaction : public QObject
 
 public:
     enum Status {
-        Status_Ok       = WAZN::PendingTransaction::Status_Ok,
-        Status_Error    = WAZN::PendingTransaction::Status_Error,
-        Status_Critical    = WAZN::PendingTransaction::Status_Critical
+        Status_Ok       = Wazn::PendingTransaction::Status_Ok,
+        Status_Error    = Wazn::PendingTransaction::Status_Error,
+        Status_Critical    = Wazn::PendingTransaction::Status_Critical
     };
     Q_ENUM(Status)
 
     enum Priority {
-        Priority_Low    = WAZN::PendingTransaction::Priority_Low,
-        Priority_Medium = WAZN::PendingTransaction::Priority_Medium,
-        Priority_High   = WAZN::PendingTransaction::Priority_High
+        Priority_Low    = Wazn::PendingTransaction::Priority_Low,
+        Priority_Medium = Wazn::PendingTransaction::Priority_Medium,
+        Priority_High   = Wazn::PendingTransaction::Priority_High
     };
     Q_ENUM(Priority)
 
@@ -51,11 +51,11 @@ public:
     Q_INVOKABLE void setFilename(const QString &fileName);
 
 private:
-    explicit PendingTransaction(WAZN::PendingTransaction * pt, QObject *parent = 0);
+    explicit PendingTransaction(Wazn::PendingTransaction * pt, QObject *parent = 0);
 
 private:
     friend class Wallet;
-    WAZN::PendingTransaction * m_pimpl;
+    Wazn::PendingTransaction * m_pimpl;
     QString m_fileName;
 };
 

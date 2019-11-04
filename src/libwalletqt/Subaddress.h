@@ -40,8 +40,8 @@ class Subaddress : public QObject
 {
     Q_OBJECT
 public:
-    Q_INVOKABLE QList<WAZN::SubaddressRow*> getAll(bool update = false) const;
-    Q_INVOKABLE WAZN::SubaddressRow * getRow(int index) const;
+    Q_INVOKABLE QList<Wazn::SubaddressRow*> getAll(bool update = false) const;
+    Q_INVOKABLE Wazn::SubaddressRow * getRow(int index) const;
     Q_INVOKABLE void addRow(quint32 accountIndex, const QString &label) const;
     Q_INVOKABLE void setLabel(quint32 accountIndex, quint32 addressIndex, const QString &label) const;
     Q_INVOKABLE void refresh(quint32 accountIndex) const;
@@ -54,10 +54,10 @@ signals:
 public slots:
 
 private:
-    explicit Subaddress(WAZN::Subaddress * subaddressImpl, QObject *parent);
+    explicit Subaddress(Wazn::Subaddress * subaddressImpl, QObject *parent);
     friend class Wallet;
-    WAZN::Subaddress * m_subaddressImpl;
-    mutable QList<WAZN::SubaddressRow*> m_rows;
+    Wazn::Subaddress * m_subaddressImpl;
+    mutable QList<Wazn::SubaddressRow*> m_rows;
 };
 
 #endif // SUBADDRESS_H

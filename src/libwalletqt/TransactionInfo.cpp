@@ -127,7 +127,7 @@ QList<Transfer*> TransactionInfo::transfers() const
     return m_transfers;
 }
 
-TransactionInfo::TransactionInfo(WAZN::TransactionInfo *pimpl, QObject *parent)
+TransactionInfo::TransactionInfo(Wazn::TransactionInfo *pimpl, QObject *parent)
     : QObject(parent), m_pimpl(pimpl)
 {
 

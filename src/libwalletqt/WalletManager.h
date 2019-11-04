@@ -20,14 +20,14 @@ class WalletManager : public QObject
 
 public:
     enum LogLevel {
-        LogLevel_Silent = WAZN::WalletManagerFactory::LogLevel_Silent,
-        LogLevel_0 = WAZN::WalletManagerFactory::LogLevel_0,
-        LogLevel_1 = WAZN::WalletManagerFactory::LogLevel_1,
-        LogLevel_2 = WAZN::WalletManagerFactory::LogLevel_2,
-        LogLevel_3 = WAZN::WalletManagerFactory::LogLevel_3,
-        LogLevel_4 = WAZN::WalletManagerFactory::LogLevel_4,
-        LogLevel_Min = WAZN::WalletManagerFactory::LogLevel_Min,
-        LogLevel_Max = WAZN::WalletManagerFactory::LogLevel_Max,
+        LogLevel_Silent = Wazn::WalletManagerFactory::LogLevel_Silent,
+        LogLevel_0 = Wazn::WalletManagerFactory::LogLevel_0,
+        LogLevel_1 = Wazn::WalletManagerFactory::LogLevel_1,
+        LogLevel_2 = Wazn::WalletManagerFactory::LogLevel_2,
+        LogLevel_3 = Wazn::WalletManagerFactory::LogLevel_3,
+        LogLevel_4 = Wazn::WalletManagerFactory::LogLevel_4,
+        LogLevel_Min = Wazn::WalletManagerFactory::LogLevel_Min,
+        LogLevel_Max = Wazn::WalletManagerFactory::LogLevel_Max,
     };
 
     static WalletManager * instance();
@@ -160,7 +160,7 @@ private:
 
     explicit WalletManager(QObject *parent = 0);
     static WalletManager * m_instance;
-    WAZN::WalletManager * m_pimpl;
+    Wazn::WalletManager * m_pimpl;
     QMutex m_mutex;
     QPointer<Wallet> m_currentWallet;
 

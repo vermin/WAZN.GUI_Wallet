@@ -62,7 +62,7 @@ QVariant SubaddressModel::data(const QModelIndex &index, int role) const
     if (!index.isValid() || index.row() < 0 || (unsigned)index.row() >= m_subaddress->count())
         return {};
 
-    WAZN::SubaddressRow * sr = m_subaddress->getRow(index.row());
+    Wazn::SubaddressRow * sr = m_subaddress->getRow(index.row());
     if (!sr)
         return {};
 

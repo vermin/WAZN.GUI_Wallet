@@ -9,7 +9,7 @@ Portions Copyright (c) 2012-2013 The Cryptonote developers
 
 - Web: [wazn.io](https://wazn.io)
 - Mail: [dev@wazn.io](mailto:dev@wazn.io)
-- GitHub: [github.com/Project-WAZN/WAZN](https://github.com/Project-WAZN/WAZN)
+- GitHub: [github.com/Project-WAZN/wazn](https://github.com/Project-WAZN/wazn)
 
 ## Vulnerability response
 
@@ -30,7 +30,7 @@ Other devices we wish to include are video gaming consoles and smart home applia
 
 ## About this project
 
-This is the GUI for the [core WAZN implementation](https://github.com/Project-WAZN/WAZN). It is open source and completely free to use without restrictions, except for those specified in the license agreement below. There are no restrictions on anyone creating an alternative implementation of WAZN that uses the protocol and network in a compatible manner.
+This is the GUI for the [core WAZN implementation](https://github.com/Project-WAZN/wazn). It is open source and completely free to use without restrictions, except for those specified in the license agreement below. There are no restrictions on anyone creating an alternative implementation of WAZN that uses the protocol and network in a compatible manner.
 
 As with many development projects, the repository on Github is considered to be the "staging" area for the latest changes. Before changes are merged into that branch on the main repository, they are tested by individual developers in their own branches, submitted as a pull request, and then subsequently tested by contributors who focus on testing and code reviews. That having been said, the repository should be carefully considered before using it in a production environment, unless there is a patch in the repository for a particular show-stopping issue you are experiencing. It is generally a better idea to use a tagged release for stability.
 
@@ -81,12 +81,12 @@ See [LICENSE](LICENSE).
 
 3. Clone repository
 
-    `git clone https://github.com/Project-WAZN/WAZN.Gui_Wallet`
+    `git clone https://github.com/Project-WAZN/wazn-gui`
 
 4. Build
 
     ```
-    cd WAZN.GUI_Wallet
+    cd wazn-gui
     QT_SELECT=5 ./build.sh
     ```
 
@@ -98,7 +98,7 @@ The executable can be found in the build/release/bin folder.
 
 2. Install [homebrew](http://brew.sh/)
 
-3. Install [WAZN](https://github.com/Project-WAZN/WAZN) dependencies:
+3. Install [WAZN](https://github.com/Project-WAZN/wazn) dependencies:
 
   `brew install boost --c++11`
 
@@ -126,13 +126,13 @@ The executable can be found in the build/release/bin folder.
 
     This is the directory where Qt 5.x is installed on **your** system
 
-6. Grab an up-to-date copy of the WAZN.GUI_Wallet repository
+6. Grab an up-to-date copy of the wazn-gui repository
 
-  `git clone https://github.com/Project-WAZN/WAZN.GUI_Wallet.git`
+  `git clone https://github.com/Project-WAZN/wazn-gui.git`
 
 7. Go into the repository
 
-  `cd WAZN.GUI_Wallet`
+  `cd wazn-gui`
 
 8. Start the build
 
@@ -167,7 +167,7 @@ The WAZN GUI Wallet on Windows is 64 bits only; 32-bit Windows GUI builds are no
     pacman -S mingw-w64-x86_64-toolchain make mingw-w64-x86_64-cmake mingw-w64-x86_64-boost mingw-w64-x86_64-openssl mingw-w64-x86_64-zeromq mingw-w64-x86_64-libsodium mingw-w64-x86_64-hidapi
     ```
 
-    You find more details about those dependencies in the [WAZN documentation](https://github.com/Project-WAZN/WAZN). Note that that there is no more need to compile Boost from source; like everything else, you can install it now with a MSYS2 package.
+    You find more details about those dependencies in the [WAZN documentation](https://github.com/Project-WAZN/wazn). Note that that there is no more need to compile Boost from source; like everything else, you can install it now with a MSYS2 package.
 
 4. Install Qt5
 
@@ -192,14 +192,14 @@ The WAZN GUI Wallet on Windows is 64 bits only; 32-bit Windows GUI builds are no
 6. Clone repository
 
     ```
-    git clone https://github.com/Project-WAZN/WAZN.GUI_Wallet.git
+    git clone https://github.com/Project-WAZN/wazn-gui.git
     ```
 
 7. Build
 
     ```
-    cd WAZN.GUI_Wallet
-    ./build.sh
+    cd wazn-gui
+    source ./build.sh release-static
     cd build
     make deploy
     ```

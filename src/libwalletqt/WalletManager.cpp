@@ -32,8 +32,8 @@ Wallet *WalletManager::createWallet(const QString &path, const QString &password
         qDebug() << "Closing open m_currentWallet" << m_currentWallet;
         delete m_currentWallet;
     }
-    WAZN::Wallet * w = m_pimpl->createWallet(path.toStdString(), password.toStdString(),
-                                                  language.toStdString(), static_cast<WAZN::NetworkType>(nettype));
+    Wazn::Wallet * w = m_pimpl->createWallet(path.toStdString(), password.toStdString(),
+                                                  language.toStdString(), static_cast<Wazn::NetworkType>(nettype));
     m_currentWallet  = new Wallet(w);
     return m_currentWallet;
 }
@@ -48,7 +48,7 @@ Wallet *WalletManager::openWallet(const QString &path, const QString &password, 
     qDebug("%s: opening wallet at %s, nettype = %d ",
            __PRETTY_FUNCTION__, qPrintable(path), nettype);
 
-    WAZN::Wallet * w =  m_pimpl->openWallet(path.toStdString(), password.toStdString(), static_cast<WAZN::NetworkType>(nettype));
+    Wazn::Wallet * w =  m_pimpl->openWallet(path.toStdString(), password.toStdString(), static_cast<Wazn::NetworkType>(nettype));
     qDebug("%s: opened wallet: %s, status: %d", __PRETTY_FUNCTION__, w->address(0, 0).c_str(), w->status());
     m_currentWallet  = new Wallet(w);
 
@@ -83,7 +83,7 @@ Wallet *WalletManager::recoveryWallet(const QString &path, const QString &memo, 
         qDebug() << "Closing open m_currentWallet" << m_currentWallet;
         delete m_currentWallet;
     }
-    WAZN::Wallet * w = m_pimpl->recoveryWallet(path.toStdString(), memo.toStdString(), static_cast<WAZN::NetworkType>(nettype), restoreHeight);
+    Wazn::Wallet * w = m_pimpl->recoveryWallet(path.toStdString(), memo.toStdString(), static_cast<Wazn::NetworkType>(nettype), restoreHeight);
     m_currentWallet = new Wallet(w);
     return m_currentWallet;
 }
@@ -98,7 +98,7 @@ Wallet *WalletManager::createWalletFromKeys(const QString &path, const QString &
         delete m_currentWallet;
         m_currentWallet = NULL;
     }
-    WAZN::Wallet * w = m_pimpl->createWalletFromKeys(path.toStdString(), language.toStdString(), static_cast<WAZN::NetworkType>(nettype), restoreHeight,
+    Wazn::Wallet * w = m_pimpl->createWalletFromKeys(path.toStdString(), language.toStdString(), static_cast<Wazn::NetworkType>(nettype), restoreHeight,
                                                        address.toStdString(), viewkey.toStdString(), spendkey.toStdString());
     m_currentWallet = new Wallet(w);
     return m_currentWallet;
@@ -113,7 +113,7 @@ Wallet *WalletManager::createWalletFromDevice(const QString &path, const QString
         delete m_currentWallet;
         m_currentWallet = NULL;
     }
-    WAZN::Wallet * w = m_pimpl->createWalletFromDevice(path.toStdString(), password.toStdString(), static_cast<WAZN::NetworkType>(nettype),
+    Wazn::Wallet * w = m_pimpl->createWalletFromDevice(path.toStdString(), password.toStdString(), static_cast<Wazn::NetworkType>(nettype),
                                                          deviceName.toStdString(), restoreHeight, subaddressLookahead.toStdString());
     m_currentWallet = new Wallet(w);
     return m_currentWallet;
@@ -180,7 +180,7 @@ QString WalletManager::walletLanguage(const QString &locale)
 
 quint64 WalletManager::maximumAllowedAmount() const
 {
-    return WAZN::Wallet::maximumAllowedAmount();
+    return Wazn::Wallet::maximumAllowedAmount();
 }
 
 QString WalletManager::maximumAllowedAmountAsSting() const
@@ -192,33 +192,33 @@ QString WalletManager::maximumAllowedAmountAsSting() const
 
 QString WalletManager::displayAmount(quint64 amount) const
 {
-    return QString::fromStdString(WAZN::Wallet::displayAmount(amount));
+    return QString::fromStdString(Wazn::Wallet::displayAmount(amount));
 }
 
 quint64 WalletManager::amountFromString(const QString &amount) const
 {
-    return WAZN::Wallet::amountFromString(amount.toStdString());
+    return Wazn::Wallet::amountFromString(amount.toStdString());
 }
 
 quint64 WalletManager::amountFromDouble(double amount) const
 {
-    return WAZN::Wallet::amountFromDouble(amount);
+    return Wazn::Wallet::amountFromDouble(amount);
 }
 
 bool WalletManager::paymentIdValid(const QString &payment_id) const
 {
-    return WAZN::Wallet::paymentIdValid(payment_id.toStdString());
+    return Wazn::Wallet::paymentIdValid(payment_id.toStdString());
 }
 
 bool WalletManager::addressValid(const QString &address, NetworkType::Type nettype) const
 {
-    return WAZN::Wallet::addressValid(address.toStdString(), static_cast<WAZN::NetworkType>(nettype));
+    return Wazn::Wallet::addressValid(address.toStdString(), static_cast<Wazn::NetworkType>(nettype));
 }
 
 bool WalletManager::keyValid(const QString &key, const QString &address, bool isViewKey,  NetworkType::Type nettype) const
 {
     std::string error;
-    if(!WAZN::Wallet::keyValid(key.toStdString(), address.toStdString(), isViewKey, static_cast<WAZN::NetworkType>(nettype), error)){
+    if(!Wazn::Wallet::keyValid(key.toStdString(), address.toStdString(), isViewKey, static_cast<Wazn::NetworkType>(nettype), error)){
         qDebug() << QString::fromStdString(error);
         return false;
     }
@@ -227,7 +227,7 @@ bool WalletManager::keyValid(const QString &key, const QString &address, bool is
 
 QString WalletManager::paymentIdFromAddress(const QString &address, NetworkType::Type nettype) const
 {
-    return QString::fromStdString(WAZN::Wallet::paymentIdFromAddress(address.toStdString(), static_cast<WAZN::NetworkType>(nettype)));
+    return QString::fromStdString(Wazn::Wallet::paymentIdFromAddress(address.toStdString(), static_cast<Wazn::NetworkType>(nettype)));
 }
 
 void WalletManager::setDaemonAddress(const QString &address)
@@ -286,7 +286,7 @@ bool WalletManager::localDaemonSynced() const
 
 bool WalletManager::isDaemonLocal(const QString &daemon_address) const
 {
-    return WAZN::Utils::isAddressLocal(daemon_address.toStdString());
+    return Wazn::Utils::isAddressLocal(daemon_address.toStdString());
 }
 
 QString WalletManager::resolveOpenAlias(const QString &address) const
@@ -305,12 +305,12 @@ bool WalletManager::parse_uri(const QString &uri, QString &address, QString &pay
 
 void WalletManager::setLogLevel(int logLevel)
 {
-    WAZN::WalletManagerFactory::setLogLevel(logLevel);
+    Wazn::WalletManagerFactory::setLogLevel(logLevel);
 }
 
 void WalletManager::setLogCategories(const QString &categories)
 {
-    WAZN::WalletManagerFactory::setLogCategories(categories.toStdString());
+    Wazn::WalletManagerFactory::setLogCategories(categories.toStdString());
 }
 
 QString WalletManager::urlToLocalPath(const QUrl &url) const
@@ -367,7 +367,7 @@ void WalletManager::checkUpdatesAsync(const QString &software, const QString &su
 QString WalletManager::checkUpdates(const QString &software, const QString &subdir) const
 {
   qDebug() << "Checking for updates";
-  const std::tuple<bool, std::string, std::string, std::string, std::string> result = WAZN::WalletManager::checkUpdates(software.toStdString(), subdir.toStdString());
+  const std::tuple<bool, std::string, std::string, std::string, std::string> result = Wazn::WalletManager::checkUpdates(software.toStdString(), subdir.toStdString());
   if (!std::get<0>(result))
     return QString("");
   return QString::fromStdString(std::get<1>(result) + "|" + std::get<2>(result) + "|" + std::get<3>(result) + "|" + std::get<4>(result));
@@ -393,5 +393,5 @@ bool WalletManager::clearWalletCache(const QString &wallet_path) const
 
 WalletManager::WalletManager(QObject *parent) : QObject(parent)
 {
-    m_pimpl =  WAZN::WalletManagerFactory::getWalletManager();
+    m_pimpl =  Wazn::WalletManagerFactory::getWalletManager();
 }

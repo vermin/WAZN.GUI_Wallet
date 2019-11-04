@@ -27,7 +27,7 @@ namespace {
     static const int WALLET_CONNECTION_STATUS_CACHE_TTL_SECONDS = 5;
 }
 
-class WalletListenerImpl : public  WAZN::WalletListener
+class WalletListenerImpl : public  Wazn::WalletListener
 {
 public:
     WalletListenerImpl(Wallet * w)
@@ -110,11 +110,11 @@ NetworkType::Type Wallet::nettype() const
 
 void Wallet::updateConnectionStatusAsync()
 {
-    QFuture<WAZN::Wallet::ConnectionStatus> future = QtConcurrent::run(m_walletImpl, &WAZN::Wallet::connected);
-    QFutureWatcher<WAZN::Wallet::ConnectionStatus> *connectionWatcher = new QFutureWatcher<WAZN::Wallet::ConnectionStatus>();
+    QFuture<Wazn::Wallet::ConnectionStatus> future = QtConcurrent::run(m_walletImpl, &Wazn::Wallet::connected);
+    QFutureWatcher<Wazn::Wallet::ConnectionStatus> *connectionWatcher = new QFutureWatcher<Wazn::Wallet::ConnectionStatus>();
 
-    connect(connectionWatcher, &QFutureWatcher<WAZN::Wallet::ConnectionStatus>::finished, [=]() {
-        QFuture<WAZN::Wallet::ConnectionStatus> future = connectionWatcher->future();
+    connect(connectionWatcher, &QFutureWatcher<Wazn::Wallet::ConnectionStatus>::finished, [=]() {
+        QFuture<Wazn::Wallet::ConnectionStatus> future = connectionWatcher->future();
         connectionWatcher->deleteLater();
         ConnectionStatus newStatus = static_cast<ConnectionStatus>(future.result());
         if (newStatus != m_connectionStatus || !m_initialized) {
@@ -393,9 +393,9 @@ PendingTransaction *Wallet::createTransaction(const QString &dst_addr, const QSt
                                               PendingTransaction::Priority priority)
 {
     std::set<uint32_t> subaddr_indices;
-    WAZN::PendingTransaction * ptImpl = m_walletImpl->createTransaction(
+    Wazn::PendingTransaction * ptImpl = m_walletImpl->createTransaction(
                 dst_addr.toStdString(), payment_id.toStdString(), amount, mixin_count,
-                static_cast<WAZN::PendingTransaction::Priority>(priority), currentSubaddressAccount(), subaddr_indices);
+                static_cast<Wazn::PendingTransaction::Priority>(priority), currentSubaddressAccount(), subaddr_indices);
     PendingTransaction * result = new PendingTransaction(ptImpl,0);
     return result;
 }
@@ -421,9 +421,9 @@ PendingTransaction *Wallet::createTransactionAll(const QString &dst_addr, const 
                                                  quint32 mixin_count, PendingTransaction::Priority priority)
 {
     std::set<uint32_t> subaddr_indices;
-    WAZN::PendingTransaction * ptImpl = m_walletImpl->createTransaction(
-                dst_addr.toStdString(), payment_id.toStdString(), WAZN::optional<uint64_t>(), mixin_count,
-                static_cast<WAZN::PendingTransaction::Priority>(priority), currentSubaddressAccount(), subaddr_indices);
+    Wazn::PendingTransaction * ptImpl = m_walletImpl->createTransaction(
+                dst_addr.toStdString(), payment_id.toStdString(), Wazn::optional<uint64_t>(), mixin_count,
+                static_cast<Wazn::PendingTransaction::Priority>(priority), currentSubaddressAccount(), subaddr_indices);
     PendingTransaction * result = new PendingTransaction(ptImpl, this);
     return result;
 }
@@ -447,7 +447,7 @@ void Wallet::createTransactionAllAsync(const QString &dst_addr, const QString &p
 
 PendingTransaction *Wallet::createSweepUnmixableTransaction()
 {
-    WAZN::PendingTransaction * ptImpl = m_walletImpl->createSweepUnmixableTransaction();
+    Wazn::PendingTransaction * ptImpl = m_walletImpl->createSweepUnmixableTransaction();
     PendingTransaction * result = new PendingTransaction(ptImpl, this);
     return result;
 }
@@ -469,7 +469,7 @@ void Wallet::createSweepUnmixableTransactionAsync()
 UnsignedTransaction * Wallet::loadTxFile(const QString &fileName)
 {
     qDebug() << "Trying to sign " << fileName;
-    WAZN::UnsignedTransaction * ptImpl = m_walletImpl->loadUnsignedTx(fileName.toStdString());
+    Wazn::UnsignedTransaction * ptImpl = m_walletImpl->loadUnsignedTx(fileName.toStdString());
     UnsignedTransaction * result = new UnsignedTransaction(ptImpl, m_walletImpl, this);
     return result;
 }
@@ -543,7 +543,7 @@ SubaddressModel *Wallet::subaddressModel()
 
 QString Wallet::generatePaymentId() const
 {
-    return QString::fromStdString(WAZN::Wallet::genPaymentId());
+    return QString::fromStdString(Wazn::Wallet::genPaymentId());
 }
 
 QString Wallet::integratedAddress(const QString &paymentId) const
@@ -847,7 +847,7 @@ void Wallet::keyReuseMitigation2(bool mitigation)
     m_walletImpl->keyReuseMitigation2(mitigation);
 }
 
-Wallet::Wallet(WAZN::Wallet *w, QObject *parent)
+Wallet::Wallet(Wazn::Wallet *w, QObject *parent)
     : QObject(parent)
     , m_walletImpl(w)
     , m_history(nullptr)
@@ -891,7 +891,7 @@ Wallet::~Wallet()
     m_addressBook = NULL;
     delete m_subaddress;
     m_subaddress = NULL;
-    //WAZN::WalletManagerFactory::getWalletManager()->closeWallet(m_walletImpl);
+    //Wazn::WalletManagerFactory::getWalletManager()->closeWallet(m_walletImpl);
     if(status() == Status_Critical)
         qDebug("Not storing wallet cache");
     else if( m_walletImpl->store(""))

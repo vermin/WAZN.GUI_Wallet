@@ -122,11 +122,11 @@ int main(int argc, char *argv[])
     parser.addHelpOption();
     parser.process(app);
 
-    WAZN::Utils::onStartup();
+    Wazn::Utils::onStartup();
 
     // Log settings
     const QString logPath = getLogPath(parser.value(logPathOption));
-    WAZN::Wallet::init(argv[0], "wazn-wallet-gui", logPath.toStdString().c_str(), true);
+    Wazn::Wallet::init(argv[0], "wazn-wallet-gui", logPath.toStdString().c_str(), true);
     qInstallMessageHandler(messageHandler);
 
 

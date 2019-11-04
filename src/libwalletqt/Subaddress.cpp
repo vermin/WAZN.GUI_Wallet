@@ -31,14 +31,14 @@
 #include "Subaddress.h"
 #include <QDebug>
 
-Subaddress::Subaddress(WAZN::Subaddress *subaddressImpl, QObject *parent)
+Subaddress::Subaddress(Wazn::Subaddress *subaddressImpl, QObject *parent)
   : QObject(parent), m_subaddressImpl(subaddressImpl)
 {
     qDebug(__FUNCTION__);
     getAll();
 }
 
-QList<WAZN::SubaddressRow*> Subaddress::getAll(bool update) const
+QList<Wazn::SubaddressRow*> Subaddress::getAll(bool update) const
 {
     qDebug(__FUNCTION__);
 
@@ -57,7 +57,7 @@ QList<WAZN::SubaddressRow*> Subaddress::getAll(bool update) const
     return m_rows;
 }
 
-WAZN::SubaddressRow * Subaddress::getRow(int index) const
+Wazn::SubaddressRow * Subaddress::getRow(int index) const
 {
     return m_rows.at(index);
 }

@@ -41,11 +41,11 @@ public slots:
 
 
 private:
-    explicit TransactionHistory(WAZN::TransactionHistory * pimpl, QObject *parent = 0);
+    explicit TransactionHistory(Wazn::TransactionHistory * pimpl, QObject *parent = 0);
 
 private:
     friend class Wallet;
-    WAZN::TransactionHistory * m_pimpl;
+    Wazn::TransactionHistory * m_pimpl;
     mutable QList<TransactionInfo*> m_tinfo;
     mutable QDateTime   m_firstDateTime;
     mutable QDateTime   m_lastDateTime;

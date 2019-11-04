@@ -9,9 +9,9 @@ class NetworkType : public QObject
 
 public:
     enum Type : uint8_t {
-        MAINNET = cryptonote::MAINNET,
-        TESTNET = cryptonote::TESTNET,
-        STAGENET = cryptonote::STAGENET
+        MAINNET = Wazn::MAINNET,
+        TESTNET = Wazn::TESTNET,
+        STAGENET = Wazn::STAGENET
     };
     Q_ENUM(Type)
 };

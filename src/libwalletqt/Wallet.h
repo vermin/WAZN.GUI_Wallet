@@ -7,7 +7,7 @@
 #include <QList>
 #include <QtConcurrent/QtConcurrent>
 
-#include "wallet/api/wallet2_api.h" // we need to have an access to the WAZN::Wallet::Status enum here;
+#include "wallet/api/wallet2_api.h" // we need to have an access to the Wazn::Wallet::Status enum here;
 #include "PendingTransaction.h" // we need to have an access to the PendingTransaction::Priority enum here;
 #include "UnsignedTransaction.h"
 #include "NetworkType.h"
@@ -56,17 +56,17 @@ public:
 
 
     enum Status {
-        Status_Ok       = WAZN::Wallet::Status_Ok,
-        Status_Error    = WAZN::Wallet::Status_Error,
-        Status_Critical = WAZN::Wallet::Status_Critical
+        Status_Ok       = Wazn::Wallet::Status_Ok,
+        Status_Error    = Wazn::Wallet::Status_Error,
+        Status_Critical = Wazn::Wallet::Status_Critical
     };
 
     Q_ENUM(Status)
 
     enum ConnectionStatus {
-        ConnectionStatus_Connected       = WAZN::Wallet::ConnectionStatus_Connected,
-        ConnectionStatus_Disconnected    = WAZN::Wallet::ConnectionStatus_Disconnected,
-        ConnectionStatus_WrongVersion    = WAZN::Wallet::ConnectionStatus_WrongVersion
+        ConnectionStatus_Connected       = Wazn::Wallet::ConnectionStatus_Connected,
+        ConnectionStatus_Disconnected    = Wazn::Wallet::ConnectionStatus_Disconnected,
+        ConnectionStatus_WrongVersion    = Wazn::Wallet::ConnectionStatus_WrongVersion
     };
 
     Q_ENUM(ConnectionStatus)
@@ -320,13 +320,13 @@ signals:
 
 private:
     Wallet(QObject * parent = nullptr);
-    Wallet(WAZN::Wallet *w, QObject * parent = 0);
+    Wallet(Wazn::Wallet *w, QObject * parent = 0);
     ~Wallet();
 private:
     friend class WalletManager;
     friend class WalletListenerImpl;
     //! libwallet's
-    WAZN::Wallet * m_walletImpl;
+    Wazn::Wallet * m_walletImpl;
     // history lifetime managed by wallet;
     TransactionHistory * m_history;
     // Used for UI history view
@@ -352,7 +352,7 @@ private:
     bool m_connectionStatusRunning;
     QString m_daemonUsername;
     QString m_daemonPassword;
-    WAZN::WalletListener *m_walletListener;
+    Wazn::WalletListener *m_walletListener;
 };
 
 

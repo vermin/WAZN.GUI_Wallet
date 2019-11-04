@@ -12,7 +12,7 @@
 #include "UnsignedTransaction.h"
 #include "NetworkType.h"
 
-namespace WAZN {
+namespace Wazn {
     class Wallet; // forward declaration
 }
 

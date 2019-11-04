@@ -6,7 +6,7 @@
 #include <QList>
 #include <QDateTime>
 
-namespace WAZN {
+namespace Wazn {
 class AddressBook;
 }
 class AddressBookRow;

@@ -9,7 +9,7 @@
 #include "NetworkType.h"
 
 class Wallet;
-namespace WAZN {
+namespace Wazn {
     class WalletManager;
 }
 

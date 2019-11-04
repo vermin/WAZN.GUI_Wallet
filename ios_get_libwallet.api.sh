@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-# 3 header files required by wazn are missing from the IOS SDK. I copied them from iphoneSimulator SDK
+# 3 header files required by WAZN are missing from the IOS SDK. I copied them from iphoneSimulator SDK
 # cd /Applications/XCode.app
 # sudo cp ./Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/usr/include/sys/vmmeter.h ./Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/include/sys/
 # sudo cp ./Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator.sdk/usr/include/netinet/udp_var.h ./Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/include/netinet/

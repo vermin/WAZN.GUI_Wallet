@@ -8,28 +8,28 @@ ROOT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 source $ROOT_DIR/utils.sh
 
 INSTALL_DIR=$ROOT_DIR/wallet
-WAZN_DIR=$ROOT_DIR/WAZN
+WAZN_DIR=$ROOT_DIR/wazn
 BUILD_LIBWALLET=false
 
 # init and update wazn submodule
 if [ ! -d $WAZN_DIR/src ]; then
-    git submodule init WAZN
+    git submodule init wazn
 fi
 git submodule update --remote
 git -C $WAZN_DIR fetch
 git -C $WAZN_DIR checkout master
 
-# get wazn core tag
+# get WAZN core tag
 pushd $WAZN_DIR
 get_tag
 popd
-# create local wazn branch
+# create local WAZN branch
 git -C $WAZN_DIR checkout -B $VERSIONTAG
 
 git -C $WAZN_DIR submodule init
 git -C $WAZN_DIR submodule update
 
-# Merge wazn PR dependencies
+# Merge WAZN PR dependencies
 
 # Workaround for git username requirements
 # Save current user settings and revert back when we are done with merging PR's
@@ -39,7 +39,7 @@ git -C $WAZN_DIR config user.name "vermin"
 git -C $WAZN_DIR config user.email "vermin@techie.com"
 # check for PR requirements in most recent commit message (i.e requires #xxxx)
 for PR in $(git log --format=%B -n 1 | grep -io "requires #[0-9]*" | sed 's/[^0-9]*//g'); do
-    echo "Merging wazn push request #$PR"
+    echo "Merging WAZN push request #$PR"
     # fetch pull request and merge
     git -C $WAZN_DIR fetch origin pull/$PR/head:PR-$PR
     git -C $WAZN_DIR merge --quiet PR-$PR  -m "Merge WAZN PR #$PR"
@@ -119,7 +119,7 @@ else
 fi
 
 
-echo "cleaning up existing wazn build dir, libs and includes"
+echo "cleaning up existing WAZN build dir, libs and includes"
 rm -fr $WAZN_DIR/build
 rm -fr $WAZN_DIR/lib
 rm -fr $WAZN_DIR/include

@@ -7,7 +7,7 @@
 
 #include <wallet/api/wallet2_api.h>
 
-//namespace WAZN {
+//namespace Wazn {
 //class PendingTransaction;
 //}
 

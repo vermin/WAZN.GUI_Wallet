@@ -198,7 +198,7 @@ ColumnLayout {
                 daemonPortText: {
                     var node_split = persistentSettings.bootstrapNodeAddress.split(":");
                     if(node_split.length == 2){
-                        (node_split[1].trim() == "") ? "21061" : node_split[1];
+                        (node_split[1].trim() == "") ? "11787" : node_split[1];
                     } else {
                         return ""
                     }
@@ -230,7 +230,7 @@ ColumnLayout {
                 id: remoteNodeEdit
                 property var rna: persistentSettings.remoteNodeAddress
                 daemonAddrText: rna.search(":") != -1 ? rna.split(":")[0].trim() : ""
-                daemonPortText: rna.search(":") != -1 ? (rna.split(":")[1].trim() == "") ? "21061" : persistentSettings.remoteNodeAddress.split(":")[1] : ""
+                daemonPortText: rna.search(":") != -1 ? (rna.split(":")[1].trim() == "") ? "11787" : persistentSettings.remoteNodeAddress.split(":")[1] : ""
 
                 placeholderFontBold: true
                 placeholderFontFamily: "Arial"

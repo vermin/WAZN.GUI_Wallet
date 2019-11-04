@@ -63,7 +63,7 @@ fi
 source ./utils.sh
 pushd $(pwd)
 ROOT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-WAZN_DIR=WAZN
+WAZN_DIR=wazn
 WAZND_EXEC=waznd
 
 MAKE='make'

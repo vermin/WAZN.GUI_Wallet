@@ -104,7 +104,7 @@ int main(int argc, char *argv[])
     MainApp app(argc, argv);
 
     app.setApplicationName("wazn");
-    app.setOrganizationDomain("wazn.com");
+    app.setOrganizationDomain("wazn.io");
     app.setOrganizationName("wazn-project");
 
 #if defined(Q_OS_LINUX)
@@ -272,7 +272,7 @@ int main(int argc, char *argv[])
 
     if (!waznAccountsRootDir.empty())
     {
-        QString waznAccountsDir = waznAccountsRootDir.at(0) + "/WAZN/wallets";
+        QString waznAccountsDir = waznAccountsRootDir.at(0) + "/wazn/wallets";
         engine.rootContext()->setContextProperty("waznAccountsDir", waznAccountsDir);
     }
 
@@ -282,7 +282,7 @@ int main(int argc, char *argv[])
     if (accountName.isEmpty())
         accountName = qgetenv("USERNAME"); // Windows
     if (accountName.isEmpty())
-        accountName = "My wazn Account";
+        accountName = "My WAZN Account";
 
     engine.rootContext()->setContextProperty("defaultAccountName", accountName);
     engine.rootContext()->setContextProperty("applicationDirectory", QApplication::applicationDirPath());

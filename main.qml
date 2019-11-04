@@ -47,7 +47,7 @@ import "js/Windows.js" as Windows
 
 ApplicationWindow {
     id: appWindow
-    title: "WAZN"
+    title: "wazn"
 
     property var currentItem
     property bool whatIsEnable: false

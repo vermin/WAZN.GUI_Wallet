@@ -24,7 +24,7 @@
   <string>WAZN GUI</string>
 
   <key>CFBundleIdentifier</key>
-  <string>org.wazn.wazn-wallet-gui</string>
+  <string>project.wazn-wallet-gui</string>
 
   <key>NSSupportsAutomaticGraphicsSwitching</key>
   <true/>

@@ -1,5 +1,5 @@
 #!/bin/bash
-WAZN_URL=https://github.com/Project-WAZN/wazn.git
+WAZN_URL=https://github.com/project-wazn/wazn.git
 WAZN_BRANCH=master
 
 pushd $(pwd)

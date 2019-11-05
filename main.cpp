@@ -143,7 +143,7 @@ int main(int argc, char *argv[])
     qreal physicalDpi = QGuiApplication::primaryScreen()->physicalDotsPerInch();
     qreal calculated_ratio = physicalDpi/ref_dpi;
 
-    QString GUI_VERSION = "-";
+    QString GUI_VERSION = "v1.0.0";
     QFile f(":/version.js");
     if(!f.open(QFile::ReadOnly)) {
         qWarning() << "Could not read qrc:///version.js";

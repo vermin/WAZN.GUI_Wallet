@@ -5,11 +5,22 @@ Copyright (c) 2018-2019 uPlexa
 Copyright (c) 2014-2019 The Monero Project  
 Portions Copyright (c) 2012-2013 The Cryptonote developers
 
+## Coverage
+
+| Type      | Status |
+|-----------|--------|
+| License   | [![License](https://img.shields.io/badge/license-GPL--3.0-blue)](https://opensource.org/licenses/GPL-3.0)
+
+## Builds
+
+Ubuntu-x64  
+Win-x64
+
 ## Development resources
 
 - Web: [wazn.io](https://wazn.io)
 - Mail: [dev@wazn.io](mailto:dev@wazn.io)
-- GitHub: [github.com/Project-WAZN/wazn](https://github.com/Project-WAZN/wazn)
+- GitHub: [github.com/vermin/wazn-gui](https://github.com/vermin/wazn-gui)
 
 ## Vulnerability response
 
@@ -17,10 +28,7 @@ Portions Copyright (c) 2012-2013 The Cryptonote developers
 
 ## Introduction
 
-WAZN  is an anonymous, secure, untraceable, decentralized digital currency, much like WAZN. The advantages being that lower end IoT devices are able to mine at a more efficient rate, allowing for the network to become more decentralized. Other advantages include a lightweight blockchain, fast synctimes, and fairly fast transactions (2 minute block times). It may be used by anyone, anywhere. We will reach adoption through technical advancements, whilst also maintaining a focus on the forefront: marketing to adopters.
-
-Our adoption advertising strategies revolve around a unique payment processing merchant we will be launching for WAZN. Features for said system, do not exist for any current cryptocurrency. Other strategies will include incentivizing shop owners to have their users use WAZN to pay, bringing more eyes to the ease-of-use of our cryptocurrency; whilst also lessening payment processing fee's from mass merchants and banks, all while allowing for security and anonymity.(edited)
-Other devices we wish to include are video gaming consoles and smart home appliances. More details will be released about that next year.
+WAZN is a private, secure, untraceable, decentralised digital currency. You are your bank, you control your funds, and nobody can trace your transfers unless you allow them to do so.
 
 **Privacy:** WAZN uses a cryptographically sound system to allow you to send and receive funds without your transactions being easily revealed on the blockchain (the ledger of transactions that everyone has). This ensures that your purchases, receipts, and all transfers remain absolutely private by default.
 

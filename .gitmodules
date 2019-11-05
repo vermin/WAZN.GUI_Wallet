@@ -1,4 +1,3 @@
 [submodule "wazn"]
 	path = wazn
 	url = https://github.com/Project-WAZN/wazn
-	ignore = all

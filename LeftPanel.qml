@@ -342,7 +342,7 @@ Rectangle {
                 anchors.right: parent.right
                 text: qsTr("Send") + translationManager.emptyString
                 symbol: qsTr("S") + translationManager.emptyString
-                dotColor: "#339933"
+                dotColor: "#ccffcc"
                 onClicked: {
                     parent.previousButton.checked = false
                     parent.previousButton = transferButton
@@ -462,7 +462,7 @@ Rectangle {
                 anchors.right: parent.right
                 text: qsTr("Mining") + translationManager.emptyString
                 symbol: qsTr("M") + translationManager.emptyString
-                dotColor: "#009966"
+                dotColor: "#99ffcc"
                 under: advancedButton
                 onClicked: {
                     parent.previousButton.checked = false
@@ -486,7 +486,7 @@ Rectangle {
                 anchors.right: parent.right
                 text: qsTr("Prove/Check") + translationManager.emptyString
                 symbol: qsTr("K") + translationManager.emptyString
-                dotColor: "#009966"
+                dotColor: "#66ffcc"
                 under: advancedButton
                 onClicked: {
                     parent.previousButton.checked = false
@@ -509,7 +509,7 @@ Rectangle {
                 anchors.right: parent.right
                 text: qsTr("Shared RingDB") + translationManager.emptyString
                 symbol: qsTr("G") + translationManager.emptyString
-                dotColor: "#009966"
+                dotColor: "#33cc99"
                 under: advancedButton
                 onClicked: {
                     parent.previousButton.checked = false

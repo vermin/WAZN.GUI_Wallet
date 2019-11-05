@@ -175,7 +175,7 @@ ListView {
                     Layout.leftMargin: 5 * scaleRatio
                     font.family: WaznComponents.Style.fontRegular.name
                     font.pixelSize: 14 * scaleRatio
-                    color:  (confirmations < confirmationsRequired)? "#0c8491" : "#545454"
+                    color:  (confirmations < confirmationsRequired)? "#339933" : "#545454"
                     text: {
                         if (!isPending)
                             if(confirmations < confirmationsRequired)

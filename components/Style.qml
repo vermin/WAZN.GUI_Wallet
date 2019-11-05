@@ -12,7 +12,7 @@ QtObject {
 
     property string defaultFontColor: "white"
     property string dimmedFontColor: "#BBBBBB"
-    property string errorColor: "#4607AB"
+    property string errorColor: "#006633"
     property string inputBoxBackground: "black"
     property string inputBoxBackgroundError: "#FFDDDD"
     property string inputBoxColor: "white"
@@ -21,7 +21,7 @@ QtObject {
     property string inputBorderColorInActive: Qt.rgba(255, 255, 255, 0.32)
     property string inputBorderColorInvalid: Qt.rgba(255, 0, 0, 0.40)
 
-    property string buttonBackgroundColor: "#4607AB"
+    property string buttonBackgroundColor: "#006633"
     property string buttonBackgroundColorHover: "#6606a9"
     property string buttonBackgroundColorDisabled: "#707070"
     property string buttonBackgroundColorDisabledHover: "#808080"

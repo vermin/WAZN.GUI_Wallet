@@ -292,7 +292,7 @@ Rectangle {
                         labelText: qsTr("Address") + translationManager.emptyString;
                         addressValidation: true
                         anchors.topMargin: 5 * scaleRatio
-                        placeholderText: "4.. / 8.."
+                        placeholderText: "Wazn.. / WaZn.."
                     }
                 }
             }
@@ -340,7 +340,7 @@ Rectangle {
     }
 
     function onPageCompleted() {
-        console.log("Sign/verify page loaded");
+        console.log("Sign/Verify page loaded");
     }
 
 }

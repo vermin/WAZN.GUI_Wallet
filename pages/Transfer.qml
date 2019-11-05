@@ -48,7 +48,7 @@ Rectangle {
     color: "transparent"
     property int mixin: 10  // (ring size 11)
     property string warningContent: ""
-    property string startLinkText: qsTr("<style type='text/css'>a {text-decoration: none; color: #0c8491; font-size: 14px;}</style><font size='2'> (</font><a href='#'>Start daemon</a><font size='2'>)</font>") + translationManager.emptyString
+    property string startLinkText: qsTr("<style type='text/css'>a {text-decoration: none; color: #339933; font-size: 14px;}</style><font size='2'> (</font><a href='#'>Start daemon</a><font size='2'>)</font>") + translationManager.emptyString
     property bool showAdvanced: false
 
     Clipboard { id: clipboard }
@@ -205,10 +205,10 @@ Rectangle {
               spacing: 0
               fontBold: true
               labelText: qsTr("<style type='text/css'>a {text-decoration: none; color: #858585; font-size: 14px;}</style>\
-                Address <font size='2'>  ( </font> <a href='#'>Address book</a><font size='2'> )</font>")
+                Address <font size='2'>  ( </font> <a href='#'>Address Book</a><font size='2'> )</font>")
                 + translationManager.emptyString
               labelButtonText: qsTr("Resolve") + translationManager.emptyString
-              placeholderText: "4.. / 8.."
+              placeholderText: "Wazn.. / WaZn.."
               wrapMode: Text.WrapAnywhere
               addressValidation: true
               onInputLabelLinkActivated: { appWindow.showPageRequest("AddressBook") }
@@ -427,7 +427,7 @@ Rectangle {
 
             StandardButton {
                 id: signTxButton
-                text: qsTr("Sign tx file") + translationManager.emptyString
+                text: qsTr("Sign TX file") + translationManager.emptyString
                 small: true
                 visible: !appWindow.viewOnly
                 onClicked: {

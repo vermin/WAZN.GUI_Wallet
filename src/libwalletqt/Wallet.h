@@ -222,7 +222,7 @@ public:
     //! returns transaction history model
     TransactionHistorySortFilterModel *historyModel() const;
 
-    //! returns Address book
+    //! returns Address Book
     AddressBook *addressBook() const;
 
     //! returns adress book model

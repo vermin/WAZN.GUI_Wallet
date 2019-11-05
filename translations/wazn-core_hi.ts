@@ -20,7 +20,7 @@
     </message>
     <message>
         <location filename="../pages/AddressBook.qml" line="66"/>
-        <source>4.. / 8..</source>
+        <source>Wazn.. / WaZn..</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -117,7 +117,7 @@
     </message>
     <message>
         <location filename="../pages/Dashboard.qml" line="102"/>
-        <source>&lt;style type=&apos;text/css&apos;&gt;a {text-decoration: none; color: #0c8491; font-size: 14px;}&lt;/style&gt;                        looking for security level and address book? go to &lt;a href=&apos;#&apos;&gt;Transfer&lt;/a&gt; tab</source>
+        <source>&lt;style type=&apos;text/css&apos;&gt;a {text-decoration: none; color: #339933; font-size: 14px;}&lt;/style&gt;                        looking for security level and address book? go to &lt;a href=&apos;#&apos;&gt;Transfer&lt;/a&gt; tab</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -453,7 +453,7 @@
     </message>
     <message>
         <location filename="../LeftPanel.qml" line="337"/>
-        <source>Address book</source>
+        <source>Address Book</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -493,7 +493,7 @@
     </message>
     <message>
         <location filename="../LeftPanel.qml" line="456"/>
-        <source>Prove/check</source>
+        <source>Prove/Check</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -533,7 +533,7 @@
     </message>
     <message>
         <location filename="../LeftPanel.qml" line="504"/>
-        <source>Sign/verify</source>
+        <source>Sign/Verify</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1761,7 +1761,7 @@ The old wallet cache file will be renamed and can be restored later.
     </message>
     <message>
         <location filename="../pages/Transfer.qml" line="49"/>
-        <source>&lt;style type=&apos;text/css&apos;&gt;a {text-decoration: none; color: #0c8491; font-size: 14px;}&lt;/style&gt;&lt;font size=&apos;2&apos;&gt; (&lt;/font&gt;&lt;a href=&apos;#&apos;&gt;Start daemon&lt;/a&gt;&lt;font size=&apos;2&apos;&gt;)&lt;/font&gt;</source>
+        <source>&lt;style type=&apos;text/css&apos;&gt;a {text-decoration: none; color: #339933; font-size: 14px;}&lt;/style&gt;&lt;font size=&apos;2&apos;&gt; (&lt;/font&gt;&lt;a href=&apos;#&apos;&gt;Start daemon&lt;/a&gt;&lt;font size=&apos;2&apos;&gt;)&lt;/font&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1786,7 +1786,7 @@ The old wallet cache file will be renamed and can be restored later.
     </message>
     <message>
         <location filename="../pages/Transfer.qml" line="205"/>
-        <source>&lt;style type=&apos;text/css&apos;&gt;a {text-decoration: none; color: #858585; font-size: 14px;}&lt;/style&gt;                Address &lt;font size=&apos;2&apos;&gt;  ( &lt;/font&gt; &lt;a href=&apos;#&apos;&gt;Address book&lt;/a&gt;&lt;font size=&apos;2&apos;&gt; )&lt;/font&gt;</source>
+        <source>&lt;style type=&apos;text/css&apos;&gt;a {text-decoration: none; color: #858585; font-size: 14px;}&lt;/style&gt;                Address &lt;font size=&apos;2&apos;&gt;  ( &lt;/font&gt; &lt;a href=&apos;#&apos;&gt;Address Book&lt;/a&gt;&lt;font size=&apos;2&apos;&gt; )&lt;/font&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1868,7 +1868,7 @@ The old wallet cache file will be renamed and can be restored later.
     </message>
     <message>
         <location filename="../pages/Transfer.qml" line="428"/>
-        <source>Sign tx file</source>
+        <source>Sign TX file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2054,7 +2054,7 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     </message>
     <message>
         <location filename="../pages/TxKey.qml" line="198"/>
-        <source>Paste tx proof</source>
+        <source>Paste TX proof</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2066,7 +2066,7 @@ For the case with Spend Proof, you don&apos;t need to specify the recipient addr
     <message>
         <location filename="../pages/TxKey.qml" line="84"/>
         <location filename="../pages/TxKey.qml" line="159"/>
-        <source>Paste tx ID</source>
+        <source>Paste TX id</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

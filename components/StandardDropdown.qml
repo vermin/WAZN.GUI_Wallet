@@ -192,7 +192,7 @@ Item {
                         font.family: WaznComponents.Style.fontRegular.name
                         font.bold: true
                         font.pixelSize: fontItemSize
-                        color: itemArea.containsMouse || index === column.currentIndex || itemArea.containsMouse ? "#4607AB" : "#FFFFFF"
+                        color: itemArea.containsMouse || index === column.currentIndex || itemArea.containsMouse ? "#006633" : "#FFFFFF"
                         text: qsTr(column1) + translationManager.emptyString
                     }
 

@@ -15,8 +15,8 @@
     </message>
     <message>
         <location filename="../pages/AddressBook.qml" line="66"/>
-        <source>4.. / 8..</source>
-        <translation>4.. / 8..</translation>
+        <source>Wazn.. / WaZn..</source>
+        <translation>Wazn.. / WaZn..</translation>
     </message>
     <message>
         <location filename="../pages/AddressBook.qml" line="73"/>
@@ -117,8 +117,8 @@
     </message>
     <message>
         <location filename="../pages/Dashboard.qml" line="102"/>
-        <source>&lt;style type=&apos;text/css&apos;&gt;a {text-decoration: none; color: #0c8491; font-size: 14px;}&lt;/style&gt;                        looking for security level and address book? go to &lt;a href=&apos;#&apos;&gt;Transfer&lt;/a&gt; tab</source>
-        <translation>&lt;style type=&apos;text/css&apos;&gt;a {text-decoration: none; color: #0c8491; font-size: 14px;}&lt;/style&gt;                        hledáte-li nastavení úrovně bezpečnosti a adresář? Jděte na &lt;a href=&apos;#&apos;&gt;Transfer&lt;/a&gt; tab</translation>
+        <source>&lt;style type=&apos;text/css&apos;&gt;a {text-decoration: none; color: #339933; font-size: 14px;}&lt;/style&gt;                        looking for security level and address book? go to &lt;a href=&apos;#&apos;&gt;Transfer&lt;/a&gt; tab</source>
+        <translation>&lt;style type=&apos;text/css&apos;&gt;a {text-decoration: none; color: #339933; font-size: 14px;}&lt;/style&gt;                        hledáte-li nastavení úrovně bezpečnosti a adresář? Jděte na &lt;a href=&apos;#&apos;&gt;Transfer&lt;/a&gt; tab</translation>
     </message>
 </context>
 <context>
@@ -448,7 +448,7 @@
     </message>
     <message>
         <location filename="../LeftPanel.qml" line="456"/>
-        <source>Prove/check</source>
+        <source>Prove/Check</source>
         <translation>Prokázat/zkontrolovat</translation>
     </message>
     <message>
@@ -478,7 +478,7 @@
     </message>
     <message>
         <location filename="../LeftPanel.qml" line="337"/>
-        <source>Address book</source>
+        <source>Address Book</source>
         <translation>Adresář</translation>
     </message>
     <message>
@@ -538,7 +538,7 @@
     </message>
     <message>
         <location filename="../LeftPanel.qml" line="504"/>
-        <source>Sign/verify</source>
+        <source>Sign/Verify</source>
         <translation>Podepsat/Ověřit</translation>
     </message>
     <message>
@@ -1749,8 +1749,8 @@ Starý soubor s cache pamětí bude přejmenován a může být následně obnov
     <name>Transfer</name>
     <message>
         <location filename="../pages/Transfer.qml" line="49"/>
-        <source>&lt;style type=&apos;text/css&apos;&gt;a {text-decoration: none; color: #0c8491; font-size: 14px;}&lt;/style&gt;&lt;font size=&apos;2&apos;&gt; (&lt;/font&gt;&lt;a href=&apos;#&apos;&gt;Start daemon&lt;/a&gt;&lt;font size=&apos;2&apos;&gt;)&lt;/font&gt;</source>
-        <translation>&lt;style type=&apos;text/css&apos;&gt;a {text-decoration: none; color: #0c8491; font-size: 14px;}&lt;/style&gt;&lt;font size=&apos;2&apos;&gt; (&lt;/font&gt;&lt;a href=&apos;#&apos;&gt;Start démona&lt;/a&gt;&lt;font size=&apos;2&apos;&gt;)&lt;/font&gt;</translation>
+        <source>&lt;style type=&apos;text/css&apos;&gt;a {text-decoration: none; color: #339933; font-size: 14px;}&lt;/style&gt;&lt;font size=&apos;2&apos;&gt; (&lt;/font&gt;&lt;a href=&apos;#&apos;&gt;Start daemon&lt;/a&gt;&lt;font size=&apos;2&apos;&gt;)&lt;/font&gt;</source>
+        <translation>&lt;style type=&apos;text/css&apos;&gt;a {text-decoration: none; color: #339933; font-size: 14px;}&lt;/style&gt;&lt;font size=&apos;2&apos;&gt; (&lt;/font&gt;&lt;a href=&apos;#&apos;&gt;Start démona&lt;/a&gt;&lt;font size=&apos;2&apos;&gt;)&lt;/font&gt;</translation>
     </message>
     <message>
         <location filename="../pages/Transfer.qml" line="64"/>
@@ -1790,7 +1790,7 @@ Starý soubor s cache pamětí bude přejmenován a může být následně obnov
     </message>
     <message>
         <location filename="../pages/Transfer.qml" line="205"/>
-        <source>&lt;style type=&apos;text/css&apos;&gt;a {text-decoration: none; color: #858585; font-size: 14px;}&lt;/style&gt;                Address &lt;font size=&apos;2&apos;&gt;  ( &lt;/font&gt; &lt;a href=&apos;#&apos;&gt;Address book&lt;/a&gt;&lt;font size=&apos;2&apos;&gt; )&lt;/font&gt;</source>
+        <source>&lt;style type=&apos;text/css&apos;&gt;a {text-decoration: none; color: #858585; font-size: 14px;}&lt;/style&gt;                Address &lt;font size=&apos;2&apos;&gt;  ( &lt;/font&gt; &lt;a href=&apos;#&apos;&gt;Address Book&lt;/a&gt;&lt;font size=&apos;2&apos;&gt; )&lt;/font&gt;</source>
         <translation>&lt;style type=&apos;text/css&apos;&gt;a {text-decoration: none; color: #858585; font-size: 14px;}&lt;/style&gt;                Adresa &lt;font size=&apos;2&apos;&gt;  ( &lt;/font&gt; &lt;a href=&apos;#&apos;&gt;Adresář&lt;/a&gt;&lt;font size=&apos;2&apos;&gt; )&lt;/font&gt;</translation>
     </message>
     <message>
@@ -1856,7 +1856,7 @@ Starý soubor s cache pamětí bude přejmenován a může být následně obnov
     </message>
     <message>
         <location filename="../pages/Transfer.qml" line="428"/>
-        <source>Sign tx file</source>
+        <source>Sign TX file</source>
         <translation>Podepsat tx soubor</translation>
     </message>
     <message>
@@ -2065,7 +2065,7 @@ U případu s prokázaným výdajem nemusíte zadávat adresu příjemce.</trans
     </message>
     <message>
         <location filename="../pages/TxKey.qml" line="198"/>
-        <source>Paste tx proof</source>
+        <source>Paste TX proof</source>
         <translation>Vložte důkaz tx</translation>
     </message>
     <message>
@@ -2089,7 +2089,7 @@ V případě odchozích plateb můžete získat doklad o výdajích, který dokl
     <message>
         <location filename="../pages/TxKey.qml" line="84"/>
         <location filename="../pages/TxKey.qml" line="159"/>
-        <source>Paste tx ID</source>
+        <source>Paste TX id</source>
         <translation>Vložte tx ID</translation>
     </message>
     <message>

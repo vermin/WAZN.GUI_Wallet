@@ -49,10 +49,10 @@ Item {
 
         ListModel {
             id: dotsModel
-            ListElement { dotColor: "#36B05B" }
-            ListElement { dotColor: "#36B05B" }
-            ListElement { dotColor: "#FFE00A" }
-            ListElement { dotColor: "#DBDBDB" }
+            ListElement { dotColor: "#66cc66" }
+            ListElement { dotColor: "#339933" }
+            ListElement { dotColor: "#009966" }
+            ListElement { dotColor: "#006633" }
         }
 
         Repeater {

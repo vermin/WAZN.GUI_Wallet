@@ -62,7 +62,7 @@ ColumnLayout {
     ListModel {
         id: dotsModel
         ListElement { dotColor: "#36B05B" }
-        ListElement { dotColor: "#DBDBDB" }
+        ListElement { dotColor: "#ff9900" }
     }
 
     WizardManageWalletUI {

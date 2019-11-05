@@ -83,7 +83,7 @@ Rectangle {
                     labelText: qsTr("Transaction ID") + translationManager.emptyString
                     id: getProofTxIdLine
                     fontSize: 16 * scaleRatio
-                    placeholderText: qsTr("Paste tx ID") + translationManager.emptyString
+                    placeholderText: qsTr("Paste TX id") + translationManager.emptyString
                     readOnly: false
                     Layout.fillWidth: true
                     copyButton: true
@@ -158,7 +158,7 @@ Rectangle {
                     id: checkProofTxIdLine
                     labelText: qsTr("Transaction ID") + translationManager.emptyString
                     fontSize: 16 * scaleRatio
-                    placeholderText: qsTr("Paste tx ID") + translationManager.emptyString
+                    placeholderText: qsTr("Paste TX id") + translationManager.emptyString
                     readOnly: false
                     width: mainLayout.editWidth
                     Layout.fillWidth: true
@@ -197,7 +197,7 @@ Rectangle {
                     id: checkProofSignatureLine
                     fontSize: 16 * scaleRatio
                     labelText: qsTr("Signature") + translationManager.emptyString
-                    placeholderText: qsTr("Paste tx proof") + translationManager.emptyString;
+                    placeholderText: qsTr("Paste TX proof") + translationManager.emptyString;
                     readOnly: false
                     width: mainLayout.editWidth
                     Layout.fillWidth: true

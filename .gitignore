@@ -9,5 +9,5 @@ moc_*
 *.mak
 *.build
 *.xcodeproj
-wazn-wallet-gui_plugin_import.cpp
-wazn-wallet-gui_qml_plugin_import.cpp
+wazn-gui_plugin_import.cpp
+wazn-gui_qml_plugin_import.cpp

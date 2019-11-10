@@ -2780,8 +2780,8 @@ Spending address index: </source>
     </message>
     <message>
         <location filename="../main.qml" line="1787"/>
-        <source>New version of wazn-wallet-gui is available: %1&lt;br&gt;%2</source>
-        <translation>Thar be argh new version o&apos; thee wazn-wallet-gui availabl&apos;: %1&lt;br&gt;%2</translation>
+        <source>New version of wazn-gui is available: %1&lt;br&gt;%2</source>
+        <translation>Thar be argh new version o&apos; thee wazn-gui availabl&apos;: %1&lt;br&gt;%2</translation>
     </message>
     <message>
         <location filename="../main.qml" line="1819"/>

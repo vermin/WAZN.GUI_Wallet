@@ -2,4 +2,4 @@
 
 set QMLSCENE_DEVICE=softwarecontext
 
-start /b wazn-gui.exe
+start /b wazn-wallet-gui.exe

@@ -91,7 +91,7 @@ if [ "$ANDROID" != true ] && ([ "$platform" == "linux32" ] || [ "$platform" == "
 fi
 
 if [ "$platform" == "darwin" ]; then
-    BIN_PATH=$BIN_PATH/wazn-gui.app/Contents/MacOS/
+    BIN_PATH=$BIN_PATH/wazn-wallet-gui.app/Contents/MacOS/
 elif [ "$platform" == "mingw64" ] || [ "$platform" == "mingw32" ]; then
     WAZND_EXEC=waznd.exe
 fi
@@ -109,7 +109,7 @@ if ! QMAKE=$(find_command qmake qmake-qt5); then
     echo "Failed to find suitable qmake command."
     exit 1
 fi
-$QMAKE ../wazn-gui.pro "$CONFIG" || exit
+$QMAKE ../wazn-wallet-gui.pro "$CONFIG" || exit
 $MAKE || exit
 
 # Copy waznd to bin folder

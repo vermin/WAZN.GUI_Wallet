@@ -12,7 +12,7 @@ AppName=WAZN GUI Wallet
 AppVersion=v1.0.0
 DefaultDirName={pf}\WAZN GUI Wallet
 DefaultGroupName=WAZN GUI Wallet
-UninstallDisplayIcon={app}\wazn-gui.exe
+UninstallDisplayIcon={app}\wazn-wallet-gui.exe
 PrivilegesRequired=admin
 ArchitecturesInstallIn64BitMode=x64
 ArchitecturesAllowed=x64
@@ -68,14 +68,14 @@ Source: "ReadMe.htm"; DestDir: "{app}"; Flags: ignoreversion
 Source: "FinishImage.bmp"; Flags: dontcopy
 
 ; WAZN GUI wallet exe and guide
-Source: "bin\wazn-gui.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "bin\wazn-wallet-gui.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "bin\wazn-GUI-guide.pdf"; DestDir: "{app}"; Flags: ignoreversion
 
 ; WAZN GUI wallet log file
 ; The GUI wallet does not have the "--log-file" command-line option of the CLI wallet and insists to put the .log beside the .exe
 ; so pre-create the file and give the necessary permissions to the wallet to write into it
 ; Flag is "onlyifdoesntexist": We do not want to overwrite an already existing log
-Source: "wazn-gui.log"; DestDir: "{app}"; Flags: onlyifdoesntexist; Permissions: users-modify
+Source: "wazn-wallet-gui.log"; DestDir: "{app}"; Flags: onlyifdoesntexist; Permissions: users-modify
 
 ; WAZN CLI wallet
 Source: "bin\wazn-wallet-cli.exe"; DestDir: "{app}"; Flags: ignoreversion
@@ -261,7 +261,7 @@ Name: desktopicon; Description: "Create a &desktop icon"; GroupDescription: "Add
 Filename: "{app}\ReadMe.htm"; Description: "Show ReadMe"; Flags: postinstall shellexec skipifsilent
 
 ; DON'T offer to run the wallet right away, let the people read about initial blockchain download first in the ReadMe
-; Filename: "{app}\wazn-gui.exe"; Description: "Run GUI Wallet now"; Flags: postinstall nowait skipifsilent
+; Filename: "{app}\wazn-wallet-gui.exe"; Description: "Run GUI Wallet now"; Flags: postinstall nowait skipifsilent
 
 
 [Code]
@@ -380,7 +380,7 @@ function WalletFlags(Param: String): String;
 // created there because of an unsolved issue in the 0.13.0.4 wallet code
 var s: String;
 begin
-  s := ExpandConstant('{app}\wazn-gui.log');
+  s := ExpandConstant('{app}\wazn-wallet-gui.log');
   if Pos(' ', s) > 0 then begin
     // Quotes needed for filename with blanks
     s := '"' + s + '"';
@@ -416,8 +416,8 @@ end;
 [Icons]
 ; Icons in the "WAZN GUI Wallet" program group
 ; Windows will almost always display icons in alphabetical order, per level, so specify the text accordingly
-Name: "{group}\GUI Wallet"; Filename: "{app}\wazn-gui.exe"; Parameters: {code:WalletFlags}
-Name: "{group}\GUI Wallet Guide"; Filename: "{app}\wazn-GUI-guide.pdf"; IconFilename: "{app}\wazn-gui.exe"
+Name: "{group}\GUI Wallet"; Filename: "{app}\wazn-wallet-gui.exe"; Parameters: {code:WalletFlags}
+Name: "{group}\GUI Wallet Guide"; Filename: "{app}\wazn-GUI-guide.pdf"; IconFilename: "{app}\wazn-wallet-gui.exe"
 Name: "{group}\Uninstall GUI Wallet"; Filename: "{uninstallexe}"
 
 ; Sub-folder "Utilities";
@@ -436,13 +436,13 @@ Name: "{group}\Utilities\Textual (CLI) Wallet"; Filename: "{app}\wazn-wallet-cli
 Name: "{group}\Utilities\x (Check Blockchain Folder)"; Filename: "{win}\Explorer.exe"; Parameters: {code:BlockChainDir}
 Name: "{group}\Utilities\x (Check Daemon Log)"; Filename: "Notepad"; Parameters: {code:DaemonLog}
 Name: "{group}\Utilities\x (Check Default Wallet Folder)"; Filename: "{win}\Explorer.exe"; Parameters: "{userdocs}\WAZN\wallets"
-Name: "{group}\Utilities\x (Check GUI Wallet Log)"; Filename: "Notepad"; Parameters: "{app}\wazn-gui.log"
+Name: "{group}\Utilities\x (Check GUI Wallet Log)"; Filename: "Notepad"; Parameters: "{app}\wazn-wallet-gui.log"
 Name: "{group}\Utilities\x (Try Daemon, Exit Confirm)"; Filename: "{app}\wazn-daemon.bat"
 Name: "{group}\Utilities\x (Try GUI Wallet Low Graphics Mode)"; Filename: "{app}\start-low-graphics-mode.bat"
 Name: "{group}\Utilities\x (Try Kill Daemon)"; Filename: "Taskkill.exe"; Parameters: "/IM waznd.exe /T /F"
 
 ; Desktop icons, optional with the help of the "Task" section
-Name: "{commondesktop}\GUI Wallet"; Filename: "{app}\wazn-gui.exe"; Parameters: {code:WalletFlags}; Tasks: desktopicon
+Name: "{commondesktop}\GUI Wallet"; Filename: "{app}\wazn-wallet-gui.exe"; Parameters: {code:WalletFlags}; Tasks: desktopicon
 
 
 [Registry]

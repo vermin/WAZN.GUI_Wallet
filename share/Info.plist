@@ -18,13 +18,13 @@
   <string>????</string>
 
   <key>CFBundleExecutable</key>
-  <string>wazn-gui</string>
+  <string>wazn-wallet-gui</string>
 
   <key>CFBundleName</key>
   <string>WAZN GUI</string>
 
   <key>CFBundleIdentifier</key>
-  <string>project.wazn-gui</string>
+  <string>project.wazn-wallet-gui</string>
 
   <key>NSSupportsAutomaticGraphicsSwitching</key>
   <true/>

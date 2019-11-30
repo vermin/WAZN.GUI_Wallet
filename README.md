@@ -1,11 +1,5 @@
 # WAZN GUI Wallet
 
-Copyright (c) 2019 WAZN Project  
-Copyright (c) 2018-2019 uPlexa  
-Copyright (c) 2014-2019 The Monero Project  
-Portions Copyright (c) 2012-2013 The Cryptonote developers
-
-## Coverage
 
 | Type      | Status |
 |-----------|--------|
@@ -215,3 +209,13 @@ The WAZN GUI Wallet on Windows is 64 bits only; 32-bit Windows GUI builds are no
 **Note:** The use of `source` above is a dirty workaround for a suspected bug in the current QT version 5.11.2-3 available in the MSYS2 packaging system, see https://github.com/monero-project/monero-gui/issues/1559 for more info.
 
 The executable can be found in the `.\release\bin` directory.
+
+
+## License
+```
+Licensed under the GPL-3.0
+Copyright (c) 2019 WAZN Project  
+Copyright (c) 2018-2019 uPlexa  
+Copyright (c) 2014-2018 The Monero Project  
+Copyright (c) 2012-2013 The Cryptonote developers
+```

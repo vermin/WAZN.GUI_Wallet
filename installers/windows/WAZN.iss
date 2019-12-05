@@ -9,7 +9,8 @@ AppName=WAZN GUI Wallet
 ; Thus it's important to keep this stable over releases
 ; With a different "AppName" InnoSetup would treat a mere update as a completely new application and thus mess up
 
-AppVersion=v1.0.0
+AppVersion=v1.1.0
+VersionInfoVersion=Sweet Chestnut
 DefaultDirName={pf}\WAZN GUI Wallet
 DefaultGroupName=WAZN GUI Wallet
 UninstallDisplayIcon={app}\wazn-wallet-gui.exe

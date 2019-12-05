@@ -10,10 +10,9 @@ WAZN GUI Wallet
 - [Introduction](#introduction)
 - [Build Status](#build-status)
 - [About this project](#about-this-project)
-- [Contributing](#contributing)
 - [Scheduled software upgrades](#scheduled-software-upgrades)
 - [Release staging schedule and protocol](#release-staging-schedule-and-protocol)
-- [Compiling WAZN from source](#compiling-wazn-from-source)
+- [Compiling WAZN GUI Wallet from source](#compiling-wazn-gui-wallet-from-source)
   - [Dependencies](#dependencies)
   - [Cloning the repository](#cloning-the-repository)
   - [Build instructions](#build-instructions)
@@ -43,8 +42,8 @@ WAZN is a private, secure, untraceable, decentralized digital currency. You are 
 
 These builds are from latest release branch and available for download:
 
-* **Sweet Chestnut GUI** [wazn-gui-v1.1.0-linux64.tar.gz](https://github.com/project-wazn/wazn/releases/download/v1.1.0/wazn-gui-v1.1.0-linux64.tar.gz)  
-* **Sweet Chestnut GUI** [wazn-gui-v1.1.0-win64.zip](https://github.com/project-wazn/wazn/releases/download/v1.1.0/wazn-gui-v1.1.0-win64.zip)
+* **Sweet Chestnut GUI** [wazn-gui-v1.1.0-linux64.tar.gz](https://github.com/project-wazn/wazn-gui/releases/download/v1.1.0/wazn-gui-v1.1.0-linux64.tar.gz)  
+* **Sweet Chestnut GUI** [wazn-gui-v1.1.0-win64.zip](https://github.com/project-wazn/wazn-gui/releases/download/v1.1.0/wazn-gui-v1.1.0-win64.zip)
 
 | Operating System      | Processor | Status |
 |-----------------------|-----------|--------|
@@ -59,17 +58,30 @@ These builds are from latest release branch and available for download:
 
 ## About this project
 
-This is the GUI for the [core WAZN implementation](https://github.com/project-wazn/wazn). It is open source and completely free to use without restrictions, except for those specified in the license agreement below. There are no restrictions on anyone creating an alternative implementation of WAZN that uses the protocol and network in a compatible manner.
+This is GUI for [core WAZN implementation](https://github.com/project-wazn/wazn). It is open source and completely free to use without restrictions, except for those specified in the license agreement below. There are no restrictions on anyone creating an alternative implementation of WAZN that uses the protocol and network in a compatible manner.
 
 As with many development projects, the repository on Github is considered to be the "staging" area for the latest changes. Before changes are merged into that branch on the main repository, they are tested by individual developers in their own branches, submitted as a pull request, and then subsequently tested by contributors who focus on testing and code reviews. That having been said, the repository should be carefully considered before using it in a production environment, unless there is a patch in the repository for a particular show-stopping issue you are experiencing. It is generally a better idea to use a tagged release for stability.
 
 **Anyone is welcome to contribute to WAZN's codebase!** If you have a fix or code change, feel free to submit it as a pull request directly to the "master" branch. In cases where the change is relatively small or does not affect other parts of the codebase it may be merged in immediately by any one of the collaborators. On the other hand, if the change is particularly large or complex, it is expected that it will be discussed at length either well in advance of the pull request being submitted, or even directly on the pull request.
 
-## Contributing
+## Scheduled software upgrades
 
-If you want to help out, see [CONTRIBUTING](CONTRIBUTING.md) for a set of guidelines.
+WAZN uses a fixed-schedule software upgrade (hard fork) mechanism to implement new features. This means that end users and service providers of WAZN should run current versions and upgrade their software on a regular schedule. Regular software upgrades are planned up to 2 times a year and they should take place in March or September. Nonessential or surface software revisions will be available as they are through testing process. The required software for these upgrades will be available prior to the scheduled date. Please check WAZN official repository before this date for appropriate software version. Below is the projected schedule for the next upgrade. Dates are provided in YYYY-MM-DD format.
 
-## Compiling the WAZN GUI Wallet from source
+| Software block upgrade height | Date & Time GMT***   | Recommended App version | Minimum App version | Modification details   |
+| ----------------------------- | -------------------- | ----------------------- | ------------------- | ---------------------- |
+| v10 -> 1                      | 2019-11-09 23:16     | v1.0.1                  | v1.0.0              | cn-wazn 128KB          |
+| **v11 -> 17 000**             | **2019-12-07 18:06** | **v1.1.0**              | **v1.1.0**          | **TX Fee amount reduction** |
+| v12 -> XX XXX                 | 2020-XX-XX           | vX.X.X                  | vX.X.X              | XXXXXX                 |
+
+* XXs indicate that these details have not been determined as of commit date.
+* *** indicates approximate time of anticipated WAZN block mined to complete the upgrade process.
+
+## Release staging schedule and protocol
+
+Approximately 8 weeks before a scheduled software upgrade, a branch from **dev** [github.com/vermin/wazn-gui](https://github.com/vermin/wazn-gui) will be created with the new release version tag. Pull requests that address bugs should then be made to both, the Dev and the **new release branch**. Pull requests that require extensive review and testing (generally, optimizations and new features) should *not* be made to the release branch. New version will pushed to [github.com/project-wazn/wazn-gui](https://github.com/project-wazn/wazn-gui) **master** branch, release created and binaries will be made available to public.
+
+## Compiling WAZN GUI Wallet from source
 
 ### On Linux:
 

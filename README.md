@@ -3,24 +3,35 @@ WAZN GUI Wallet
 
 [![License](https://img.shields.io/badge/license-GPL--3.0-blue)](https://opensource.org/licenses/GPL-3.0)
 
-## Builds
+## Table of Contents
 
-Ubuntu-x64  
-Win-x64
+- [Development resources](#development-resources)
+- [Announcements](#announcements)
+- [Introduction](#introduction)
+- [Build Status](#build-status)
+- [About this project](#about-this-project)
+- [Contributing](#contributing)
+- [Scheduled software upgrades](#scheduled-software-upgrades)
+- [Release staging schedule and protocol](#release-staging-schedule-and-protocol)
+- [Compiling WAZN from source](#compiling-wazn-from-source)
+  - [Dependencies](#dependencies)
+  - [Cloning the repository](#cloning-the-repository)
+  - [Build instructions](#build-instructions)
+- [License](#license)
 
 ## Development resources
 
 - Web: [wazn.io](https://wazn.io)
-- Mail: [dev@wazn.io](mailto:dev@wazn.io)
 - GitHub: [github.com/vermin/wazn-gui](https://github.com/vermin/wazn-gui)
+- Mail: [dev@wazn.io](mailto:dev@wazn.io)
 
-## Vulnerability response
+## Announcements
 
-- Our Vulnerability Response Process encourages responsible disclosure. Please send a message to dev@wazn.io with "vuln" somewhere within the title.
+- Subscribe to our Reddit for important announcements regarding WAZN future (https://www.reddit.com/r/WAZN/)
 
 ## Introduction
 
-WAZN is a private, secure, untraceable, decentralised digital currency. You are your bank, you control your funds, and nobody can trace your transfers unless you allow them to do so.
+WAZN is a private, secure, untraceable, decentralized digital currency. You are your bank, you control your funds, and nobody can trace your transfers unless you allow them to do so.
 
 **Privacy:** WAZN uses a cryptographically sound system to allow you to send and receive funds without your transactions being easily revealed on the blockchain (the ledger of transactions that everyone has). This ensures that your purchases, receipts, and all transfers remain absolutely private by default.
 
@@ -28,15 +39,35 @@ WAZN is a private, secure, untraceable, decentralised digital currency. You are 
 
 **Untraceability:** By taking advantage of ring signatures, a special property of a certain type of cryptography, WAZN is able to ensure that transactions are not only untraceable, but have an optional measure of ambiguity that ensures that transactions cannot easily be tied back to an individual user or computer.
 
+## Build Status
+
+These builds are from latest release branch and available for download:
+
+* **Sweet Chestnut GUI** [wazn-gui-v1.1.0-linux64.tar.gz](https://github.com/project-wazn/wazn/releases/download/v1.1.0/wazn-gui-v1.1.0-linux64.tar.gz)  
+* **Sweet Chestnut GUI** [wazn-gui-v1.1.0-win64.zip](https://github.com/project-wazn/wazn/releases/download/v1.1.0/wazn-gui-v1.1.0-win64.zip)
+
+| Operating System      | Processor | Status |
+|-----------------------|-----------|--------|
+| Win10 (MSYS2/MinGW)   |    amd64    | [![Build](https://img.shields.io/badge/passing-brightgreen)](https://github.com/project-wazn/wazn-gui/releases)
+| Win10 (MSYS2/MinGW)   |    IA-32    | [![Build](https://img.shields.io/badge/failed-red)](https://github.com/project-wazn/wazn-gui/releases)
+| macOS 10.13           |    amd64    | [![Build](https://img.shields.io/badge/unknown-lightgrey)](https://github.com/project-wazn/wazn-gui/releases)
+| macOS 10.14           |    IA-32    | [![Build](https://img.shields.io/badge/failed-red)](https://github.com/project-wazn/wazn-gui/releases)
+| Ubuntu 18.04          |    amd64    | [![Build](https://img.shields.io/badge/passing-brightgreen)](https://github.com/project-wazn/wazn-gui/releases)
+| Ubuntu 18.04          |    IA-32    | [![Build](https://img.shields.io/badge/failed-red)](https://github.com/project-wazn/wazn-gui/releases)
+| Ubuntu 18.04          |  ARMv8 x64  | [![Build](https://img.shields.io/badge/unknown-lightgrey)](https://github.com/project-wazn/wazn-gui/releases)
+| Raspbian 9 Stretch    |  ARMv8 x64  | [![Build](https://img.shields.io/badge/failed-red)](https://github.com/project-wazn/wazn-gui/releases)
+
 ## About this project
 
 This is the GUI for the [core WAZN implementation](https://github.com/project-wazn/wazn). It is open source and completely free to use without restrictions, except for those specified in the license agreement below. There are no restrictions on anyone creating an alternative implementation of WAZN that uses the protocol and network in a compatible manner.
 
 As with many development projects, the repository on Github is considered to be the "staging" area for the latest changes. Before changes are merged into that branch on the main repository, they are tested by individual developers in their own branches, submitted as a pull request, and then subsequently tested by contributors who focus on testing and code reviews. That having been said, the repository should be carefully considered before using it in a production environment, unless there is a patch in the repository for a particular show-stopping issue you are experiencing. It is generally a better idea to use a tagged release for stability.
 
-## License
+**Anyone is welcome to contribute to WAZN's codebase!** If you have a fix or code change, feel free to submit it as a pull request directly to the "master" branch. In cases where the change is relatively small or does not affect other parts of the codebase it may be merged in immediately by any one of the collaborators. On the other hand, if the change is particularly large or complex, it is expected that it will be discussed at length either well in advance of the pull request being submitted, or even directly on the pull request.
 
-See [LICENSE](LICENSE).
+## Contributing
+
+If you want to help out, see [CONTRIBUTING](CONTRIBUTING.md) for a set of guidelines.
 
 ## Compiling the WAZN GUI Wallet from source
 

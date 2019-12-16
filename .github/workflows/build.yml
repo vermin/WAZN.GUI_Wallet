@@ -45,6 +45,7 @@ jobs:
       run: pacman -S mingw-w64-x86_64-toolchain make mingw-w64-x86_64-cmake mingw-w64-x86_64-boost mingw-w64-x86_64-openssl mingw-w64-x86_64-zeromq mingw-w64-x86_64-libsodium mingw-w64-x86_64-hidapi
     - name: install wazn gui dependencies
       run: pacman -R mingw-w64-x86_64-qt5
+    - name: build
       run: ./build.sh release-static
     - name: change dir
       run: cd build

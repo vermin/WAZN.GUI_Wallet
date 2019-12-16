@@ -1,4 +1,0 @@
-[submodule "wazn"]
-	url = https://github.com/project-wazn/wazn.git
-	branch = master
-	path = wazn

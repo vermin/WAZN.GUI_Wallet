@@ -32,24 +32,3 @@ jobs:
       run: export PATH=$PATH:/usr/local/opt/qt/bin && ./build.sh
     - name: test qml
       run: build/release/bin/wazn-wallet-gui.app/Contents/MacOS/wazn-wallet-gui --test-qml
-
-  build-windows:
-
-    runs-on: windows-latest
-
-    steps:
-    - uses: actions/checkout@v1
-    - name: update with pacman
-      run: pacman -Syuu
-    - name: install wazn dependencies
-      run: pacman -S mingw-w64-x86_64-toolchain make mingw-w64-x86_64-cmake mingw-w64-x86_64-boost mingw-w64-x86_64-openssl mingw-w64-x86_64-zeromq mingw-w64-x86_64-libsodium mingw-w64-x86_64-hidapi
-    - name: install wazn gui dependencies
-      run: pacman -R mingw-w64-x86_64-qt5
-    - name: build
-      run: ./build.sh release-static
-    - name: change dir
-      run: cd build
-    - name: deploy
-      run: make deploy
-    - name: test qml
-      run: xvfb-run -a build/release/bin/wazn-wallet-gui --test-qml
